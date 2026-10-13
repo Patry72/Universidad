@@ -1,0 +1,8 @@
+*.cmd
+.tmp_versions/
+Module.symvers
+driver_SO.mod.c
+modules.order
+*.ko
+*.o
+*.mod.c

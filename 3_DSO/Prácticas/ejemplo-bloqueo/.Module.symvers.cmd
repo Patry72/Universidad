@@ -1,0 +1,1 @@
+cmd_/home/pi/DSO/Clase/ejemplo-bloqueo/Module.symvers :=  sed 's/ko$$/o/'  /home/pi/DSO/Clase/ejemplo-bloqueo/modules.order | scripts/mod/modpost -m -a    -o /home/pi/DSO/Clase/ejemplo-bloqueo/Module.symvers -e -i Module.symvers -T - 

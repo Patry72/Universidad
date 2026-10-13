@@ -1,0 +1,1 @@
+cmd_/home/patricia/Universidad/DSO/Clase/modulo_kernel/fortune_mod.ko := ld -r -m elf_i386  --build-id  -T ./scripts/module-common.lds -o /home/patricia/Universidad/DSO/Clase/modulo_kernel/fortune_mod.ko /home/patricia/Universidad/DSO/Clase/modulo_kernel/fortune_mod.o /home/patricia/Universidad/DSO/Clase/modulo_kernel/fortune_mod.mod.o;  true

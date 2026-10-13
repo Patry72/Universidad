@@ -1,0 +1,1 @@
+cmd_/home/practicas/media/DSO-miMedia/mean.ko := ld -r -m elf_x86_64 -z max-page-size=0x200000 -T ./scripts/module-common.lds --build-id  -o /home/practicas/media/DSO-miMedia/mean.ko /home/practicas/media/DSO-miMedia/mean.o /home/practicas/media/DSO-miMedia/mean.mod.o ;  true

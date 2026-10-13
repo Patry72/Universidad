@@ -1,0 +1,1 @@
+cmd_/home/dso/kthreads/ejemplo_kthread.ko := ld -r -EL -z noexecstack --build-id=sha1  -T scripts/module.lds -o /home/dso/kthreads/ejemplo_kthread.ko /home/dso/kthreads/ejemplo_kthread.o /home/dso/kthreads/ejemplo_kthread.mod.o;  true

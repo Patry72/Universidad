@@ -1,0 +1,1 @@
+cmd_/home/dso/ejemplo-timer-tasklet/ejemplo_timer.ko := ld -r -EL -z noexecstack --build-id=sha1  -T scripts/module.lds -o /home/dso/ejemplo-timer-tasklet/ejemplo_timer.ko /home/dso/ejemplo-timer-tasklet/ejemplo_timer.o /home/dso/ejemplo-timer-tasklet/ejemplo_timer.mod.o;  true

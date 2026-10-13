@@ -1,0 +1,1 @@
+cmd_/home/pi/DSO/Clase/ejemplo-bloqueo/bloqueo.ko := ld -r -EL -z noexecstack --build-id=sha1  -T scripts/module.lds -o /home/pi/DSO/Clase/ejemplo-bloqueo/bloqueo.ko /home/pi/DSO/Clase/ejemplo-bloqueo/bloqueo.o /home/pi/DSO/Clase/ejemplo-bloqueo/bloqueo.mod.o;  true

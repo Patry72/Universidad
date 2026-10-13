@@ -1,0 +1,1 @@
+cmd_/home/patricia/Universidad/DSO/Clase/modulo_kernel/fortune_mod.mod := { echo  /home/patricia/Universidad/DSO/Clase/modulo_kernel/fortune_mod.o; echo; } > /home/patricia/Universidad/DSO/Clase/modulo_kernel/fortune_mod.mod

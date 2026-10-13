@@ -1,0 +1,11 @@
+[Unit]
+Description = Ejemplo de kernel thread, crea /proc/counter
+
+[Service]
+Type= oneshot
+ExecStart  = /sbin/insmod /home/dso/kthreads/ejemplo_kthread.ko
+RemainAfterExit = true
+ExecStop  = /sbin/rmmod  ejemplo_kthread
+
+[Install]
+WantedBy = multi-user.target
