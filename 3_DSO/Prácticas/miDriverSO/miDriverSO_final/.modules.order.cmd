@@ -1,0 +1,1 @@
+cmd_/home/pi/DSO/Clase/miDriverSO/miDriverSO_final/modules.order := {   echo /home/pi/DSO/Clase/miDriverSO/miDriverSO_final/driverSO.ko; :; } > /home/pi/DSO/Clase/miDriverSO/miDriverSO_final/modules.order

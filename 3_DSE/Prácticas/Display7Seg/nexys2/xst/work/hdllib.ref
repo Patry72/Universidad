@@ -1,0 +1,6 @@
+EN interfaz NULL C:/DisSistEmpotrados/Display7Seg/Display7Seg_lib/hdl/interfaz_struct.vhd sub00/vhpl04 1667559808
+EN control_display NULL C:/DisSistEmpotrados/Display7Seg/Display7Seg_lib/hdl/control_display_struct.vhd sub00/vhpl02 1667559806
+AR control_display struct C:/DisSistEmpotrados/Display7Seg/Display7Seg_lib/hdl/control_display_struct.vhd sub00/vhpl03 1667559807
+AR buffer_reloj struct C:/DisSistEmpotrados/Display7Seg/auxiliar_lib/hdl/buffer_reloj_struct.vhd sub00/vhpl01 1667559805
+AR interfaz struct C:/DisSistEmpotrados/Display7Seg/Display7Seg_lib/hdl/interfaz_struct.vhd sub00/vhpl05 1667559809
+EN buffer_reloj NULL C:/DisSistEmpotrados/Display7Seg/auxiliar_lib/hdl/buffer_reloj_struct.vhd sub00/vhpl00 1667559804

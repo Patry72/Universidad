@@ -1,0 +1,8 @@
+EN interfaz NULL C:/DisSistEmpotrados/Expendedora/Expendedora_lib/hdl/interfaz_struct.vhd sub00/vhpl06 1666175934
+AR expendedora struct C:/DisSistEmpotrados/Expendedora/Expendedora_lib/hdl/expendedora_struct.vhd sub00/vhpl05 1666175933
+AR nivel_a_pulso_mealy struct C:/DisSistEmpotrados/Expendedora/auxiliar_lib/hdl/nivel_a_pulso_mealy_struct.vhd sub00/vhpl03 1666175931
+AR buffer_reloj struct C:/DisSistEmpotrados/Expendedora/auxiliar_lib/hdl/buffer_reloj_struct.vhd sub00/vhpl01 1666175929
+EN nivel_a_pulso_mealy NULL C:/DisSistEmpotrados/Expendedora/auxiliar_lib/hdl/nivel_a_pulso_mealy_struct.vhd sub00/vhpl02 1666175930
+EN expendedora NULL C:/DisSistEmpotrados/Expendedora/Expendedora_lib/hdl/expendedora_struct.vhd sub00/vhpl04 1666175932
+AR interfaz struct C:/DisSistEmpotrados/Expendedora/Expendedora_lib/hdl/interfaz_struct.vhd sub00/vhpl07 1666175935
+EN buffer_reloj NULL C:/DisSistEmpotrados/Expendedora/auxiliar_lib/hdl/buffer_reloj_struct.vhd sub00/vhpl00 1666175928

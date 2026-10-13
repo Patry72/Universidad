@@ -1,0 +1,146 @@
+DESIGN @multiplicador_tb
+VIEW symbol.sb
+NO_GRAPHIC 0
+DESIGN @multiplicador_tb
+VIEW symbol.sb
+GRAPHIC 50,0 8 0 
+DESIGN @multiplicador_tb
+VIEW symbol.sb
+GRAPHIC 1,0 13 0 
+DESIGN @multiplicador_tb
+VIEW symbol.sb
+GRAPHIC 1,0 14 0 
+DESIGN @multiplicador_tb
+VIEW struct.bd
+NO_GRAPHIC 17
+DESIGN @multiplicador_tb
+VIEW struct.bd
+GRAPHIC 41,0 26 0 
+DESIGN @multiplicador_tb
+VIEW struct.bd
+NO_GRAPHIC 34
+DESIGN @multiplicador_tb
+VIEW struct.bd
+GRAPHIC 0,0 37 2 
+DESIGN @multiplicador_tb
+VIEW struct.bd
+GRAPHIC 289,0 42 0 
+DESIGN @multiplicador_tb
+VIEW struct.bd
+GRAPHIC 329,0 43 0 
+DESIGN @multiplicador_tb
+VIEW struct.bd
+GRAPHIC 339,0 44 0 
+DESIGN @multiplicador_tb
+VIEW struct.bd
+GRAPHIC 279,0 45 0 
+DESIGN @multiplicador_tb
+VIEW struct.bd
+GRAPHIC 299,0 46 0 
+DESIGN @multiplicador_tb
+VIEW struct.bd
+GRAPHIC 309,0 47 0 
+DESIGN @multiplicador_tb
+VIEW struct.bd
+GRAPHIC 349,0 48 0 
+DESIGN @multiplicador_tb
+VIEW struct.bd
+NO_GRAPHIC 49
+DESIGN @multiplicador_tb
+VIEW struct.bd
+NO_GRAPHIC 50
+LIBRARY Multiplicador_lib
+DESIGN @multiplicador
+VIEW struct
+GRAPHIC 198,0 52 0 
+DESIGN @multiplicador
+VIEW symbol.sb
+GRAPHIC 199,0 54 0 
+DESIGN @multiplicador
+VIEW symbol.sb
+GRAPHIC 204,0 55 0 
+DESIGN @multiplicador
+VIEW symbol.sb
+GRAPHIC 214,0 56 0 
+DESIGN @multiplicador
+VIEW symbol.sb
+GRAPHIC 209,0 57 0 
+DESIGN @multiplicador
+VIEW symbol.sb
+GRAPHIC 244,0 58 0 
+DESIGN @multiplicador
+VIEW symbol.sb
+GRAPHIC 343,0 59 0 
+DESIGN @multiplicador
+VIEW symbol.sb
+GRAPHIC 419,0 60 0 
+DESIGN @multiplicador_tb
+VIEW struct.bd
+GRAPHIC 261,0 63 0 
+DESIGN @multiplicador_tb
+VIEW struct.bd
+GRAPHIC 281,0 65 0 
+DESIGN @multiplicador_tb
+VIEW struct.bd
+GRAPHIC 291,0 66 0 
+DESIGN @multiplicador_tb
+VIEW struct.bd
+GRAPHIC 321,0 67 0 
+DESIGN @multiplicador_tb
+VIEW struct.bd
+GRAPHIC 331,0 68 0 
+DESIGN @multiplicador_tb
+VIEW struct.bd
+GRAPHIC 271,0 69 0 
+DESIGN @multiplicador_tb
+VIEW struct.bd
+GRAPHIC 301,0 70 0 
+DESIGN @multiplicador_tb
+VIEW struct.bd
+GRAPHIC 341,0 71 0 
+LIBRARY Multiplicador_lib
+DESIGN @multiplicador_tb
+VIEW struct.bd
+NO_GRAPHIC 74
+DESIGN @multiplicador_tb
+VIEW struct.bd
+GRAPHIC 198,0 77 0 
+DESIGN @multiplicador_tb
+VIEW struct.bd
+GRAPHIC 261,0 78 0 
+DESIGN @multiplicador_tb
+VIEW struct.bd
+NO_GRAPHIC 81
+DESIGN @multiplicador_tb
+VIEW struct.bd
+NO_GRAPHIC 83
+DESIGN @multiplicador_tb
+VIEW struct.bd
+GRAPHIC 198,0 85 0 
+DESIGN @multiplicador_tb
+VIEW struct.bd
+GRAPHIC 353,0 87 0 
+DESIGN @multiplicador_tb
+VIEW struct.bd
+GRAPHIC 361,0 88 0 
+DESIGN @multiplicador_tb
+VIEW struct.bd
+GRAPHIC 377,0 89 0 
+DESIGN @multiplicador_tb
+VIEW struct.bd
+GRAPHIC 369,0 90 0 
+DESIGN @multiplicador_tb
+VIEW struct.bd
+GRAPHIC 385,0 91 0 
+DESIGN @multiplicador_tb
+VIEW struct.bd
+GRAPHIC 281,0 92 0 
+DESIGN @multiplicador_tb
+VIEW struct.bd
+GRAPHIC 291,0 93 0 
+DESIGN @multiplicador_tb
+VIEW struct.bd
+GRAPHIC 261,0 95 0 
+DESIGN @multiplicador_tb
+VIEW struct.bd
+NO_GRAPHIC 106

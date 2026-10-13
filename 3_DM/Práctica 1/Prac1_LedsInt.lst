@@ -1,0 +1,173 @@
+* R8C/Tiny,M16C/60 SERIES ASSEMBLER *   SOURCE LIST       Tue Feb 14 09:40:22 2023  PAGE 001
+
+  SEQ.  LOC.   OBJ.              0XMSDA ....*....SOURCE STATEMENT....7....*....8....*....9....*....0....*....1....*....2....*....3....*....4....*....5....*....6....*....7....*....8....*....9....*....0
+
+     1                                  ;
+     2                                  ;	PRÁCTICA 1: PARPADEO LEDS POR INTERRUPCIONES
+     3                                  ;
+     4                                  ;	
+     5                                  ;----------------------------------------------------------------------------------------
+     6                                  	.list off			; deshabilita el volcado desde ahora
+     7                                  	.list on			; habilita el volcado desde ahora
+     8                                  ;
+     9                                  ;----- DEFINICIÓN DE SÍMBOLOS 3DKUM16C/62PU ---------------------------------------------
+    10                                  ;
+    11  00000400h                       VramTOP		.equ 000400h ; inicio de la RAM interna
+    12  00007CFFh                       VramEND 	.equ 007CFFh ; final de la RAM interna
+    13  00007CFFh                       VIstack		.equ 007CFFh ; Direccion de la cima de la pila stack pointer
+    14  000A0000h                       VprogTOP	.equ 0A0000h ; inicio del area de programa
+    15  000FA000h                       Vintbase 	.equ 0FA000h ; inicio tabla de interrupciones variable
+    16  000FFFDCh                       Vvector 	.equ 0FFFDCh ; inicio tabla de interrupciones fija
+    17  00000380h                       SB_base 	.equ 000380h ; Base del direccionamiento SB relativo
+    18                                  ;
+    19                                  ;----- Área de datos RAM ----------------------------------------
+    20                                  ;
+    21                                  	.section 	memory, data
+    22  00400                           	.org 		VramTOP
+    23                                  ;
+    24                                  ;----- Área de código ROM/Flash --------------------------------
+    25                                  ;
+    26                                  	.section 	prog, code
+    27  A0000                           	.org 		VprogTOP
+    28                                  ;
+    29                                  ;----- Limpieza de la RAM -------------------------------
+    30                                  ;
+    31  A0000  D900                  Q  	mov.w #0, R0 ; 0 clear
+    32  A0002  75C3803C                 	mov.w #(VramEND+1-VramTOP)/2,R3 ; number of times
+    33  A0006  AA0004                S  	mov.w #VramTOP, A1 ; start address
+    34  A0009  7DEA                     	sstr.w
+    35                                  ;
+    36                                  ;---- INICIALIZACION ---- (3DKM16C/62PU) ------------------------------------------------
+    37  A000B                           reset:
+    38  A000B  EB200F00                 	ldintb 	#Tabla_Vector_Usu ; Necesito dummy
+               EB1000A0 
+    39  A0013  7E9F301F                 	bset	PD2_0 		; P2_7 salida
+    40  A0017  C7809603              S  	mov.b 	#80h,TA0MR 	; TA0 en modo temporizador con f32
+    41  A001B  C7015500              S  	mov.b 	#1,TA0IC 	; Limpia el bit de petición de interrupción. Prioridad 1
+    42  A001F  75CF8603CA08             	mov.w 	#2250,TA0 	; 2250 periodos de 27,7ns*32= 2 ms. (reloj 36MHz)
+    43  A0025  7E9F001C                 	bset 	TA0S 		; arranca el contador
+    44  A0029  D900                  Q  	mov.w 	#0,r0 		; r0 cuenta de periodos de 2 ms.
+    45                                  ;
+    46                                  ;----- PROGRAMA PRINCIPAL ---------------------------------------------------------------
+    47                                  ;
+    48  A002B                           main:
+    49  A002B  7780F401                 	cmp.w 	#500,r0 	; r0=500?
+    50  A002F  6EFB                     	jnz 	main
+    51  A0031  D900                  Q  	mov.w 	#0,r0 		; reinicia cuenta (cada segundo)
+    52  A0033  7EAF201F                 	bnot 	P2_0 		; cambia la polaridad del diodo
+    53  A0037  FEF3                  B  	jmp 	main
+    54                                  ;
+    55                                  ;----- MANEJADOR INTERRUPCION TIMER TA0 -------------------------------------------------
+    56                                  ;
+    57  A0039                           sw_ta0:
+    58  A0039  C910                  Q  	add.w 	#1,r0 ; desbordamiento (cada 2 ms)
+    59  A003B  FB                       	reit
+    60                                  ;
+    61                                  ;----- MANEJADOR RUTINA DUMMY -----------------------------------------------------------
+* R8C/Tiny,M16C/60 SERIES ASSEMBLER *   SOURCE LIST       Tue Feb 14 09:40:22 2023  PAGE 002
+
+  SEQ.  LOC.   OBJ.              0XMSDA ....*....SOURCE STATEMENT....7....*....8....*....9....*....0....*....1....*....2....*....3....*....4....*....5....*....6....*....7....*....8....*....9....*....0
+
+    62                                  ;
+    63  A003C                           dummy:
+    64  A003C  FB                       	reit
+    65                                  ;
+    66                                  ;----- INTERRUPCION DEL TIMER TA0 (tabla de vectores variable) --------------------------
+    67                                  ;
+    68                                  	.section 	int_ta0,romdata
+    69  FA000                           	.org 		Vintbase
+    70                                  	
+    71  FA000                           Tabla_Vector_Usu:
+    72                                  
+    73  FA000  3C000A00                 	.lword		dummy			; No0  Break Interrupt
+    74  FA004  3C000A00                 	.lword		dummy			; No1  Break Interrupt
+    75  FA008  3C000A00                 	.lword		dummy			; No2  Break Interrupt
+    76  FA00C  3C000A00                 	.lword		dummy			; No3  Break Interrupt
+    77  FA010  3C000A00                 	.lword		dummy			; No4  Break Interrupt
+    78  FA014  3C000A00                 	.lword		dummy			; No5  Break Interrupt
+    79  FA018  3C000A00                 	.lword		dummy			; No6  Break Interrupt
+    80  FA01C  3C000A00                 	.lword		dummy			; No7  Break Interrupt
+    81  FA020  3C000A00                 	.lword		dummy			; No8  Break Interrupt
+    82  FA024  3C000A00                 	.lword		dummy			; No9  Break Interrupt
+    83  FA028  3C000A00                 	.lword		dummy			; No10 Bus Clash Detect
+    84  FA02C  3C000A00                 	.lword		dummy			; No11 DMA0 
+    85  FA030  3C000A00                 	.lword		dummy			; No12 DMA1 
+    86  FA034  3C000A00                 	.lword		dummy			; No13 KEY IN Interrupt
+    87  FA038  3C000A00                 	.lword		dummy	   		; No14 A-D Interrupt
+    88  FA03C  3C000A00                 	.lword		dummy			; No15 UART2 Transmission Interrupt
+    89  FA040  3C000A00                 	.lword		dummy			; No16 UART2 receive Interrupt
+    90  FA044  3C000A00                 	.lword		dummy			; No17 UART0 Transmission Interrupt
+    91  FA048  3C000A00                 	.lword		dummy			; No18 UART0 receive Interrupt
+    92  FA04C  00F90F00                 	.lword		0FF900H			; No19 UART1 Transmission Interrupt
+    93  FA050  00F90F00                 	.lword		0ff900H			; No20 UART1 receive Interrupt
+    94  FA054  39000A00                 	.lword		sw_ta0 			; No21 TimerA0 Interrupt
+    95  FA058  3C000A00                 	.lword		dummy   		; No22 TimerA1 Interrupt
+    96  FA05C  3C000A00                 	.lword		dummy			; No23 TimerA2 Interrupt
+    97  FA060  3C000A00                 	.lword		dummy			; No24 TimerA3 Interrupt
+    98  FA064  3C000A00                 	.lword		dummy			; No25 TimerA4 Interrupt
+    99  FA068  3C000A00                 	.lword		dummy			; No26 TimerB0 Interrupt
+   100  FA06C  3C000A00                 	.lword		dummy			; No27 TimerB1 Interrupt
+   101  FA070  3C000A00                 	.lword		dummy			; No28 TimerB2 Interrupt
+   102  FA074  3C000A00                 	.lword		dummy			; No29 INIT0(Active Low) Interrupt
+   103  FA078  3C000A00                 	.lword		dummy			; No30 INIT1(Active Low) Interrupt
+   104  FA07C  3C000A00                 	.lword		dummy			; No31 INIT2(Active Low) Interrupt
+   105  FA080  3C000A00                 	.lword		dummy			; No32 S/W Interrupt
+   106  FA084  3C000A00                 	.lword		dummy			; No33 S/W Interrupt
+   107  FA088  3C000A00                 	.lword		dummy			; No34 S/W Interrupt
+   108  FA08C  3C000A00                 	.lword		dummy			; No35 S/W Interrupt
+   109  FA090  3C000A00                 	.lword		dummy			; No36 S/W Interrupt
+   110  FA094  3C000A00                 	.lword		dummy			; No37 S/W Interrupt
+   111  FA098  3C000A00                 	.lword		dummy			; No38 S/W Interrupt
+   112  FA09C  3C000A00                 	.lword		dummy			; No39 S/W Interrupt
+   113  FA0A0  3C000A00                 	.lword		dummy			; No40 S/W Interrupt
+   114  FA0A4  3C000A00                 	.lword		dummy			; No41 S/W Interrupt
+   115  FA0A8  3C000A00                 	.lword		dummy			; No42 S/W Interrupt
+   116  FA0AC  3C000A00                 	.lword		dummy			; No43 S/W Interrupt
+   117  FA0B0  3C000A00                 	.lword		dummy			; No44 S/W Interrupt
+   118  FA0B4  3C000A00                 	.lword		dummy			; No45 S/W Interrupt
+   119  FA0B8  3C000A00                 	.lword		dummy			; No46 S/W Interrupt
+   120  FA0BC  3C000A00                 	.lword		dummy			; No47 S/W Interrupt
+   121  FA0C0  3C000A00                 	.lword		dummy			; No48 S/W Interrupt
+   122  FA0C4  3C000A00                 	.lword		dummy			; No49 S/W Interrupt
+   123  FA0C8  3C000A00                 	.lword		dummy			; No50 S/W Interrupt
+* R8C/Tiny,M16C/60 SERIES ASSEMBLER *   SOURCE LIST       Tue Feb 14 09:40:22 2023  PAGE 003
+
+  SEQ.  LOC.   OBJ.              0XMSDA ....*....SOURCE STATEMENT....7....*....8....*....9....*....0....*....1....*....2....*....3....*....4....*....5....*....6....*....7....*....8....*....9....*....0
+
+   124  FA0CC  3C000A00                 	.lword		dummy			; No51 S/W Interrupt
+   125  FA0D0  3C000A00                 	.lword		dummy			; No52 S/W Interrupt
+   126  FA0D4  3C000A00                 	.lword		dummy			; No53 S/W Interrupt
+   127  FA0D8  3C000A00                 	.lword		dummy			; No54 S/W Interrupt
+   128  FA0DC  3C000A00                 	.lword		dummy			; No55 S/W Interrupt
+   129  FA0E0  3C000A00                 	.lword		dummy			; No56 S/W Interrupt
+   130  FA0E4  3C000A00                 	.lword		dummy			; No57 S/W Interrupt
+   131  FA0E8  3C000A00                 	.lword		dummy			; No58 S/W Interrupt
+   132  FA0EC  3C000A00                 	.lword		dummy			; No59 S/W Interrupt
+   133  FA0F0  3C000A00                 	.lword		dummy			; No60 S/W Interrupt
+   134  FA0F4  3C000A00                 	.lword		dummy			; No61 S/W Interrupt
+   135  FA0F8  3C000A00                 	.lword		dummy			; No62 S/W Interrupt
+   136  FA0FC  3C000A00                 	.lword		dummy			; No63 S/W Interrupt
+   137                                  
+   138                                  ;
+   139                                  ;----- INTERRUPCIÓN DE RESET (INICIALIZA PC) --------------------------------------------------------------------
+   140                                  ;
+   141                                  	.section 	int_reset,romdata
+   142  FFFFC                           	.org 		Vvector+(8*4)
+   143  FFFFC  0B000A00                 	.lword 		reset
+   144                                  ;
+   145                                  ;---- FIN DEL PROGRAMA ------------------------------------------------------------------
+   146                                  	.end
+
+Information List
+
+TOTAL ERROR(S)    00000
+TOTAL WARNING(S)  00000
+TOTAL LINE(S)     00146   LINES
+
+Section List
+
+Attr        Size          Name
+DATA     0000000(00000H)  memory
+CODE     0000061(0003DH)  prog
+ROMDATA  0000256(00100H)  int_ta0
+ROMDATA  0000004(00004H)  int_reset

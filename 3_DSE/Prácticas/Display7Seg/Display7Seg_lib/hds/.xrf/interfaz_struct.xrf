@@ -1,0 +1,195 @@
+DESIGN interfaz
+VIEW symbol.sb
+NO_GRAPHIC 0
+DESIGN interfaz
+VIEW symbol.sb
+GRAPHIC 50,0 8 0 
+DESIGN interfaz
+VIEW symbol.sb
+GRAPHIC 112,0 14 0 
+DESIGN interfaz
+VIEW symbol.sb
+GRAPHIC 169,0 15 0 
+DESIGN interfaz
+VIEW symbol.sb
+GRAPHIC 174,0 16 0 
+DESIGN interfaz
+VIEW symbol.sb
+GRAPHIC 179,0 17 0 
+DESIGN interfaz
+VIEW symbol.sb
+GRAPHIC 184,0 18 0 
+DESIGN interfaz
+VIEW symbol.sb
+GRAPHIC 189,0 19 0 
+DESIGN interfaz
+VIEW symbol.sb
+GRAPHIC 117,0 20 0 
+DESIGN interfaz
+VIEW symbol.sb
+GRAPHIC 159,0 21 0 
+DESIGN interfaz
+VIEW symbol.sb
+GRAPHIC 164,0 22 0 
+DESIGN interfaz
+VIEW symbol.sb
+GRAPHIC 1,0 25 0 
+DESIGN interfaz
+VIEW symbol.sb
+GRAPHIC 1,0 26 0 
+DESIGN interfaz
+VIEW struct.bd
+NO_GRAPHIC 29
+DESIGN interfaz
+VIEW struct.bd
+GRAPHIC 41,0 38 0 
+DESIGN interfaz
+VIEW struct.bd
+NO_GRAPHIC 41
+DESIGN interfaz
+VIEW struct.bd
+GRAPHIC 0,0 45 2 
+DESIGN interfaz
+VIEW struct.bd
+GRAPHIC 336,0 50 0 
+DESIGN interfaz
+VIEW struct.bd
+GRAPHIC 300,0 51 0 
+DESIGN interfaz
+VIEW struct.bd
+GRAPHIC 672,0 52 0 
+DESIGN interfaz
+VIEW struct.bd
+GRAPHIC 678,0 53 0 
+DESIGN interfaz
+VIEW struct.bd
+GRAPHIC 684,0 54 0 
+DESIGN interfaz
+VIEW struct.bd
+GRAPHIC 690,0 55 0 
+DESIGN interfaz
+VIEW struct.bd
+NO_GRAPHIC 56
+DESIGN interfaz
+VIEW struct.bd
+NO_GRAPHIC 73
+LIBRARY auxiliar_lib
+DESIGN buffer_reloj
+VIEW struct
+GRAPHIC 205,0 75 0 
+DESIGN buffer_reloj
+VIEW symbol.sb
+GRAPHIC 200,0 77 0 
+DESIGN buffer_reloj
+VIEW symbol.sb
+GRAPHIC 112,0 78 0 
+DESIGN buffer_reloj
+VIEW symbol.sb
+GRAPHIC 195,0 79 0 
+DESIGN buffer_reloj
+VIEW symbol.sb
+GRAPHIC 117,0 80 0 
+LIBRARY Display7Seg_lib
+DESIGN control_display
+VIEW struct
+GRAPHIC 141,0 83 0 
+DESIGN control_display
+VIEW symbol.sb
+GRAPHIC 149,0 85 0 
+DESIGN control_display
+VIEW symbol.sb
+GRAPHIC 124,0 86 0 
+DESIGN control_display
+VIEW symbol.sb
+GRAPHIC 129,0 87 0 
+DESIGN control_display
+VIEW symbol.sb
+GRAPHIC 134,0 88 0 
+DESIGN control_display
+VIEW symbol.sb
+GRAPHIC 139,0 89 0 
+DESIGN control_display
+VIEW symbol.sb
+GRAPHIC 144,0 90 0 
+DESIGN control_display
+VIEW symbol.sb
+GRAPHIC 154,0 91 0 
+DESIGN control_display
+VIEW symbol.sb
+GRAPHIC 159,0 92 0 
+LIBRARY Display7Seg_lib
+DESIGN interfaz
+VIEW struct.bd
+NO_GRAPHIC 95
+DESIGN interfaz
+VIEW struct.bd
+GRAPHIC 205,0 98 0 
+DESIGN interfaz
+VIEW struct.bd
+GRAPHIC 141,0 99 0 
+DESIGN interfaz
+VIEW struct.bd
+NO_GRAPHIC 102
+DESIGN interfaz
+VIEW struct.bd
+GRAPHIC 383,0 104 0 
+DESIGN interfaz
+VIEW struct.bd
+GRAPHIC 527,0 117 0 
+DESIGN interfaz
+VIEW struct.bd
+GRAPHIC 575,0 130 0 
+DESIGN interfaz
+VIEW struct.bd
+GRAPHIC 623,0 143 0 
+DESIGN interfaz
+VIEW struct.bd
+GRAPHIC 180,0 156 0 
+DESIGN interfaz
+VIEW struct.bd
+NO_GRAPHIC 182
+DESIGN interfaz
+VIEW struct.bd
+GRAPHIC 205,0 184 0 
+DESIGN interfaz
+VIEW struct.bd
+GRAPHIC 306,0 186 0 
+DESIGN interfaz
+VIEW struct.bd
+GRAPHIC 302,0 187 0 
+DESIGN interfaz
+VIEW struct.bd
+GRAPHIC 324,0 188 0 
+DESIGN interfaz
+VIEW struct.bd
+GRAPHIC 338,0 189 0 
+DESIGN interfaz
+VIEW struct.bd
+GRAPHIC 141,0 191 0 
+DESIGN interfaz
+VIEW struct.bd
+GRAPHIC 666,0 193 0 
+DESIGN interfaz
+VIEW struct.bd
+GRAPHIC 674,0 194 0 
+DESIGN interfaz
+VIEW struct.bd
+GRAPHIC 680,0 195 0 
+DESIGN interfaz
+VIEW struct.bd
+GRAPHIC 686,0 196 0 
+DESIGN interfaz
+VIEW struct.bd
+GRAPHIC 692,0 197 0 
+DESIGN interfaz
+VIEW struct.bd
+GRAPHIC 658,0 198 0 
+DESIGN interfaz
+VIEW struct.bd
+GRAPHIC 698,0 199 0 
+DESIGN interfaz
+VIEW struct.bd
+GRAPHIC 706,0 200 0 
+DESIGN interfaz
+VIEW struct.bd
+NO_GRAPHIC 203

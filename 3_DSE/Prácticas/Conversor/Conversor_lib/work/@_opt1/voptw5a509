@@ -1,0 +1,175 @@
+m255
+K3
+13
+cModel Technology
+Z0 dC:\DisSistEmpotrados\Conversor\Conversor_lib\work
+T_opt
+VMJ=SUEYQNQ7nj?7BlzHf73
+04 12 6 work conversor_tb struct 1
+=1-f0795965c084-63776924-3bf-1654
+o-quiet +acc -auto_acc_if_foreign -work Conversor_lib -L Conversor_lib -L auxiliar_lib -L vectores
+n@_opt
+Z1 OL;O;10.1c;51
+Z2 dC:\DisSistEmpotrados\Conversor\Conversor_lib\work
+T_opt1
+Vo59OD:T:;AMBczR:oLnQ^1
+04 15 3 work control_estados fsm 1
+=1-f0795965c084-63776b2f-2e0-a90
+o-quiet +acc -auto_acc_if_foreign -work Conversor_lib -L Conversor_lib
+n@_opt1
+R1
+Econtrol_estados
+Z3 w1668770597
+Z4 DPx4 ieee 15 std_logic_arith 0 22 4`Y?g_lkdn;7UL9IiJck01
+Z5 DPx3 std 6 textio 0 22 5>J:;AW>W0[[dW0I6EN1Q0
+Z6 DPx4 ieee 14 std_logic_1164 0 22 5=aWaoGZSMWIcH0i^f`XF1
+R2
+Z7 8C:/DisSistEmpotrados/Conversor/Conversor_lib/hdl/control_estados_fsm.vhd
+Z8 FC:/DisSistEmpotrados/Conversor/Conversor_lib/hdl/control_estados_fsm.vhd
+l0
+L13
+VD7Ngo126^46k18OQgXf220
+Z9 OL;C;10.1c;51
+32
+Z10 !s108 1668770597.201000
+Z11 !s90 -work|Conversor_lib|-nologo|-f|C:/Users/puesto22/AppData/Local/Temp/Files0|
+Z12 !s107 C:/DisSistEmpotrados/Conversor/Conversor_lib/hdl/control_estados_fsm.vhd|
+Z13 o-work Conversor_lib -nologo
+Z14 tExplicit 1
+!s100 OdWS;GhhmG0z>_7FjYiD`3
+!i10b 1
+Afsm
+DEx4 work 15 control_estados 0 22 D7Ngo126^46k18OQgXf220
+R4
+R5
+R6
+l61
+L39
+Va]DmM34aVZ3mbz5M00]@01
+!s100 CB=>kTQo9h]R?OJgBF^ld1
+R9
+32
+R10
+R11
+R12
+R13
+R14
+!i10b 1
+Econversor
+Z15 w1668770057
+R4
+R5
+R6
+R2
+Z16 8C:/DisSistEmpotrados/Conversor/Conversor_lib/hdl/conversor_struct.vhd
+Z17 FC:/DisSistEmpotrados/Conversor/Conversor_lib/hdl/conversor_struct.vhd
+l0
+L13
+V?o@jYW^Ezf=]5mT1SFPP?3
+R9
+32
+Z18 !s108 1668770074.719000
+R11
+Z19 !s107 C:/DisSistEmpotrados/Conversor/Conversor_lib/hdl/conversor_tb_struct.vhd|C:/DisSistEmpotrados/Conversor/Conversor_lib/hdl/conversor_struct.vhd|C:/DisSistEmpotrados/Conversor/Conversor_lib/hdl/control_estados_fsm.vhd|
+R13
+R14
+!s100 ee<NJ0TG<=ZL_24Ke7DC83
+!i10b 1
+Astruct
+DEx12 auxiliar_lib 19 nivel_a_pulso_mealy 0 22 >4DdPQc?Sj=5<^:6d1fzP1
+DEx13 conversor_lib 15 control_estados 0 22 D7Ngo126^46k18OQgXf220
+DEx4 work 9 conversor 0 22 ?o@jYW^Ezf=]5mT1SFPP?3
+R4
+R5
+R6
+l121
+L46
+V[XNTN<4_7OHJDAUGXWW0n3
+R9
+32
+R18
+R11
+R19
+R13
+R14
+!s100 TXSG_^_4g;ikKEJeSIP5z1
+!i10b 1
+Econversor_tb
+Z20 w1668770066
+R4
+R5
+R6
+R2
+Z21 8C:/DisSistEmpotrados/Conversor/Conversor_lib/hdl/conversor_tb_struct.vhd
+Z22 FC:/DisSistEmpotrados/Conversor/Conversor_lib/hdl/conversor_tb_struct.vhd
+l0
+L13
+V@gQfjz7P6;zR5XmkM[AoW3
+R9
+32
+R18
+R11
+R19
+R13
+R14
+!s100 >aJB3SLME`2W1JE:nSN<P2
+!i10b 1
+Astruct
+DEx13 conversor_lib 16 conversor_tester 0 22 aLz8U7M83@B7KMl9X0W9R2
+DEx13 conversor_lib 9 conversor 0 22 ?o@jYW^Ezf=]5mT1SFPP?3
+DEx4 work 12 conversor_tb 0 22 @gQfjz7P6;zR5XmkM[AoW3
+Z23 DPx8 vectores 6 vectio 0 22 bML6L;3o@dS6Zm]MHRnYD0
+R4
+R5
+R6
+l94
+L38
+VQRIi2^DbQ[2eigU_hnGEF3
+R9
+32
+R18
+R11
+R19
+R13
+R14
+!s100 jDRYA>AaU6bh4jm5OOnDZ3
+!i10b 1
+Econversor_tester
+Z24 w1668768271
+R23
+R4
+R5
+R6
+R2
+Z25 8C:/DisSistEmpotrados/Conversor/Conversor_lib/hdl/conversor_tester_struct.vhd
+Z26 FC:/DisSistEmpotrados/Conversor/Conversor_lib/hdl/conversor_tester_struct.vhd
+l0
+L18
+VaLz8U7M83@B7KMl9X0W9R2
+R9
+32
+Z27 !s108 1668768463.112000
+Z28 !s90 -work|Conversor_lib|-nologo|-f|C:/Users/puesto22/AppData/Local/Temp/Files1|
+Z29 !s107 C:/DisSistEmpotrados/Conversor/Conversor_lib/hdl/conversor_tb_struct.vhd|C:/DisSistEmpotrados/Conversor/Conversor_lib/hdl/conversor_tester_struct.vhd|C:/DisSistEmpotrados/Conversor/Conversor_lib/hdl/conversor_struct.vhd|C:/DisSistEmpotrados/Conversor/Conversor_lib/hdl/control_estados_fsm.vhd|
+R13
+R14
+!s100 XdIdon;Da`AfDQ0hG[K@O3
+!i10b 1
+Astruct
+DEx4 work 16 conversor_tester 0 22 aLz8U7M83@B7KMl9X0W9R2
+R23
+R4
+R5
+R6
+l62
+L54
+V@Kb^C^R=f1B:E5=2fVNZk1
+R9
+32
+R27
+R28
+R29
+R13
+R14
+!s100 2I@zLGN:IbEIVNR:KD9zS2
+!i10b 1

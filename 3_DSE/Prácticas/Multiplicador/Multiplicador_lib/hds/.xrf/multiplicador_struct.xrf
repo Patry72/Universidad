@@ -1,0 +1,234 @@
+DESIGN @multiplicador
+VIEW symbol.sb
+NO_GRAPHIC 0
+DESIGN @multiplicador
+VIEW symbol.sb
+GRAPHIC 50,0 8 0 
+DESIGN @multiplicador
+VIEW symbol.sb
+GRAPHIC 199,0 14 0 
+DESIGN @multiplicador
+VIEW symbol.sb
+GRAPHIC 204,0 15 0 
+DESIGN @multiplicador
+VIEW symbol.sb
+GRAPHIC 214,0 16 0 
+DESIGN @multiplicador
+VIEW symbol.sb
+GRAPHIC 209,0 17 0 
+DESIGN @multiplicador
+VIEW symbol.sb
+GRAPHIC 244,0 18 0 
+DESIGN @multiplicador
+VIEW symbol.sb
+GRAPHIC 343,0 19 0 
+DESIGN @multiplicador
+VIEW symbol.sb
+GRAPHIC 419,0 20 0 
+DESIGN @multiplicador
+VIEW symbol.sb
+GRAPHIC 1,0 23 0 
+DESIGN @multiplicador
+VIEW symbol.sb
+GRAPHIC 1,0 24 0 
+DESIGN @multiplicador
+VIEW struct.bd
+NO_GRAPHIC 27
+DESIGN @multiplicador
+VIEW struct.bd
+GRAPHIC 41,0 36 0 
+DESIGN @multiplicador
+VIEW struct.bd
+NO_GRAPHIC 39
+DESIGN @multiplicador
+VIEW struct.bd
+GRAPHIC 0,0 43 2 
+DESIGN @multiplicador
+VIEW struct.bd
+GRAPHIC 623,0 48 0 
+DESIGN @multiplicador
+VIEW struct.bd
+GRAPHIC 639,0 49 0 
+DESIGN @multiplicador
+VIEW struct.bd
+GRAPHIC 1036,0 50 0 
+DESIGN @multiplicador
+VIEW struct.bd
+GRAPHIC 1360,0 51 0 
+DESIGN @multiplicador
+VIEW struct.bd
+GRAPHIC 1259,0 52 0 
+DESIGN @multiplicador
+VIEW struct.bd
+GRAPHIC 1267,0 53 0 
+DESIGN @multiplicador
+VIEW struct.bd
+GRAPHIC 631,0 54 0 
+DESIGN @multiplicador
+VIEW struct.bd
+GRAPHIC 1705,0 55 0 
+DESIGN @multiplicador
+VIEW struct.bd
+GRAPHIC 1711,0 56 0 
+DESIGN @multiplicador
+VIEW struct.bd
+GRAPHIC 1752,0 57 0 
+DESIGN @multiplicador
+VIEW struct.bd
+GRAPHIC 1323,0 58 0 
+DESIGN @multiplicador
+VIEW struct.bd
+GRAPHIC 1425,0 59 0 
+DESIGN @multiplicador
+VIEW struct.bd
+GRAPHIC 1431,0 60 0 
+DESIGN @multiplicador
+VIEW struct.bd
+GRAPHIC 1824,0 61 0 
+DESIGN @multiplicador
+VIEW struct.bd
+GRAPHIC 1858,0 62 0 
+DESIGN @multiplicador
+VIEW struct.bd
+GRAPHIC 1925,0 63 0 
+DESIGN @multiplicador
+VIEW struct.bd
+GRAPHIC 2038,0 64 0 
+DESIGN @multiplicador
+VIEW struct.bd
+GRAPHIC 490,0 65 0 
+DESIGN @multiplicador
+VIEW struct.bd
+GRAPHIC 1571,0 66 0 
+DESIGN @multiplicador
+VIEW struct.bd
+NO_GRAPHIC 67
+DESIGN @multiplicador
+VIEW struct.bd
+NO_GRAPHIC 86
+LIBRARY auxiliar_lib
+DESIGN nivel_a_pulso_mealy
+VIEW struct
+GRAPHIC 1543,0 88 0 
+DESIGN nivel_a_pulso_mealy
+VIEW symbol.sb
+GRAPHIC 116,0 90 0 
+DESIGN nivel_a_pulso_mealy
+VIEW symbol.sb
+GRAPHIC 126,0 91 0 
+DESIGN nivel_a_pulso_mealy
+VIEW symbol.sb
+GRAPHIC 121,0 92 0 
+DESIGN nivel_a_pulso_mealy
+VIEW symbol.sb
+GRAPHIC 131,0 93 0 
+LIBRARY Multiplicador_lib
+DESIGN @control_@estados
+VIEW fsm
+GRAPHIC 2000,0 96 0 
+DESIGN @multiplicador
+VIEW struct.bd
+GRAPHIC 2010,0 98 0 
+DESIGN @multiplicador
+VIEW struct.bd
+GRAPHIC 2018,0 99 0 
+DESIGN @multiplicador
+VIEW struct.bd
+GRAPHIC 2030,0 100 0 
+DESIGN @multiplicador
+VIEW struct.bd
+GRAPHIC 2040,0 101 0 
+DESIGN @multiplicador
+VIEW struct.bd
+GRAPHIC 2050,0 102 0 
+LIBRARY Multiplicador_lib
+DESIGN @multiplicador
+VIEW struct.bd
+NO_GRAPHIC 105
+DESIGN @multiplicador
+VIEW struct.bd
+GRAPHIC 2000,0 108 0 
+DESIGN @multiplicador
+VIEW struct.bd
+GRAPHIC 1543,0 109 0 
+DESIGN @multiplicador
+VIEW struct.bd
+NO_GRAPHIC 112
+DESIGN @multiplicador
+VIEW struct.bd
+GRAPHIC 1176,0 114 0 
+DESIGN @multiplicador
+VIEW struct.bd
+GRAPHIC 1190,0 128 0 
+DESIGN @multiplicador
+VIEW struct.bd
+GRAPHIC 199,0 142 0 
+DESIGN @multiplicador
+VIEW struct.bd
+GRAPHIC 256,0 153 0 
+DESIGN @multiplicador
+VIEW struct.bd
+GRAPHIC 304,0 164 0 
+DESIGN @multiplicador
+VIEW struct.bd
+GRAPHIC 1349,0 175 0 
+DESIGN @multiplicador
+VIEW struct.bd
+GRAPHIC 907,0 183 0 
+DESIGN @multiplicador
+VIEW struct.bd
+GRAPHIC 926,0 186 0 
+DESIGN @multiplicador
+VIEW struct.bd
+GRAPHIC 1805,0 189 0 
+DESIGN @multiplicador
+VIEW struct.bd
+GRAPHIC 1864,0 192 0 
+DESIGN @multiplicador
+VIEW struct.bd
+GRAPHIC 771,0 195 0 
+DESIGN @multiplicador
+VIEW struct.bd
+GRAPHIC 1690,0 198 0 
+DESIGN @multiplicador
+VIEW struct.bd
+GRAPHIC 1758,0 201 0 
+DESIGN @multiplicador
+VIEW struct.bd
+GRAPHIC 1090,0 204 0 
+DESIGN @multiplicador
+VIEW struct.bd
+GRAPHIC 1406,0 216 0 
+DESIGN @multiplicador
+VIEW struct.bd
+GRAPHIC 1596,0 226 0 
+DESIGN @multiplicador
+VIEW struct.bd
+GRAPHIC 990,0 229 0 
+DESIGN @multiplicador
+VIEW struct.bd
+GRAPHIC 1941,0 238 0 
+DESIGN @multiplicador
+VIEW struct.bd
+NO_GRAPHIC 247
+DESIGN @multiplicador
+VIEW struct.bd
+GRAPHIC 1543,0 249 0 
+DESIGN @multiplicador
+VIEW struct.bd
+GRAPHIC 1907,0 251 0 
+DESIGN @multiplicador
+VIEW struct.bd
+GRAPHIC 1555,0 252 0 
+DESIGN @multiplicador
+VIEW struct.bd
+GRAPHIC 1883,0 253 0 
+DESIGN @multiplicador
+VIEW struct.bd
+GRAPHIC 1573,0 254 0 
+DESIGN @multiplicador
+VIEW struct.bd
+GRAPHIC 2000,0 256 0 
+DESIGN @multiplicador
+VIEW struct.bd
+NO_GRAPHIC 265

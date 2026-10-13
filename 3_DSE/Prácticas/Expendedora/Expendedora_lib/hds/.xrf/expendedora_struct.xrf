@@ -1,0 +1,431 @@
+DESIGN @expendedora
+VIEW symbol.sb
+NO_GRAPHIC 0
+DESIGN @expendedora
+VIEW symbol.sb
+GRAPHIC 50,0 8 0 
+DESIGN @expendedora
+VIEW symbol.sb
+GRAPHIC 130,0 14 0 
+DESIGN @expendedora
+VIEW symbol.sb
+GRAPHIC 125,0 15 0 
+DESIGN @expendedora
+VIEW symbol.sb
+GRAPHIC 120,0 16 0 
+DESIGN @expendedora
+VIEW symbol.sb
+GRAPHIC 135,0 17 0 
+DESIGN @expendedora
+VIEW symbol.sb
+GRAPHIC 145,0 18 0 
+DESIGN @expendedora
+VIEW symbol.sb
+GRAPHIC 140,0 19 0 
+DESIGN @expendedora
+VIEW symbol.sb
+GRAPHIC 1,0 22 0 
+DESIGN @expendedora
+VIEW symbol.sb
+GRAPHIC 1,0 23 0 
+DESIGN @expendedora
+VIEW struct.bd
+NO_GRAPHIC 26
+DESIGN @expendedora
+VIEW struct.bd
+GRAPHIC 41,0 35 0 
+DESIGN @expendedora
+VIEW struct.bd
+NO_GRAPHIC 38
+DESIGN @expendedora
+VIEW struct.bd
+GRAPHIC 0,0 40 2 
+DESIGN @expendedora
+VIEW struct.bd
+NO_GRAPHIC 60
+DESIGN @expendedora
+VIEW struct.bd
+NO_GRAPHIC 61
+DESIGN @expendedora
+VIEW struct.bd
+NO_GRAPHIC 62
+DESIGN @expendedora
+VIEW struct.bd
+GRAPHIC 109,0 65 0 
+LIBRARY Expendedora_lib
+DESIGN @expendedora
+VIEW struct.bd
+GRAPHIC 290,0 68 0
+LIBRARY Expendedora_lib
+DESIGN @expendedora
+VIEW struct.bd
+NO_GRAPHIC 69
+LIBRARY Expendedora_lib
+DESIGN @expendedora
+VIEW struct.bd
+GRAPHIC 290,0 72 0
+LIBRARY Expendedora_lib
+DESIGN @expendedora
+VIEW struct.bd
+NO_GRAPHIC 73
+LIBRARY Expendedora_lib
+DESIGN @expendedora
+VIEW struct.bd
+GRAPHIC 359,0 74 0
+LIBRARY Expendedora_lib
+DESIGN @expendedora
+VIEW struct.bd
+GRAPHIC 349,0 76 0
+LIBRARY Expendedora_lib
+DESIGN @expendedora
+VIEW struct.bd
+NO_GRAPHIC 77
+LIBRARY Expendedora_lib
+DESIGN @expendedora
+VIEW struct.bd
+GRAPHIC 290,0 79 0
+LIBRARY Expendedora_lib
+DESIGN @expendedora
+VIEW struct.bd
+NO_GRAPHIC 80
+LIBRARY Expendedora_lib
+DESIGN @expendedora
+VIEW struct.bd
+GRAPHIC 290,0 82 0
+LIBRARY Expendedora_lib
+DESIGN @expendedora
+VIEW struct.bd
+NO_GRAPHIC 83
+LIBRARY Expendedora_lib
+DESIGN @expendedora
+VIEW struct.bd
+GRAPHIC 290,0 89 0
+LIBRARY Expendedora_lib
+DESIGN @expendedora
+VIEW struct.bd
+GRAPHIC 332,0 90 0
+LIBRARY Expendedora_lib
+DESIGN @expendedora
+VIEW struct.bd
+GRAPHIC 605,0 91 0
+LIBRARY Expendedora_lib
+DESIGN @expendedora
+VIEW struct.bd
+GRAPHIC 475,0 92 0
+LIBRARY Expendedora_lib
+DESIGN @expendedora
+VIEW struct.bd
+GRAPHIC 715,0 93 0
+LIBRARY Expendedora_lib
+DESIGN @expendedora
+VIEW struct.bd
+GRAPHIC 526,0 94 0
+LIBRARY Expendedora_lib
+DESIGN @expendedora
+VIEW struct.bd
+NO_GRAPHIC 95
+LIBRARY Expendedora_lib
+DESIGN @expendedora
+VIEW struct.bd
+GRAPHIC 332,0 96 0
+LIBRARY Expendedora_lib
+DESIGN @expendedora
+VIEW struct.bd
+NO_GRAPHIC 97
+LIBRARY Expendedora_lib
+DESIGN @expendedora
+VIEW struct.bd
+GRAPHIC 458,0 98 0
+LIBRARY Expendedora_lib
+DESIGN @expendedora
+VIEW struct.bd
+GRAPHIC 575,0 99 0
+LIBRARY Expendedora_lib
+DESIGN @expendedora
+VIEW struct.bd
+GRAPHIC 509,0 100 0
+LIBRARY Expendedora_lib
+DESIGN @expendedora
+VIEW struct.bd
+GRAPHIC 585,0 101 0
+LIBRARY Expendedora_lib
+DESIGN @expendedora
+VIEW struct.bd
+GRAPHIC 332,0 102 0
+LIBRARY Expendedora_lib
+DESIGN @expendedora
+VIEW struct.bd
+NO_GRAPHIC 103
+LIBRARY Expendedora_lib
+DESIGN @expendedora
+VIEW struct.bd
+GRAPHIC 458,0 104 0
+LIBRARY Expendedora_lib
+DESIGN @expendedora
+VIEW struct.bd
+NO_GRAPHIC 105
+LIBRARY Expendedora_lib
+DESIGN @expendedora
+VIEW struct.bd
+GRAPHIC 475,0 106 0
+LIBRARY Expendedora_lib
+DESIGN @expendedora
+VIEW struct.bd
+GRAPHIC 615,0 107 0
+LIBRARY Expendedora_lib
+DESIGN @expendedora
+VIEW struct.bd
+GRAPHIC 492,0 108 0
+LIBRARY Expendedora_lib
+DESIGN @expendedora
+VIEW struct.bd
+GRAPHIC 735,0 109 0
+LIBRARY Expendedora_lib
+DESIGN @expendedora
+VIEW struct.bd
+GRAPHIC 543,0 110 0
+LIBRARY Expendedora_lib
+DESIGN @expendedora
+VIEW struct.bd
+NO_GRAPHIC 111
+LIBRARY Expendedora_lib
+DESIGN @expendedora
+VIEW struct.bd
+GRAPHIC 475,0 112 0
+LIBRARY Expendedora_lib
+DESIGN @expendedora
+VIEW struct.bd
+NO_GRAPHIC 113
+LIBRARY Expendedora_lib
+DESIGN @expendedora
+VIEW struct.bd
+GRAPHIC 492,0 114 0
+LIBRARY Expendedora_lib
+DESIGN @expendedora
+VIEW struct.bd
+GRAPHIC 755,0 115 0
+LIBRARY Expendedora_lib
+DESIGN @expendedora
+VIEW struct.bd
+GRAPHIC 332,0 116 0
+LIBRARY Expendedora_lib
+DESIGN @expendedora
+VIEW struct.bd
+GRAPHIC 811,0 117 0
+LIBRARY Expendedora_lib
+DESIGN @expendedora
+VIEW struct.bd
+GRAPHIC 509,0 118 0
+LIBRARY Expendedora_lib
+DESIGN @expendedora
+VIEW struct.bd
+NO_GRAPHIC 119
+LIBRARY Expendedora_lib
+DESIGN @expendedora
+VIEW struct.bd
+GRAPHIC 492,0 120 0
+LIBRARY Expendedora_lib
+DESIGN @expendedora
+VIEW struct.bd
+NO_GRAPHIC 121
+LIBRARY Expendedora_lib
+DESIGN @expendedora
+VIEW struct.bd
+GRAPHIC 509,0 122 0
+LIBRARY Expendedora_lib
+DESIGN @expendedora
+VIEW struct.bd
+GRAPHIC 625,0 123 0
+LIBRARY Expendedora_lib
+DESIGN @expendedora
+VIEW struct.bd
+GRAPHIC 526,0 124 0
+LIBRARY Expendedora_lib
+DESIGN @expendedora
+VIEW struct.bd
+GRAPHIC 705,0 125 0
+LIBRARY Expendedora_lib
+DESIGN @expendedora
+VIEW struct.bd
+GRAPHIC 332,0 126 0
+LIBRARY Expendedora_lib
+DESIGN @expendedora
+VIEW struct.bd
+NO_GRAPHIC 127
+LIBRARY Expendedora_lib
+DESIGN @expendedora
+VIEW struct.bd
+GRAPHIC 509,0 128 0
+LIBRARY Expendedora_lib
+DESIGN @expendedora
+VIEW struct.bd
+NO_GRAPHIC 129
+LIBRARY Expendedora_lib
+DESIGN @expendedora
+VIEW struct.bd
+GRAPHIC 526,0 130 0
+LIBRARY Expendedora_lib
+DESIGN @expendedora
+VIEW struct.bd
+GRAPHIC 635,0 131 0
+LIBRARY Expendedora_lib
+DESIGN @expendedora
+VIEW struct.bd
+GRAPHIC 543,0 132 0
+LIBRARY Expendedora_lib
+DESIGN @expendedora
+VIEW struct.bd
+GRAPHIC 725,0 133 0
+LIBRARY Expendedora_lib
+DESIGN @expendedora
+VIEW struct.bd
+GRAPHIC 475,0 134 0
+LIBRARY Expendedora_lib
+DESIGN @expendedora
+VIEW struct.bd
+NO_GRAPHIC 135
+LIBRARY Expendedora_lib
+DESIGN @expendedora
+VIEW struct.bd
+GRAPHIC 526,0 136 0
+LIBRARY Expendedora_lib
+DESIGN @expendedora
+VIEW struct.bd
+NO_GRAPHIC 137
+LIBRARY Expendedora_lib
+DESIGN @expendedora
+VIEW struct.bd
+GRAPHIC 543,0 138 0
+LIBRARY Expendedora_lib
+DESIGN @expendedora
+VIEW struct.bd
+GRAPHIC 745,0 139 0
+LIBRARY Expendedora_lib
+DESIGN @expendedora
+VIEW struct.bd
+GRAPHIC 509,0 140 0
+LIBRARY Expendedora_lib
+DESIGN @expendedora
+VIEW struct.bd
+GRAPHIC 801,0 141 0
+LIBRARY Expendedora_lib
+DESIGN @expendedora
+VIEW struct.bd
+GRAPHIC 332,0 142 0
+LIBRARY Expendedora_lib
+DESIGN @expendedora
+VIEW struct.bd
+NO_GRAPHIC 143
+LIBRARY Expendedora_lib
+DESIGN @expendedora
+VIEW struct.bd
+GRAPHIC 543,0 144 0
+LIBRARY Expendedora_lib
+DESIGN @expendedora
+VIEW struct.bd
+NO_GRAPHIC 145
+LIBRARY Expendedora_lib
+DESIGN @expendedora
+VIEW struct.bd
+GRAPHIC 382,0 146 0
+LIBRARY Expendedora_lib
+DESIGN @expendedora
+VIEW struct.bd
+NO_GRAPHIC 148
+LIBRARY Expendedora_lib
+DESIGN @expendedora
+VIEW struct.bd
+GRAPHIC 290,0 149 0
+LIBRARY Expendedora_lib
+DESIGN @expendedora
+VIEW struct.bd
+NO_GRAPHIC 150
+LIBRARY Expendedora_lib
+DESIGN @expendedora
+VIEW struct.bd
+GRAPHIC 290,0 152 0
+LIBRARY Expendedora_lib
+DESIGN @expendedora
+VIEW struct.bd
+NO_GRAPHIC 153
+LIBRARY Expendedora_lib
+DESIGN @expendedora
+VIEW struct.bd
+GRAPHIC 290,0 159 0
+LIBRARY Expendedora_lib
+DESIGN @expendedora
+VIEW struct.bd
+GRAPHIC 332,0 160 0
+LIBRARY Expendedora_lib
+DESIGN @expendedora
+VIEW struct.bd
+GRAPHIC 347,0 161 0
+LIBRARY Expendedora_lib
+DESIGN @expendedora
+VIEW struct.bd
+GRAPHIC 458,0 163 0
+LIBRARY Expendedora_lib
+DESIGN @expendedora
+VIEW struct.bd
+GRAPHIC 473,0 164 0
+LIBRARY Expendedora_lib
+DESIGN @expendedora
+VIEW struct.bd
+GRAPHIC 475,0 166 0
+LIBRARY Expendedora_lib
+DESIGN @expendedora
+VIEW struct.bd
+GRAPHIC 490,0 167 0
+LIBRARY Expendedora_lib
+DESIGN @expendedora
+VIEW struct.bd
+GRAPHIC 492,0 169 0
+LIBRARY Expendedora_lib
+DESIGN @expendedora
+VIEW struct.bd
+GRAPHIC 507,0 170 0
+LIBRARY Expendedora_lib
+DESIGN @expendedora
+VIEW struct.bd
+GRAPHIC 509,0 172 0
+LIBRARY Expendedora_lib
+DESIGN @expendedora
+VIEW struct.bd
+GRAPHIC 524,0 173 0
+LIBRARY Expendedora_lib
+DESIGN @expendedora
+VIEW struct.bd
+GRAPHIC 526,0 175 0
+LIBRARY Expendedora_lib
+DESIGN @expendedora
+VIEW struct.bd
+GRAPHIC 541,0 176 0
+LIBRARY Expendedora_lib
+DESIGN @expendedora
+VIEW struct.bd
+GRAPHIC 543,0 178 0
+LIBRARY Expendedora_lib
+DESIGN @expendedora
+VIEW struct.bd
+GRAPHIC 558,0 179 0
+LIBRARY Expendedora_lib
+DESIGN @expendedora
+VIEW struct.bd
+NO_GRAPHIC 181
+LIBRARY Expendedora_lib
+DESIGN @expendedora
+VIEW struct.bd
+GRAPHIC 290,0 183 0
+LIBRARY Expendedora_lib
+DESIGN @expendedora
+VIEW struct.bd
+NO_GRAPHIC 185
+DESIGN @expendedora
+VIEW struct.bd
+NO_GRAPHIC 187
+DESIGN @expendedora
+VIEW struct.bd
+NO_GRAPHIC 188
+DESIGN @expendedora
+VIEW struct.bd
+NO_GRAPHIC 191

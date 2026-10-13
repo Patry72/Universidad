@@ -1,0 +1,24 @@
+Para compilar el módulo: 
+$ MODULE=mean make
+
+Para instalar el módulo:
+$ sudo insmod mean.ko 
+
+Para comprobar si el módulo fue cargado:
+$ sudo lsmod
+$ dmesg | tail
+
+Para desinstalar el módulo:
+$ sudo rmmod mean
+
+Ejemplo de uso:
+$ cat /proc/mean
+No hay numeros para la media
+$ echo "2" > /proc/mean
+$ echo "7" > /proc/mean
+$ echo "6 " > / proc/mean
+$ cat /proc/mean
+Media = 7.50 de 3 numeros
+$ echo "fallo" > /proc/mean
+$ cat /proc/mean
+No hay valores disponibles

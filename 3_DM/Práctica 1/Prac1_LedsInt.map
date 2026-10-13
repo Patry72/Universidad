@@ -1,0 +1,50 @@
+##########################################
+# (1) LINK INFORMATION                   #
+##########################################
+C:\MTOOL\BIN\Practicas\ln30.exe -MS -T -G Prac1_LedsInt.r30
+
+# LINK FILE INFORMATION
+Prac1_LedsInt (Prac1_LedsInt.r30)
+	Feb 14 09:40:22 2023
+	
+
+##########################################
+# (2) SECTION INFORMATION                #
+##########################################
+# SECTION                        ATR TYPE    START  LENGTH ALIGN MODULENAME
+memory                           ABS DATA    000400 000000       Prac1_LedsInt
+prog                             ABS CODE    0A0000 00003D       Prac1_LedsInt
+int_ta0                          ABS ROMDATA 0FA000 000100       Prac1_LedsInt
+int_reset                        ABS ROMDATA 0FFFFC 000004       Prac1_LedsInt
+# Total -------------------------------------------------------------------
+                                     DATA           000000(0000000) Byte(s)
+                                     ROMDATA        000104(0000260) Byte(s)
+                                     CODE           00003D(0000061) Byte(s)
+
+##########################################
+# (3) GLOBAL LABEL INFORMATION           #
+##########################################
+
+##########################################
+# (4) GLOBAL EQU SYMBOL INFORMATION      #
+##########################################
+
+##########################################
+# (5) GLOBAL EQU BIT-SYMBOL INFORMATION  #
+##########################################
+
+##########################################
+# (6) LOCAL LABEL INFORMATION            #
+##########################################
+@ Prac1_LedsInt ( Prac1_LedsInt.r30 )
+
+##########################################
+# (7) LOCAL EQU SYMBOL INFORMATION       #
+##########################################
+@ Prac1_LedsInt ( Prac1_LedsInt.r30 )
+
+##########################################
+# (8) LOCAL EQU BIT-SYMBOL INFORMATION   #
+##########################################
+@ Prac1_LedsInt ( Prac1_LedsInt.r30 )
+

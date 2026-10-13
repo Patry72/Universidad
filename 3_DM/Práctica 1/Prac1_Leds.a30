@@ -1,0 +1,66 @@
+;
+;	PRÁCTICA 1: PARPADEO LEDS POR MUESTREO
+;
+; Enciende/Apaga el diodo cada segundo
+;
+	.list off			; Deshabilita el volcado desde ahora
+	.include sfr.inc
+	.list on			; Habilita el volcado desde ahora
+;
+;----- DEFINICIÓN DE SÍMBOLOS 3DKUM16C/62PU ---------------------------------------------
+;
+VramTOP		.equ 000400h  ; Inicio de la RAM interna
+VramEND 	.equ 007CFFh  ; Final de la RAM interna
+VIstack		.equ 007CFFh  ; Direccion de la cima de la pila stack pointer
+VprogTOP	.equ 0A0000h  ; Inicio del area de programa
+Vintbase 	.equ 0FA000h  ; Inicio tabla de interrupciones variable
+Vvector 	.equ 0FFFDCh  ; Inicio tabla de interrupciones fija
+SB_base 	.equ 000380h  ; Base del direccionamiento SB relativo
+;
+;----- Área de datos RAM ----------------------------------------------------------------
+;
+	.section 	memory, data
+	.org 		VramTOP
+;
+;----- Área de código ROM/Flash ---------------------------------------------------------
+;
+	.section 	prog, code
+	.org 		VprogTOP
+;
+;----- Limpieza de la RAM ---------------------------------------------------------------
+;
+	mov.w #0, R0 					; 0 clear
+	mov.w #(VramEND+1-VramTOP)/2,R3 ; number of times
+	mov.w #VramTOP, A1 				; start address
+	sstr.w
+;
+;----- INICIALIZACIÓN INTERRUPCIÓN Y PUERTOS 3DKUM16C/62PU ------------------------------
+;
+reset: 
+	bset PD2_0 			; Activamos puerto P2_0
+	mov.b #80h,TA0MR 	; Ponemos TA0 en modo temporizador con reloj f32
+	mov.w #2250,TA0 	; Inicializa valor de cuenta del temporizador -> 2250 periodos de 27,77 ns x 32= 2 ms (reloj de 36MHz)
+	bset TA0S 			; Inicia el contador
+;
+;----- PROGRAMA PRINCIPAL ---------------------------------------------------------------
+;
+main:
+	mov.w #0,r0 	; Inicializamos r0 (cuenta de periodos de 2 ms)
+retraso:
+	btstc 3,TA0IC 	; Comprobamos la interrupción de fin de cuenta del temporizador (bit 3) 
+	jnc retraso		; Vuelve al bucle si el bit testeado es 0
+	add.w #1,r0 	; r0 = r0 + 1
+	cmp.w #500,r0 	; Compara si r0 = 500 (500 - r0)
+	jnz retraso		; Vuelve al bucle si el testeo anterior aún no es 0
+	bnot P2_0 		; Cambia la polaridad del diodo
+	jmp main		
+;
+;----- INTERRUPCIÓN DE RESET (INICIALIZA PC) --------------------------------------------
+;
+	.section 	int_reset,romdata
+	.org 		Vvector + (8*4)
+	.lword 		reset
+;
+;----- FIN DEL PROGRAMA -----------------------------------------------------------------
+;
+	.end

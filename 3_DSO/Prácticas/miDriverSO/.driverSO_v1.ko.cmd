@@ -1,0 +1,1 @@
+cmd_/home/dso/DSO/miDriverSO/driverSO_v1.ko := ld -r -EL -z noexecstack --build-id=sha1  -T scripts/module.lds -o /home/dso/DSO/miDriverSO/driverSO_v1.ko /home/dso/DSO/miDriverSO/driverSO_v1.o /home/dso/DSO/miDriverSO/driverSO_v1.mod.o;  true

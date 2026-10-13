@@ -1,0 +1,1 @@
+ -L Conversor_lib -L auxiliar_lib -L vectores -l transcript.txt -i -t ns -multisource_delay latest +typdelays Conversor_lib.Conversor_tb(struct)

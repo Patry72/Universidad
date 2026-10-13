@@ -1,0 +1,1 @@
+cmd_/home/pi/DSO/Clase/miDriverSO/driverSO_v2.ko := ld -r -EL -z noexecstack --build-id=sha1  -T scripts/module.lds -o /home/pi/DSO/Clase/miDriverSO/driverSO_v2.ko /home/pi/DSO/Clase/miDriverSO/driverSO_v2.o /home/pi/DSO/Clase/miDriverSO/driverSO_v2.mod.o;  true

@@ -1,0 +1,13 @@
+[ModelSim]
+Tutorial_lib = $HDS_PROJECT_DIR\Tutorial_lib\work
+[hdl]
+Tutorial_lib = $HDS_PROJECT_DIR/Tutorial_lib/hdl
+[hds]
+Tutorial_lib = $HDS_PROJECT_DIR/Tutorial_lib/hds
+[hds_settings]
+default_library = Tutorial_lib
+version = 2
+[library_type]
+Tutorial_lib = regular
+[shared]
+others = $HDS_TEAM_HOME/shared.hdp

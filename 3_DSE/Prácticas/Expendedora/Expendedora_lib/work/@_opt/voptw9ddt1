@@ -1,0 +1,125 @@
+m255
+K3
+13
+cModel Technology
+Z0 dC:\DisSistEmpotrados\Expendedora\Expendedora\Expendedora_lib\work
+T_opt
+Va[>HMkjnK6o5m89TgSGnm2
+04 14 6 work expendedora_tb struct 1
+=1-f0795965c084-633d59b4-204-17e0
+o-quiet +acc -auto_acc_if_foreign -work Expendedora_lib -L Expendedora_lib -L vectores
+n@_opt
+OL;O;10.1c;51
+Eexpendedora
+Z1 w1664961397
+Z2 DPx4 ieee 15 std_logic_arith 0 22 4`Y?g_lkdn;7UL9IiJck01
+Z3 DPx3 std 6 textio 0 22 5>J:;AW>W0[[dW0I6EN1Q0
+Z4 DPx4 ieee 14 std_logic_1164 0 22 5=aWaoGZSMWIcH0i^f`XF1
+Z5 dC:\DisSistEmpotrados\Expendedora\Expendedora\Expendedora_lib\work
+Z6 8C:/DisSistEmpotrados/Expendedora/Expendedora/Expendedora_lib/hdl/expendedora_struct.vhd
+Z7 FC:/DisSistEmpotrados/Expendedora/Expendedora/Expendedora_lib/hdl/expendedora_struct.vhd
+l0
+L13
+VnzdjT22aZG9:n273z1Dk;0
+Z8 OL;C;10.1c;51
+32
+Z9 !s108 1664965029.498000
+Z10 !s90 -work|Expendedora_lib|-nologo|-f|C:/Users/puesto22/AppData/Local/Temp/Files0|
+Z11 !s107 C:/DisSistEmpotrados/Expendedora/Expendedora/Expendedora_lib/hdl/expendedora_struct.vhd|
+Z12 o-work Expendedora_lib -nologo
+Z13 tExplicit 1
+!s100 >=REF@?OTQE9aHD<mlGNZ2
+!i10b 1
+Astruct
+DEx4 work 11 expendedora 0 22 nzdjT22aZG9:n273z1Dk;0
+R2
+R3
+R4
+l64
+L41
+V5;KSz^@8eIX4_957Mo3HG1
+R8
+32
+R9
+R10
+R11
+R12
+R13
+!s100 EPZLn;L>TH;2G>D?2><cI1
+!i10b 1
+Eexpendedora_tb
+R1
+R5
+Z14 8C:/DisSistEmpotrados/Expendedora/Expendedora/Expendedora_lib/hdl/expendedora_tb_struct.vhd
+Z15 FC:/DisSistEmpotrados/Expendedora/Expendedora/Expendedora_lib/hdl/expendedora_tb_struct.vhd
+l0
+L11
+V98jb[E<DMI47FXgXKG^N22
+R8
+32
+Z16 !s108 1664965029.756000
+Z17 !s90 -work|Expendedora_lib|-nologo|-f|C:/Users/puesto22/AppData/Local/Temp/Files2|
+Z18 !s107 C:/DisSistEmpotrados/Expendedora/Expendedora/Expendedora_lib/hdl/expendedora_tb_struct.vhd|C:/DisSistEmpotrados/Expendedora/Expendedora/Expendedora_lib/hdl/expendedora_tester_struct.vhd|
+R12
+R13
+!s100 5E4AGLe?VTkCeP4AUXP0n2
+!i10b 1
+Astruct
+DEx15 expendedora_lib 18 expendedora_tester 0 22 kd=C^g[Jleh^od3=X4FkT1
+DEx15 expendedora_lib 11 expendedora 0 22 nzdjT22aZG9:n273z1Dk;0
+DEx4 work 14 expendedora_tb 0 22 98jb[E<DMI47FXgXKG^N22
+Z19 DPx8 vectores 6 vectio 0 22 bML6L;3o@dS6Zm]MHRnYD0
+R2
+R3
+R4
+l78
+L36
+VdI3LAhDDzFWQjzhAB7KiA2
+R8
+32
+R16
+R17
+R18
+R12
+R13
+!s100 ^P]G?BUImkh;Q0X529Ggo1
+!i10b 1
+Eexpendedora_tester
+R1
+R19
+R2
+R3
+R4
+R5
+Z20 8C:/DisSistEmpotrados/Expendedora/Expendedora/Expendedora_lib/hdl/expendedora_tester_struct.vhd
+Z21 FC:/DisSistEmpotrados/Expendedora/Expendedora/Expendedora_lib/hdl/expendedora_tester_struct.vhd
+l0
+L18
+Vkd=C^g[Jleh^od3=X4FkT1
+R8
+32
+R16
+R17
+R18
+R12
+R13
+!s100 nIUdFoAYDXnC`<bfe^ljg1
+!i10b 1
+Astruct
+DEx4 work 18 expendedora_tester 0 22 kd=C^g[Jleh^od3=X4FkT1
+R19
+R2
+R3
+R4
+l59
+L51
+VQ8OZXFATbICz^[X=`;aJ30
+R8
+32
+R16
+R17
+R18
+R12
+R13
+!s100 lEhFAe=gCaW>55UV<L24<3
+!i10b 1

@@ -1,0 +1,327 @@
+DESIGN @conversor
+VIEW symbol.sb
+NO_GRAPHIC 0
+DESIGN @conversor
+VIEW symbol.sb
+GRAPHIC 50,0 8 0 
+DESIGN @conversor
+VIEW symbol.sb
+GRAPHIC 114,0 14 0 
+DESIGN @conversor
+VIEW symbol.sb
+GRAPHIC 124,0 15 0 
+DESIGN @conversor
+VIEW symbol.sb
+GRAPHIC 119,0 16 0 
+DESIGN @conversor
+VIEW symbol.sb
+GRAPHIC 251,0 17 0 
+DESIGN @conversor
+VIEW symbol.sb
+GRAPHIC 662,0 18 0 
+DESIGN @conversor
+VIEW symbol.sb
+GRAPHIC 667,0 19 0 
+DESIGN @conversor
+VIEW symbol.sb
+GRAPHIC 672,0 20 0 
+DESIGN @conversor
+VIEW symbol.sb
+GRAPHIC 677,0 21 0 
+DESIGN @conversor
+VIEW symbol.sb
+GRAPHIC 511,0 22 0 
+DESIGN @conversor
+VIEW symbol.sb
+GRAPHIC 1,0 25 0 
+DESIGN @conversor
+VIEW symbol.sb
+GRAPHIC 1,0 26 0 
+DESIGN @conversor
+VIEW struct.bd
+NO_GRAPHIC 29
+DESIGN @conversor
+VIEW struct.bd
+GRAPHIC 41,0 38 0 
+DESIGN @conversor
+VIEW struct.bd
+NO_GRAPHIC 41
+DESIGN @conversor
+VIEW struct.bd
+GRAPHIC 0,0 45 2 
+DESIGN @conversor
+VIEW struct.bd
+GRAPHIC 2262,0 50 0 
+DESIGN @conversor
+VIEW struct.bd
+GRAPHIC 2746,0 51 0 
+DESIGN @conversor
+VIEW struct.bd
+GRAPHIC 2278,0 52 0 
+DESIGN @conversor
+VIEW struct.bd
+GRAPHIC 2286,0 53 0 
+DESIGN @conversor
+VIEW struct.bd
+GRAPHIC 377,0 54 0 
+DESIGN @conversor
+VIEW struct.bd
+GRAPHIC 2456,0 55 0 
+DESIGN @conversor
+VIEW struct.bd
+GRAPHIC 1116,0 56 0 
+DESIGN @conversor
+VIEW struct.bd
+GRAPHIC 1122,0 57 0 
+DESIGN @conversor
+VIEW struct.bd
+GRAPHIC 2159,0 58 0 
+DESIGN @conversor
+VIEW struct.bd
+GRAPHIC 2165,0 59 0 
+DESIGN @conversor
+VIEW struct.bd
+GRAPHIC 2171,0 60 0 
+DESIGN @conversor
+VIEW struct.bd
+GRAPHIC 2177,0 61 0 
+DESIGN @conversor
+VIEW struct.bd
+GRAPHIC 511,0 62 0 
+DESIGN @conversor
+VIEW struct.bd
+GRAPHIC 2462,0 63 0 
+DESIGN @conversor
+VIEW struct.bd
+GRAPHIC 1443,0 64 0 
+DESIGN @conversor
+VIEW struct.bd
+GRAPHIC 2141,0 65 0 
+DESIGN @conversor
+VIEW struct.bd
+GRAPHIC 2147,0 66 0 
+DESIGN @conversor
+VIEW struct.bd
+GRAPHIC 2153,0 67 0 
+DESIGN @conversor
+VIEW struct.bd
+GRAPHIC 626,0 68 0 
+DESIGN @conversor
+VIEW struct.bd
+GRAPHIC 1104,0 69 0 
+DESIGN @conversor
+VIEW struct.bd
+GRAPHIC 1110,0 70 0 
+DESIGN @conversor
+VIEW struct.bd
+GRAPHIC 3895,0 71 0 
+DESIGN @conversor
+VIEW struct.bd
+GRAPHIC 3901,0 72 0 
+DESIGN @conversor
+VIEW struct.bd
+GRAPHIC 3889,0 73 0 
+DESIGN @conversor
+VIEW struct.bd
+GRAPHIC 3907,0 74 0 
+DESIGN @conversor
+VIEW struct.bd
+GRAPHIC 2448,0 75 0 
+DESIGN @conversor
+VIEW struct.bd
+GRAPHIC 565,0 76 0 
+DESIGN @conversor
+VIEW struct.bd
+GRAPHIC 3140,0 77 0 
+DESIGN @conversor
+VIEW struct.bd
+GRAPHIC 452,0 78 0 
+DESIGN @conversor
+VIEW struct.bd
+GRAPHIC 2874,0 79 0 
+DESIGN @conversor
+VIEW struct.bd
+NO_GRAPHIC 80
+DESIGN @conversor
+VIEW struct.bd
+GRAPHIC 2676,0 82 0 
+DESIGN @conversor
+VIEW struct.bd
+GRAPHIC 2694,0 83 0 
+DESIGN @conversor
+VIEW struct.bd
+GRAPHIC 2712,0 84 0 
+DESIGN @conversor
+VIEW struct.bd
+GRAPHIC 2730,0 85 0 
+DESIGN @conversor
+VIEW struct.bd
+NO_GRAPHIC 93
+LIBRARY auxiliar_lib
+DESIGN nivel_a_pulso_mealy
+VIEW struct
+GRAPHIC 2828,0 95 0 
+DESIGN nivel_a_pulso_mealy
+VIEW symbol.sb
+GRAPHIC 116,0 97 0 
+DESIGN nivel_a_pulso_mealy
+VIEW symbol.sb
+GRAPHIC 126,0 98 0 
+DESIGN nivel_a_pulso_mealy
+VIEW symbol.sb
+GRAPHIC 121,0 99 0 
+DESIGN nivel_a_pulso_mealy
+VIEW symbol.sb
+GRAPHIC 131,0 100 0 
+LIBRARY Conversor_lib
+DESIGN @control_@estados
+VIEW fsm
+GRAPHIC 3202,0 103 0 
+DESIGN @conversor
+VIEW struct.bd
+GRAPHIC 3218,0 105 0 
+DESIGN @conversor
+VIEW struct.bd
+GRAPHIC 3226,0 106 0 
+DESIGN @conversor
+VIEW struct.bd
+GRAPHIC 3275,0 107 0 
+DESIGN @conversor
+VIEW struct.bd
+GRAPHIC 3285,0 108 0 
+DESIGN @conversor
+VIEW struct.bd
+GRAPHIC 3295,0 109 0 
+LIBRARY Conversor_lib
+DESIGN @conversor
+VIEW struct.bd
+NO_GRAPHIC 112
+DESIGN @conversor
+VIEW struct.bd
+GRAPHIC 3202,0 115 0 
+DESIGN @conversor
+VIEW struct.bd
+GRAPHIC 2828,0 116 0 
+DESIGN @conversor
+VIEW struct.bd
+NO_GRAPHIC 119
+DESIGN @conversor
+VIEW struct.bd
+GRAPHIC 1353,0 121 0 
+DESIGN @conversor
+VIEW struct.bd
+GRAPHIC 1504,0 135 0 
+DESIGN @conversor
+VIEW struct.bd
+GRAPHIC 1518,0 149 0 
+DESIGN @conversor
+VIEW struct.bd
+GRAPHIC 1581,0 163 0 
+DESIGN @conversor
+VIEW struct.bd
+GRAPHIC 247,0 177 0 
+DESIGN @conversor
+VIEW struct.bd
+GRAPHIC 714,0 188 0 
+DESIGN @conversor
+VIEW struct.bd
+GRAPHIC 731,0 204 0 
+DESIGN @conversor
+VIEW struct.bd
+GRAPHIC 830,0 220 0 
+DESIGN @conversor
+VIEW struct.bd
+GRAPHIC 929,0 236 0 
+DESIGN @conversor
+VIEW struct.bd
+GRAPHIC 1037,0 252 0 
+DESIGN @conversor
+VIEW struct.bd
+GRAPHIC 1047,0 255 0 
+DESIGN @conversor
+VIEW struct.bd
+GRAPHIC 1066,0 258 0 
+DESIGN @conversor
+VIEW struct.bd
+GRAPHIC 1085,0 261 0 
+DESIGN @conversor
+VIEW struct.bd
+GRAPHIC 1376,0 264 0 
+DESIGN @conversor
+VIEW struct.bd
+GRAPHIC 2084,0 267 0 
+DESIGN @conversor
+VIEW struct.bd
+GRAPHIC 2103,0 270 0 
+DESIGN @conversor
+VIEW struct.bd
+GRAPHIC 2122,0 273 0 
+DESIGN @conversor
+VIEW struct.bd
+GRAPHIC 367,0 276 0 
+DESIGN @conversor
+VIEW struct.bd
+GRAPHIC 440,0 279 0 
+DESIGN @conversor
+VIEW struct.bd
+GRAPHIC 349,0 301 0 
+DESIGN @conversor
+VIEW struct.bd
+GRAPHIC 2385,0 304 0 
+DESIGN @conversor
+VIEW struct.bd
+GRAPHIC 1259,0 307 0 
+DESIGN @conversor
+VIEW struct.bd
+GRAPHIC 1918,0 317 0 
+DESIGN @conversor
+VIEW struct.bd
+GRAPHIC 1931,0 327 0 
+DESIGN @conversor
+VIEW struct.bd
+GRAPHIC 1982,0 337 0 
+DESIGN @conversor
+VIEW struct.bd
+GRAPHIC 2033,0 347 0 
+DESIGN @conversor
+VIEW struct.bd
+GRAPHIC 308,0 357 0 
+DESIGN @conversor
+VIEW struct.bd
+GRAPHIC 616,0 370 0 
+DESIGN @conversor
+VIEW struct.bd
+NO_GRAPHIC 373
+DESIGN @conversor
+VIEW struct.bd
+GRAPHIC 2828,0 375 0 
+DESIGN @conversor
+VIEW struct.bd
+GRAPHIC 2850,0 377 0 
+DESIGN @conversor
+VIEW struct.bd
+GRAPHIC 2870,0 378 0 
+DESIGN @conversor
+VIEW struct.bd
+GRAPHIC 2856,0 379 0 
+DESIGN @conversor
+VIEW struct.bd
+GRAPHIC 2876,0 380 0 
+DESIGN @conversor
+VIEW struct.bd
+GRAPHIC 3202,0 382 0 
+DESIGN @conversor
+VIEW struct.bd
+GRAPHIC 2676,0 392 0 
+DESIGN @conversor
+VIEW struct.bd
+GRAPHIC 2694,0 393 0 
+DESIGN @conversor
+VIEW struct.bd
+GRAPHIC 2712,0 394 0 
+DESIGN @conversor
+VIEW struct.bd
+GRAPHIC 2730,0 395 0 
+DESIGN @conversor
+VIEW struct.bd
+NO_GRAPHIC 397

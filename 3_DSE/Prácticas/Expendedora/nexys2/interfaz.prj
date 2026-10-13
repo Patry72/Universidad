@@ -1,0 +1,4 @@
+vhdl work "../Expendedora_lib/hdl/expendedora_struct.vhd"
+vhdl work "../auxiliar_lib/hdl/nivel_a_pulso_mealy_struct.vhd"
+vhdl work "../auxiliar_lib/hdl/buffer_reloj_struct.vhd"
+vhdl work "../Expendedora_lib/hdl/interfaz_struct.vhd"

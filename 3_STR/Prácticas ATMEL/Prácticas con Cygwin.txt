@@ -1,0 +1,3 @@
+Para realizar prácticas utilizando Cygwin:
+- Crear código en la ruta C:\cygwin64\home\carde.
+- Compilar en el terminal de Cygwin (estando en la ruta anterior).

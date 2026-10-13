@@ -1,0 +1,21 @@
+[DesignChecker]
+Expendedora_lib = $HDS_PROJECT_DIR/Expendedora_lib/designcheck
+[ModelSim]
+Expendedora_lib = $HDS_PROJECT_DIR/Expendedora_lib/work
+vectores = $HDS_HOME/hdl_libs/vectores/work
+[hdl]
+auxiliar_lib = $HDS_PROJECT_DIR\auxiliar_lib\hdl
+Expendedora_lib = $HDS_PROJECT_DIR/Expendedora_lib/hdl
+[hds]
+auxiliar_lib = $HDS_PROJECT_DIR\auxiliar_lib\hds
+Expendedora_lib = $HDS_PROJECT_DIR/Expendedora_lib/hds
+[hds_settings]
+default_library = Expendedora_lib
+version = 2
+[library_files_inclusion]
+auxiliar_lib = all
+[library_type]
+auxiliar_lib = regular
+Expendedora_lib = regular
+[shared]
+others = $HDS_TEAM_HOME/shared.hdp

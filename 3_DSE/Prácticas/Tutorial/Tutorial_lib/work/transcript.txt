@@ -1,0 +1,83 @@
+# //  ModelSim SE-64 10.1c Jul 28 2012 
+# //
+# //  Copyright 1991-2012 Mentor Graphics Corporation
+# //  All Rights Reserved.
+# //
+# //  THIS WORK CONTAINS TRADE SECRET AND PROPRIETARY INFORMATION
+# //  WHICH IS THE PROPERTY OF MENTOR GRAPHICS CORPORATION OR ITS
+# //  LICENSORS AND IS SUBJECT TO LICENSE TERMS.
+# //
+# vsim -L Tutorial_lib -l transcript.txt -i -multisource_delay latest -t ns +typdelays -foreign {hdsInit C:/MentorGraphics/HDS_2012.1/resources/downstream/modelsim/ModelSim_64Bit.dll} -pli {"C:/MentorGraphics/HDS_2012.1/resources/downstream/modelsim/ModelSim_64Bit.dll"} Tutorial_lib.Timer_tb(struct) 
+# ** Note: (vsim-3812) Design is being optimized...
+# 
+# ** Note: (vsim-3865) Due to PLI being present, full design access is being specified.
+# 
+# ** Note: (vopt-143) Recognized 1 FSM in architecture body "Control(fsm)".
+# 
+# Loading C:/MentorGraphics/HDS_2012.1/resources/downstream/modelsim/ModelSim_64Bit.dll
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading ieee.std_logic_arith(body)
+# Loading work.timer_tb(struct)#1
+# Loading work.timer(struct)#1
+# Loading work.control(fsm)#1
+# Loading work.counter(struct)#1
+# Loading work.bcdcounter(spec)#1
+# Loading work.timer_tester(test)#1
+# hds_restart 
+restart -force
+# Loading C:/MentorGraphics/HDS_2012.1/resources/downstream/modelsim/ModelSim_64Bit.dll
+# hds_step_object /Timer_tb/U_0/U_0/ current_state 
+# Simulation stop requested.
+# 0
+# 
+# hds_restart 
+restart -force
+# Loading C:/MentorGraphics/HDS_2012.1/resources/downstream/modelsim/ModelSim_64Bit.dll
+run
+# 0
+# 
+run
+# 0
+# 
+run
+# 0
+# 
+run
+# 0
+# 
+run
+# 0
+# 
+run
+# 0
+# 
+run
+# 0
+# 
+run
+# 0
+# 
+run
+# 0
+# 
+run
+# 0
+# 
+run
+# 0
+# 
+run
+# 0
+# 
+run
+# 0
+# 
+run
+# 0
+# 
+run
+# 0
+# 
+# The connection to HDS has been closed 

@@ -1,0 +1,35 @@
+V3 19
+FL C:/DisSistEmpotrados/Expendedora/auxiliar_lib/hdl/buffer_reloj_struct.vhd 2022/10/19.11:51:43 P.20131013
+EN work/buffer_reloj 1666175928 \
+      FL C:/DisSistEmpotrados/Expendedora/auxiliar_lib/hdl/buffer_reloj_struct.vhd \
+      PB ieee/std_logic_1164 1381692176 PB ieee/std_logic_arith 1381692177
+AR work/buffer_reloj/struct 1666175929 \
+      FL C:/DisSistEmpotrados/Expendedora/auxiliar_lib/hdl/buffer_reloj_struct.vhd \
+      EN work/buffer_reloj 1666175928 PB ieee/std_logic_1164 1381692176 \
+      PB ieee/std_logic_arith 1381692177 LB UNISIM PH unisim/VCOMPONENTS 1381692182 \
+      CP BUFG
+FL C:/DisSistEmpotrados/Expendedora/auxiliar_lib/hdl/nivel_a_pulso_mealy_struct.vhd 2022/10/19.11:51:43 P.20131013
+EN work/nivel_a_pulso_mealy 1666175930 \
+      FL C:/DisSistEmpotrados/Expendedora/auxiliar_lib/hdl/nivel_a_pulso_mealy_struct.vhd \
+      PB ieee/std_logic_1164 1381692176 PB ieee/std_logic_arith 1381692177
+AR work/nivel_a_pulso_mealy/struct 1666175931 \
+      FL C:/DisSistEmpotrados/Expendedora/auxiliar_lib/hdl/nivel_a_pulso_mealy_struct.vhd \
+      EN work/nivel_a_pulso_mealy 1666175930 PB ieee/std_logic_1164 1381692176 \
+      PB ieee/std_logic_arith 1381692177
+FL C:/DisSistEmpotrados/Expendedora/Expendedora_lib/hdl/expendedora_struct.vhd 2022/10/19.12:38:00 P.20131013
+EN work/Expendedora 1666175932 \
+      FL C:/DisSistEmpotrados/Expendedora/Expendedora_lib/hdl/expendedora_struct.vhd \
+      PB ieee/std_logic_1164 1381692176 PB ieee/std_logic_arith 1381692177
+AR work/Expendedora/struct 1666175933 \
+      FL C:/DisSistEmpotrados/Expendedora/Expendedora_lib/hdl/expendedora_struct.vhd \
+      EN work/Expendedora 1666175932 PB ieee/std_logic_1164 1381692176 \
+      PB ieee/std_logic_arith 1381692177
+FL C:/DisSistEmpotrados/Expendedora/Expendedora_lib/hdl/interfaz_struct.vhd 2022/10/19.12:38:37 P.20131013
+EN work/interfaz 1666175934 \
+      FL C:/DisSistEmpotrados/Expendedora/Expendedora_lib/hdl/interfaz_struct.vhd \
+      PB ieee/std_logic_1164 1381692176 PB ieee/std_logic_arith 1381692177
+AR work/interfaz/struct 1666175935 \
+      FL C:/DisSistEmpotrados/Expendedora/Expendedora_lib/hdl/interfaz_struct.vhd \
+      EN work/interfaz 1666175934 PB ieee/std_logic_1164 1381692176 \
+      PB ieee/std_logic_arith 1381692177 CP buffer_reloj CP nivel_a_pulso_mealy \
+      CP Expendedora

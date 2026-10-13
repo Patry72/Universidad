@@ -1,0 +1,8 @@
+INTSTYLE=ise
+INFILE=C:\DisSistEmpotrados\Expendedora\nexys2\interfaz.ncd
+OUTFILE=C:\DisSistEmpotrados\Expendedora\nexys2\interfaz.bit
+FAMILY=Spartan3E
+PART=xc3s500e-4fg320
+WORKINGDIR=C:\DisSistEmpotrados\Expendedora\nexys2
+LICENSE=WebPack
+USER_INFO=210912321_0_0_241

@@ -1,0 +1,23 @@
+//! **************************************************************************
+// Written by: Map P.20131013 on Wed Oct 19 12:39:00 2022
+//! **************************************************************************
+
+SCHEMATIC START;
+COMP "ep" LOCATE = SITE "J15" LEVEL 1;
+COMP "clk" LOCATE = SITE "B8" LEVEL 1;
+COMP "m5" LOCATE = SITE "E18" LEVEL 1;
+COMP "m10" LOCATE = SITE "D18" LEVEL 1;
+COMP "rst" LOCATE = SITE "B18" LEVEL 1;
+COMP "d" LOCATE = SITE "J14" LEVEL 1;
+NET "clk_BUFGP/IBUFG" BEL "clk_BUFGP/BUFG.GCLKMUX" USELOCALCONNECT;
+TIMEGRP sys_clk_pin = BEL "mw_U_4reg_cval_0" BEL "mw_U_4reg_cval_1" BEL
+        "mw_U_4reg_cval_2" BEL "mw_U_4reg_cval_3" BEL "mw_U_4reg_cval_4" BEL
+        "mw_U_4reg_cval_5" BEL "mw_U_4reg_cval_6" BEL "mw_U_4reg_cval_7" BEL
+        "mw_U_4reg_cval_8" BEL "mw_U_4reg_cval_9" BEL "mw_U_4reg_cval_10" BEL
+        "mw_U_4reg_cval_11" BEL "mw_U_4reg_cval_12" BEL "mw_U_4reg_cval_13"
+        BEL "mw_U_4reg_cval_14" BEL "mw_U_4reg_cval_15" BEL
+        "mw_U_4reg_cval_16" BEL "U_1/mw_U_0reg_cval" BEL
+        "clk_BUFGP/BUFG.GCLKMUX" BEL "clk_BUFGP/BUFG";
+TS_sys_clk_pin = PERIOD TIMEGRP "sys_clk_pin" 50 MHz HIGH 50%;
+SCHEMATIC END;
+

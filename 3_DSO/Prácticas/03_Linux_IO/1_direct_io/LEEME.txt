@@ -1,0 +1,17 @@
+
+Este directorio incluye ejemplos de E/S directa a los GPIO de RPI(2 y 3)
+tanto en ensamblador como en lenguaje C.
+La idea es mostar a los estudiantes E/S por sondeo (NO interrupciones)
+desde la línea de comando del linux. O sea, editar, compilar, debugar y
+ejecutar sin tener que ir a bare metal.
+
+
+Como las instrucciones de acceso a memoria (E/S mapeada) del procesador
+manipulan direcciones virtuales hay que mapear las direcciones física en
+algunas entradas de la tabla de páginas, en concreto una sola entrada.
+Esto se hace con una llamada a la funcion mmap_io() que está en la
+librería libmapio.a cuyo código fuente esta en el subdirectorio mapio.
+
+Hay un Makefile para crear los ejecutables y también la librería.
+
+Ejecutar los programas con privilegios (sudo).

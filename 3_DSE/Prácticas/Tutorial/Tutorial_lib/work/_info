@@ -1,0 +1,236 @@
+m255
+K3
+13
+cModel Technology
+Z0 dC:\DisSistEmpotrados\Tutorial\Tutorial_lib\work
+T_opt
+Vke6iglzZJG@5;82Cf>72k1
+04 8 6 work timer_tb struct 1
+=1-f0795965c084-6336b7cf-d-1a28
+o-quiet +acc -auto_acc_if_foreign -work Tutorial_lib -L Tutorial_lib
+n@_opt
+OL;O;10.1c;51
+Ebcdcounter
+Z1 w1663751908
+Z2 DPx4 ieee 15 std_logic_arith 0 22 4`Y?g_lkdn;7UL9IiJck01
+Z3 DPx3 std 6 textio 0 22 5>J:;AW>W0[[dW0I6EN1Q0
+Z4 DPx4 ieee 14 std_logic_1164 0 22 5=aWaoGZSMWIcH0i^f`XF1
+Z5 dC:\DisSistEmpotrados\Tutorial\Tutorial_lib\work
+Z6 8C:/DisSistEmpotrados/Tutorial/Tutorial_lib/hdl/Timer_BCDCounter.vhd
+Z7 FC:/DisSistEmpotrados/Tutorial/Tutorial_lib/hdl/Timer_BCDCounter.vhd
+l0
+L7
+VKJE0U2XfzWda<jCIaP6OZ3
+Z8 OL;C;10.1c;51
+32
+Z9 !s108 1664530369.884000
+Z10 !s90 -work|Tutorial_lib|-nologo|-f|C:/Users/puesto22/AppData/Local/Temp/Files0|
+Z11 !s107 C:/DisSistEmpotrados/Tutorial/Tutorial_lib/hdl/timer_tb_struct.vhd|C:/DisSistEmpotrados/Tutorial/Tutorial_lib/hdl/Timer_tester.vhd|C:/DisSistEmpotrados/Tutorial/Tutorial_lib/hdl/timer_struct.vhd|C:/DisSistEmpotrados/Tutorial/Tutorial_lib/hdl/counter_struct.vhd|C:/DisSistEmpotrados/Tutorial/Tutorial_lib/hdl/Timer_BCDCounter.vhd|C:/DisSistEmpotrados/Tutorial/Tutorial_lib/hdl/control_fsm.vhd|
+Z12 o-work Tutorial_lib -nologo
+Z13 tExplicit 1
+!s100 l^]a=?o;b@]^J`g@]F4lX2
+!i10b 1
+Aspec
+DEx4 work 10 bcdcounter 0 22 KJE0U2XfzWda<jCIaP6OZ3
+R2
+R3
+R4
+l32
+L30
+Vi6MR=Gc?G;I7P[oUOTW<M2
+R8
+32
+R9
+R10
+R11
+R12
+R13
+!s100 [1g9QjHI`I7b;K0af:2On2
+!i10b 1
+Econtrol
+Z14 w1664526140
+R2
+R3
+R4
+R5
+Z15 8C:/DisSistEmpotrados/Tutorial/Tutorial_lib/hdl/control_fsm.vhd
+Z16 FC:/DisSistEmpotrados/Tutorial/Tutorial_lib/hdl/control_fsm.vhd
+l0
+L13
+Vh3m@9=LelDccJaQ;fOzU93
+R8
+32
+R9
+R10
+R11
+R12
+R13
+!s100 bTEizQD2@6]d6LfjF6@z^0
+!i10b 1
+Afsm
+DEx4 work 7 control 0 22 h3m@9=LelDccJaQ;fOzU93
+R2
+R3
+R4
+l71
+L44
+V;i@0z?d49Ugbh7N5DQ7KL2
+R8
+32
+R9
+R10
+R11
+R12
+R13
+!s100 eXa?[oQ:cVkMF7nS@03@A0
+!i10b 1
+Ecounter
+Z17 w1664526141
+R2
+R3
+R4
+R5
+Z18 8C:/DisSistEmpotrados/Tutorial/Tutorial_lib/hdl/counter_struct.vhd
+Z19 FC:/DisSistEmpotrados/Tutorial/Tutorial_lib/hdl/counter_struct.vhd
+l0
+L13
+V^dJU8C`Vf9f_:eZ;1Y0Dd3
+R8
+32
+R9
+R10
+R11
+R12
+R13
+!s100 g`AR<a?IC<ATi3=`lckI_0
+!i10b 1
+Astruct
+DEx12 tutorial_lib 10 bcdcounter 0 22 KJE0U2XfzWda<jCIaP6OZ3
+DEx4 work 7 counter 0 22 ^dJU8C`Vf9f_:eZ;1Y0Dd3
+R2
+R3
+R4
+l81
+L44
+VkGH^K[dTZV2b9d>8<dmS_0
+R8
+32
+R9
+R10
+R11
+R12
+R13
+!s100 F@5mkO=h0K^GPLXReaYD61
+!i10b 1
+Etimer
+R17
+R2
+R3
+R4
+R5
+Z20 8C:/DisSistEmpotrados/Tutorial/Tutorial_lib/hdl/timer_struct.vhd
+Z21 FC:/DisSistEmpotrados/Tutorial/Tutorial_lib/hdl/timer_struct.vhd
+l0
+L13
+VG?QSGY7^mV`LJ2MJ^Qa;d1
+R8
+32
+R9
+R10
+R11
+R12
+R13
+!s100 Il6VH0eK]HR]LfP>MH93=0
+!i10b 1
+Astruct
+DEx12 tutorial_lib 7 counter 0 22 ^dJU8C`Vf9f_:eZ;1Y0Dd3
+DEx12 tutorial_lib 7 control 0 22 h3m@9=LelDccJaQ;fOzU93
+DEx4 work 5 timer 0 22 G?QSGY7^mV`LJ2MJ^Qa;d1
+R2
+R3
+R4
+l95
+L44
+VGW:?VZWCd6DR`K=]D`DA_0
+R8
+32
+R9
+R10
+R11
+R12
+R13
+!s100 `[don;MTfU]J>^P63Wloh0
+!i10b 1
+Etimer_tb
+Z22 w1664526199
+R5
+Z23 8C:/DisSistEmpotrados/Tutorial/Tutorial_lib/hdl/timer_tb_struct.vhd
+Z24 FC:/DisSistEmpotrados/Tutorial/Tutorial_lib/hdl/timer_tb_struct.vhd
+l0
+L11
+V0[@c3k<maaLgc8>9FeD@K0
+R8
+32
+R9
+R10
+R11
+R12
+R13
+!s100 <MzOC>G^Y3DDjc1ZjC94b3
+!i10b 1
+Astruct
+DEx12 tutorial_lib 12 timer_tester 0 22 <l2YCk8NZh6dN?:DfXD_@3
+DEx12 tutorial_lib 5 timer 0 22 G?QSGY7^mV`LJ2MJ^Qa;d1
+DEx4 work 8 timer_tb 0 22 0[@c3k<maaLgc8>9FeD@K0
+R2
+R3
+R4
+l79
+L31
+V_84VA>T2U]5;<A:4NN>Sc0
+R8
+32
+R9
+R10
+R11
+R12
+R13
+!s100 h_Ji^IeHoiM=GV5AD;;oK3
+!i10b 1
+Etimer_tester
+R1
+R2
+R3
+R4
+R5
+Z25 8C:/DisSistEmpotrados/Tutorial/Tutorial_lib/hdl/Timer_tester.vhd
+Z26 FC:/DisSistEmpotrados/Tutorial/Tutorial_lib/hdl/Timer_tester.vhd
+l0
+L7
+V<l2YCk8NZh6dN?:DfXD_@3
+R8
+32
+R9
+R10
+R11
+R12
+R13
+!s100 U<:7m1`eSRROfhWMnXIWz1
+!i10b 1
+Atest
+DEx4 work 12 timer_tester 0 22 <l2YCk8NZh6dN?:DfXD_@3
+R2
+R3
+R4
+l44
+L28
+V^?SVlAgML@14z5MMgD3H>0
+R8
+32
+R9
+R10
+R11
+R12
+R13
+!s100 >gFg=L::h?Q<NNg2ZNlKz2
+!i10b 1

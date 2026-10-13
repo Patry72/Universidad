@@ -1,0 +1,1 @@
+ -L Multiplicador_lib -L auxiliar_lib -L vectores -l transcript.txt -i -t ns -multisource_delay latest +typdelays Multiplicador_lib.Multiplicador_tb(struct)

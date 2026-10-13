@@ -1,0 +1,1 @@
+cmd_/home/patricia/Universidad/DSO/miMedia/Module.symvers := sed 's/\.ko$$/\.o/' /home/patricia/Universidad/DSO/miMedia/modules.order | scripts/mod/modpost -m -a  -o /home/patricia/Universidad/DSO/miMedia/Module.symvers -e -i Module.symvers   -T -

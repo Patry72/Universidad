@@ -1,0 +1,1 @@
+ -L Display7Seg_lib -L vectores -l transcript.txt -i -t ns -multisource_delay latest +typdelays Display7Seg_lib.control_display_tb(struct)

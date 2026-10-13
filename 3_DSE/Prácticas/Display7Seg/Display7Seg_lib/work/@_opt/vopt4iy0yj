@@ -1,0 +1,125 @@
+m255
+K3
+13
+cModel Technology
+Z0 dC:\DisSistEmpotrados\Display7Seg\Display7Seg_lib\work
+T_opt
+V;>f72NYLIeaC:0]zKPJaz3
+04 18 6 work control_display_tb struct 1
+=1-f0795965c084-635b9c3c-162-150c
+o-quiet +acc -auto_acc_if_foreign -work Display7Seg_lib -L Display7Seg_lib -L vectores
+n@_opt
+OL;O;10.1c;51
+Econtrol_display
+Z1 w1666774120
+Z2 DPx4 ieee 15 std_logic_arith 0 22 4`Y?g_lkdn;7UL9IiJck01
+Z3 DPx3 std 6 textio 0 22 5>J:;AW>W0[[dW0I6EN1Q0
+Z4 DPx4 ieee 14 std_logic_1164 0 22 5=aWaoGZSMWIcH0i^f`XF1
+Z5 dC:\DisSistEmpotrados\Display7Seg\Display7Seg_lib\work
+Z6 8C:/DisSistEmpotrados/Display7Seg/Display7Seg_lib/hdl/control_display_struct.vhd
+Z7 FC:/DisSistEmpotrados/Display7Seg/Display7Seg_lib/hdl/control_display_struct.vhd
+l0
+L13
+VAca[KkJ`ggHQmPS1LS@n^1
+Z8 OL;C;10.1c;51
+32
+Z9 !s108 1666948127.679000
+Z10 !s90 -work|Display7Seg_lib|-nologo|-f|C:/Users/puesto22/AppData/Local/Temp/Files0|
+Z11 !s107 C:/DisSistEmpotrados/Display7Seg/Display7Seg_lib/hdl/control_display_struct.vhd|
+Z12 o-work Display7Seg_lib -nologo
+Z13 tExplicit 1
+!s100 ZZzfZRbGSELa=[61CFX;i3
+!i10b 1
+Astruct
+DEx4 work 15 control_display 0 22 Aca[KkJ`ggHQmPS1LS@n^1
+R2
+R3
+R4
+l65
+L43
+Ve34l<HS=?ncPW]:kbdgeg0
+R8
+32
+R9
+R10
+R11
+R12
+R13
+!s100 Pjm>0aNnShlNRIMOg@;@N3
+!i10b 1
+Econtrol_display_tb
+Z14 w1666944527
+R5
+Z15 8C:/DisSistEmpotrados/Display7Seg/Display7Seg_lib/hdl/control_display_tb_struct.vhd
+Z16 FC:/DisSistEmpotrados/Display7Seg/Display7Seg_lib/hdl/control_display_tb_struct.vhd
+l0
+L11
+V3VnFOz17=ZANj>DE`;O1<2
+R8
+32
+Z17 !s108 1666948127.899000
+Z18 !s90 -work|Display7Seg_lib|-nologo|-f|C:/Users/puesto22/AppData/Local/Temp/Files2|
+Z19 !s107 C:/DisSistEmpotrados/Display7Seg/Display7Seg_lib/hdl/control_display_tb_struct.vhd|C:/DisSistEmpotrados/Display7Seg/Display7Seg_lib/hdl/control_display_tester_struct.vhd|
+R12
+R13
+!s100 UB9Ib?k^nAA<dcP>@f8YO0
+!i10b 1
+Astruct
+DEx15 display7seg_lib 22 control_display_tester 0 22 miY_Q3hBn5@FTANJ0NhUN1
+DEx15 display7seg_lib 15 control_display 0 22 Aca[KkJ`ggHQmPS1LS@n^1
+DEx4 work 18 control_display_tb 0 22 3VnFOz17=ZANj>DE`;O1<2
+Z20 DPx8 vectores 6 vectio 0 22 bML6L;3o@dS6Zm]MHRnYD0
+R2
+R3
+R4
+l84
+L36
+VKmI4j`WJSo7^kcjFVc@5P0
+R8
+32
+R17
+R18
+R19
+R12
+R13
+!s100 _eYlSgDYlo1S[XUlZOgdH2
+!i10b 1
+Econtrol_display_tester
+Z21 w1666944485
+R20
+R2
+R3
+R4
+R5
+Z22 8C:/DisSistEmpotrados/Display7Seg/Display7Seg_lib/hdl/control_display_tester_struct.vhd
+Z23 FC:/DisSistEmpotrados/Display7Seg/Display7Seg_lib/hdl/control_display_tester_struct.vhd
+l0
+L18
+VmiY_Q3hBn5@FTANJ0NhUN1
+R8
+32
+R17
+R18
+R19
+R12
+R13
+!s100 im2Me8jU65K<8El?@a_972
+!i10b 1
+Astruct
+R20
+DEx4 work 22 control_display_tester 0 22 miY_Q3hBn5@FTANJ0NhUN1
+R2
+R3
+R4
+l56
+L48
+VEn><EaUZ6:a`HS;l@ZDi^3
+R8
+32
+R17
+R18
+R19
+R12
+R13
+!s100 gH=?DkFcWbL`kMd>hl7Ne0
+!i10b 1

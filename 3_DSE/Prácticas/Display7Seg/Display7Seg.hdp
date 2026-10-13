@@ -1,0 +1,21 @@
+[DesignChecker]
+Display7Seg_lib = $HDS_PROJECT_DIR\Display7Seg_lib\designcheck
+[ModelSim]
+Display7Seg_lib = $HDS_PROJECT_DIR/Display7Seg_lib/work
+vectores = $HDS_HOME/hdl_libs/vectores/work
+[hdl]
+auxiliar_lib = $HDS_PROJECT_DIR\auxiliar_lib\hdl
+Display7Seg_lib = $HDS_PROJECT_DIR/Display7Seg_lib/hdl
+[hds]
+auxiliar_lib = $HDS_PROJECT_DIR\auxiliar_lib\hds
+Display7Seg_lib = $HDS_PROJECT_DIR/Display7Seg_lib/hds
+[hds_settings]
+default_library = Display7Seg_lib
+version = 2
+[library_files_inclusion]
+auxiliar_lib = all
+[library_type]
+auxiliar_lib = regular
+Display7Seg_lib = regular
+[shared]
+others = $HDS_TEAM_HOME/shared.hdp

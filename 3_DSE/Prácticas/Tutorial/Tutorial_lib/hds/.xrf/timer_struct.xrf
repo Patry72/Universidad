@@ -1,0 +1,239 @@
+DESIGN @timer
+VIEW symbol.sb
+NO_GRAPHIC 0
+DESIGN @timer
+VIEW symbol.sb
+GRAPHIC 50,0 8 0 
+DESIGN @timer
+VIEW symbol.sb
+GRAPHIC 284,0 14 0 
+DESIGN @timer
+VIEW symbol.sb
+GRAPHIC 218,0 15 0 
+DESIGN @timer
+VIEW symbol.sb
+GRAPHIC 279,0 16 0 
+DESIGN @timer
+VIEW symbol.sb
+GRAPHIC 269,0 17 0 
+DESIGN @timer
+VIEW symbol.sb
+GRAPHIC 274,0 18 0 
+DESIGN @timer
+VIEW symbol.sb
+GRAPHIC 233,0 19 0 
+DESIGN @timer
+VIEW symbol.sb
+GRAPHIC 223,0 20 0 
+DESIGN @timer
+VIEW symbol.sb
+GRAPHIC 228,0 21 0 
+DESIGN @timer
+VIEW symbol.sb
+GRAPHIC 1,0 24 0 
+DESIGN @timer
+VIEW symbol.sb
+GRAPHIC 1,0 25 0 
+DESIGN @timer
+VIEW struct.bd
+NO_GRAPHIC 28
+DESIGN @timer
+VIEW struct.bd
+GRAPHIC 41,0 37 0 
+DESIGN @timer
+VIEW struct.bd
+NO_GRAPHIC 40
+DESIGN @timer
+VIEW struct.bd
+GRAPHIC 0,0 43 2 
+DESIGN @timer
+VIEW struct.bd
+GRAPHIC 693,0 46 0 
+DESIGN @timer
+VIEW struct.bd
+GRAPHIC 181,0 51 0 
+DESIGN @timer
+VIEW struct.bd
+GRAPHIC 141,0 52 0 
+DESIGN @timer
+VIEW struct.bd
+GRAPHIC 231,0 53 0 
+DESIGN @timer
+VIEW struct.bd
+GRAPHIC 161,0 54 0 
+DESIGN @timer
+VIEW struct.bd
+GRAPHIC 151,0 55 0 
+DESIGN @timer
+VIEW struct.bd
+GRAPHIC 171,0 56 0 
+DESIGN @timer
+VIEW struct.bd
+NO_GRAPHIC 57
+DESIGN @timer
+VIEW struct.bd
+NO_GRAPHIC 58
+LIBRARY Tutorial_lib
+DESIGN @control
+VIEW fsm
+GRAPHIC 115,0 60 0 
+DESIGN @timer
+VIEW struct.bd
+GRAPHIC 400,0 62 0 
+DESIGN @timer
+VIEW struct.bd
+GRAPHIC 223,0 63 0 
+DESIGN @timer
+VIEW struct.bd
+GRAPHIC 389,0 64 0 
+DESIGN @timer
+VIEW struct.bd
+GRAPHIC 377,0 65 0 
+DESIGN @timer
+VIEW struct.bd
+GRAPHIC 383,0 66 0 
+DESIGN @timer
+VIEW struct.bd
+GRAPHIC 173,0 67 0 
+DESIGN @timer
+VIEW struct.bd
+GRAPHIC 183,0 68 0 
+DESIGN @timer
+VIEW struct.bd
+GRAPHIC 143,0 69 0 
+DESIGN @timer
+VIEW struct.bd
+GRAPHIC 163,0 70 0 
+DESIGN @timer
+VIEW struct.bd
+GRAPHIC 153,0 71 0 
+DESIGN @timer
+VIEW struct.bd
+GRAPHIC 125,0 74 0 
+DESIGN @timer
+VIEW struct.bd
+GRAPHIC 143,0 76 0 
+DESIGN @timer
+VIEW struct.bd
+GRAPHIC 400,0 77 0 
+DESIGN @timer
+VIEW struct.bd
+GRAPHIC 233,0 78 0 
+DESIGN @timer
+VIEW struct.bd
+GRAPHIC 163,0 79 0 
+DESIGN @timer
+VIEW struct.bd
+GRAPHIC 153,0 80 0 
+DESIGN @timer
+VIEW struct.bd
+GRAPHIC 257,0 81 0 
+DESIGN @timer
+VIEW struct.bd
+GRAPHIC 299,0 82 0 
+DESIGN @timer
+VIEW struct.bd
+GRAPHIC 173,0 83 0 
+LIBRARY Tutorial_lib
+DESIGN @timer
+VIEW struct.bd
+NO_GRAPHIC 86
+DESIGN @timer
+VIEW struct.bd
+GRAPHIC 115,0 89 0 
+DESIGN @timer
+VIEW struct.bd
+GRAPHIC 125,0 90 0 
+DESIGN @timer
+VIEW struct.bd
+NO_GRAPHIC 93
+DESIGN @timer
+VIEW struct.bd
+GRAPHIC 109,0 96 0 
+DESIGN @timer
+VIEW struct.bd
+GRAPHIC 942,0 103 0 
+DESIGN @timer
+VIEW struct.bd
+GRAPHIC 944,0 104 0 
+DESIGN @timer
+VIEW struct.bd
+GRAPHIC 1010,0 105 0 
+DESIGN @timer
+VIEW struct.bd
+GRAPHIC 1040,0 106 0 
+DESIGN @timer
+VIEW struct.bd
+GRAPHIC 1000,0 107 0 
+DESIGN @timer
+VIEW struct.bd
+GRAPHIC 1060,0 108 0 
+DESIGN @timer
+VIEW struct.bd
+GRAPHIC 978,0 109 0 
+DESIGN @timer
+VIEW struct.bd
+GRAPHIC 1062,0 110 0 
+DESIGN @timer
+VIEW struct.bd
+GRAPHIC 956,0 111 0 
+DESIGN @timer
+VIEW struct.bd
+GRAPHIC 1064,0 112 0 
+DESIGN @timer
+VIEW struct.bd
+GRAPHIC 1030,0 113 0 
+DESIGN @timer
+VIEW struct.bd
+GRAPHIC 1066,0 114 0 
+DESIGN @timer
+VIEW struct.bd
+GRAPHIC 1032,0 115 0 
+DESIGN @timer
+VIEW struct.bd
+GRAPHIC 1068,0 116 0 
+DESIGN @timer
+VIEW struct.bd
+GRAPHIC 1034,0 117 0 
+DESIGN @timer
+VIEW struct.bd
+GRAPHIC 1070,0 118 0 
+DESIGN @timer
+VIEW struct.bd
+GRAPHIC 1036,0 119 0 
+DESIGN @timer
+VIEW struct.bd
+GRAPHIC 1072,0 120 0 
+DESIGN @timer
+VIEW struct.bd
+GRAPHIC 1038,0 121 0 
+DESIGN @timer
+VIEW struct.bd
+GRAPHIC 1074,0 122 0 
+DESIGN @timer
+VIEW struct.bd
+GRAPHIC 1076,0 124 0 
+DESIGN @timer
+VIEW struct.bd
+GRAPHIC 696,0 129 1 
+DESIGN @timer
+VIEW struct.bd
+NO_GRAPHIC 132
+DESIGN @timer
+VIEW struct.bd
+GRAPHIC 135,0 133 0 
+DESIGN @timer
+VIEW struct.bd
+NO_GRAPHIC 136
+DESIGN @timer
+VIEW struct.bd
+NO_GRAPHIC 137
+DESIGN @timer
+VIEW struct.bd
+GRAPHIC 115,0 139 0 
+DESIGN @timer
+VIEW struct.bd
+GRAPHIC 125,0 152 0 
+DESIGN @timer
+VIEW struct.bd
+NO_GRAPHIC 164

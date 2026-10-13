@@ -1,0 +1,86 @@
+* R8C/Tiny,M16C/60 SERIES ASSEMBLER *   SOURCE LIST       Tue Feb 14 09:05:22 2023  PAGE 001
+
+  SEQ.  LOC.   OBJ.              0XMSDA ....*....SOURCE STATEMENT....7....*....8....*....9....*....0....*....1....*....2....*....3....*....4....*....5....*....6....*....7....*....8....*....9....*....0
+
+     1                                  ;
+     2                                  ;	PRÁCTICA 1: LEDS
+     3                                  ;
+     4                                  
+     5                                  ; Enciende/Apaga el diodo cada segundo
+     6                                  ;
+     7                                  	.list off			; Deshabilita el volcado desde ahora
+     8                                  	.list on			; Habilita el volcado desde ahora
+     9                                  ;
+    10                                  ;----- DEFINICIÓN DE SÍMBOLOS 3DKUM16C/62PU ---------------------------------------------
+    11                                  ;
+    12  00000400h                       VramTOP		.equ 000400h  ; Inicio de la RAM interna
+    13  00007CFFh                       VramEND 	.equ 007CFFh  ; Final de la RAM interna
+    14  00007CFFh                       VIstack		.equ 007CFFh  ; Direccion de la cima de la pila stack pointer
+    15  000A0000h                       VprogTOP	.equ 0A0000h  ; Inicio del area de programa
+    16  000FA000h                       Vintbase 	.equ 0FA000h  ; Inicio tabla de interrupciones variable
+    17  000FFFDCh                       Vvector 	.equ 0FFFDCh  ; Inicio tabla de interrupciones fija
+    18  00000380h                       SB_base 	.equ 000380h  ; Base del direccionamiento SB relativo
+    19                                  ;
+    20                                  ;----- Área de datos RAM ----------------------------------------
+    21                                  ;
+    22                                  	.section memory, data
+    23  00400                           	.org VramTOP
+    24                                  ;
+    25                                  ;----- Área de código ROM/Flash --------------------------------
+    26                                  ;
+    27                                  	.section prog, code
+    28  A0000                           	.org VprogTOP
+    29                                  ;
+    30                                  ;----- Limpieza de la RAM -------------------------------
+    31                                  ;
+    32  A0000  D900                  Q  	mov.w #0, R0 ; 0 clear
+    33  A0002  75C3803C                 	mov.w #(VramEND+1-VramTOP)/2,R3 ; number of times
+    34  A0006  AA0004                S  	mov.w #VramTOP, A1 ; start address
+    35  A0009  7DEA                     	sstr.w
+    36                                  ;
+    37                                  ;----- INICIALIZACIÓN INTERRUPCIÓN Y PUERTOS 3DKUM16C/62PU ------------------------------
+    38                                  ;
+    39  A000B                           reset: 
+    40  A000B  7E9F301F                 	bset PD2_0 			; Activamos puerto P2_0
+    41  A000F  C7809603              S  	mov.b #80h,TA0MR 	; Ponemos TA0 en modo temporizador con reloj f32
+    42  A0013  75CF8603CA08             	mov.w #2250,TA0 	; Inicializa valor de cuenta del temporizador -> 2250 periodos de 27,77 ns x 32= 2 ms (reloj de 36MHz)
+    43  A0019  7E9F001C                 	bset TA0S 			; Inicia el contador
+    44                                  ;
+    45                                  ;----- PROGRAMA PRINCIPAL ---------------------------------------------------------------
+    46                                  ;
+    47  A001D                           main:
+    48  A001D  D900                  Q  	mov.w #0,r0 	; Inicializamos r0 (cuenta de periodos de 2 ms)
+    49  A001F                           retraso:
+    50  A001F  7E0FAB02                 	btstc 3,TA0IC 	; Comprobamos la interrupción de fin de cuenta del temporizador (bit 3) 
+    51  A0023  6CFB                     	jnc retraso		; Salta a RETRASO si el bit testeado es 0
+    52  A0025  C910                  Q  	add.w #1,r0 	; r0 = r0 + 1
+    53  A0027  7780F401                 	cmp.w #500,r0 	; Compara si r0 = 500 (500 - r0)
+    54  A002B  6EF3                     	jnz retraso		; Salta a RETRASO si el testeo anterior aún no es 0
+    55  A002D  7EAF201F                 	bnot P2_0 		; Cambia la polaridad del diodo
+    56  A0031  FEEB                  B  	jmp main		; Salta a MAIN
+    57                                  ;
+    58                                  
+    59                                  ;----- INTERRUPCIÓN DE RESET (INICIALIZA PC) --------------------------------------------
+    60                                  ;
+    61                                  	.section 	int_reset,romdata
+    62  FFFFC                           	.org 		Vvector + (8*4)
+* R8C/Tiny,M16C/60 SERIES ASSEMBLER *   SOURCE LIST       Tue Feb 14 09:05:22 2023  PAGE 002
+
+  SEQ.  LOC.   OBJ.              0XMSDA ....*....SOURCE STATEMENT....7....*....8....*....9....*....0....*....1....*....2....*....3....*....4....*....5....*....6....*....7....*....8....*....9....*....0
+
+    63  FFFFC  0B000A00                 	.lword 		reset
+    64                                  ;
+    65                                  	.end
+
+Information List
+
+TOTAL ERROR(S)    00000
+TOTAL WARNING(S)  00000
+TOTAL LINE(S)     00065   LINES
+
+Section List
+
+Attr        Size          Name
+DATA     0000000(00000H)  memory
+CODE     0000051(00033H)  prog
+ROMDATA  0000004(00004H)  int_reset

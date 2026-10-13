@@ -1,0 +1,1 @@
+[path avrdude.exe] -C[path avrdude.conf] -patmega328p -carduino -PCOM[Puerto del arduino] -b115200 -Uflash:w:${ProjectDir}/${ImagePath}:i

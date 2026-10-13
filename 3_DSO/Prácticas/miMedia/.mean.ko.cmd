@@ -1,0 +1,1 @@
+cmd_/home/patricia/Universidad/DSO/miMedia/mean.ko := ld -r -m elf_x86_64 -z noexecstack --build-id=sha1  -T scripts/module.lds -o /home/patricia/Universidad/DSO/miMedia/mean.ko /home/patricia/Universidad/DSO/miMedia/mean.o /home/patricia/Universidad/DSO/miMedia/mean.mod.o;  true

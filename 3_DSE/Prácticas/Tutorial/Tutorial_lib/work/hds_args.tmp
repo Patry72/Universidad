@@ -1,0 +1,1 @@
+ -L Tutorial_lib -l transcript.txt -i -t ns -multisource_delay latest +typdelays Tutorial_lib.Timer_tb(struct)

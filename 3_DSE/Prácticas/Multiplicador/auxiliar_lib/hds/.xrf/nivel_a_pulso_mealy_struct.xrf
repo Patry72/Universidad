@@ -1,0 +1,60 @@
+DESIGN nivel_a_pulso_mealy
+VIEW symbol.sb
+NO_GRAPHIC 0
+DESIGN nivel_a_pulso_mealy
+VIEW symbol.sb
+GRAPHIC 50,0 8 0 
+DESIGN nivel_a_pulso_mealy
+VIEW symbol.sb
+GRAPHIC 116,0 14 0 
+DESIGN nivel_a_pulso_mealy
+VIEW symbol.sb
+GRAPHIC 126,0 15 0 
+DESIGN nivel_a_pulso_mealy
+VIEW symbol.sb
+GRAPHIC 121,0 16 0 
+DESIGN nivel_a_pulso_mealy
+VIEW symbol.sb
+GRAPHIC 131,0 17 0 
+DESIGN nivel_a_pulso_mealy
+VIEW symbol.sb
+GRAPHIC 1,0 20 0 
+DESIGN nivel_a_pulso_mealy
+VIEW symbol.sb
+GRAPHIC 1,0 21 0 
+DESIGN nivel_a_pulso_mealy
+VIEW struct.bd
+NO_GRAPHIC 24
+DESIGN nivel_a_pulso_mealy
+VIEW struct.bd
+GRAPHIC 42,0 33 0 
+DESIGN nivel_a_pulso_mealy
+VIEW struct.bd
+NO_GRAPHIC 36
+DESIGN nivel_a_pulso_mealy
+VIEW struct.bd
+GRAPHIC 0,0 38 2 
+DESIGN nivel_a_pulso_mealy
+VIEW struct.bd
+GRAPHIC 799,0 43 0 
+DESIGN nivel_a_pulso_mealy
+VIEW struct.bd
+NO_GRAPHIC 44
+DESIGN nivel_a_pulso_mealy
+VIEW struct.bd
+NO_GRAPHIC 48
+DESIGN nivel_a_pulso_mealy
+VIEW struct.bd
+NO_GRAPHIC 49
+DESIGN nivel_a_pulso_mealy
+VIEW struct.bd
+GRAPHIC 615,0 51 0 
+DESIGN nivel_a_pulso_mealy
+VIEW struct.bd
+GRAPHIC 653,0 62 0 
+DESIGN nivel_a_pulso_mealy
+VIEW struct.bd
+NO_GRAPHIC 65
+DESIGN nivel_a_pulso_mealy
+VIEW struct.bd
+NO_GRAPHIC 68

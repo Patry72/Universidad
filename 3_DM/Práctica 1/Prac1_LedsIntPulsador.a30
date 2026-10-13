@@ -1,0 +1,152 @@
+;
+; 
+; -------------- FALTA POR HACER ------------------
+;
+;
+;	PRÁCTICA 1: PARPADEO LEDS POR INTERRUPCIONES   
+;	
+; 	Enciende/Apaga el diodo cada segundo cuando activamos un pulsador
+;----------------------------------------------------------------------------------------
+	.list off			; deshabilita el volcado desde ahora
+	.include sfr.inc
+	.list on			; habilita el volcado desde ahora
+;
+;----- DEFINICIÓN DE SÍMBOLOS 3DKUM16C/62PU ---------------------------------------------
+;
+VramTOP		.equ 000400h ; inicio de la RAM interna
+VramEND 	.equ 007CFFh ; final de la RAM interna
+VIstack		.equ 007CFFh ; Direccion de la cima de la pila stack pointer
+VprogTOP	.equ 0A0000h ; inicio del area de programa
+Vintbase 	.equ 0FA000h ; inicio tabla de interrupciones variable
+Vvector 	.equ 0FFFDCh ; inicio tabla de interrupciones fija
+SB_base 	.equ 000380h ; Base del direccionamiento SB relativo
+;
+;----- Área de datos RAM ----------------------------------------------------------------
+;
+	.section 	memory, data
+	.org 		VramTOP
+;
+;----- Área de código ROM/Flash ---------------------------------------------------------
+;
+	.section 	prog, code
+	.org 		VprogTOP
+;
+;----- Limpieza de la RAM ---------------------------------------------------------------
+;
+	mov.w #0, R0 					; 0 clear
+	mov.w #(VramEND+1-VramTOP)/2,R3 ; number of times
+	mov.w #VramTOP, A1 				; start address
+	sstr.w
+;
+;----- INICIALIZACION INTERRUPCIÓN Y PUERTOS (3DKM16C/62PU) -----------------------------------------------
+reset:
+	ldintb 	#Tabla_Vector_Usu ; Necesitamos dummy
+	bset	PD2_7 		; Activamos puerto P2_7
+	mov.b 	#80h,TA0MR 	; Ponemos TA0 en modo temporizador con reloj f32
+	mov.b 	#1,TA0IC 	; Limpia el bit de petición de interrupción. Prioridad 1
+	mov.w 	#2250,TA0 	; Inicializa valor de cuenta del temporizador -> 2250 periodos de 27,7ns * 32 = 2 ms. (reloj 36MHz)
+	bset 	TA0S 		; Arranca el contador
+	mov.w 	#0,r0 		; r0 cuenta de periodos de 2 ms.
+;
+;----- PROGRAMA PRINCIPAL ---------------------------------------------------------------
+;
+main:
+	cmp.w 	#500,r0 	; r0=500?
+	jnz 	main
+	mov.w 	#0,r0 		; reinicia cuenta (cada segundo)
+	bnot 	P2_7 		; cambia la polaridad del diodo
+	jmp 	main
+;
+;----- MANEJADOR INTERRUPCION TIMER TA0 -------------------------------------------------
+;
+sw_ta0:
+	add.w 	#1,r0 ; desbordamiento (cada 2 ms)
+	reit
+;
+;----- MANEJADOR RUTINA DUMMY -----------------------------------------------------------
+;
+dummy:
+	reit
+;
+;----- INTERRUPCION DEL TIMER TA0 (tabla de vectores variable) --------------------------
+;
+	.section 	int_ta0,romdata
+	.org 		Vintbase
+	
+Tabla_Vector_Usu:
+
+	.lword		dummy			; No0  Break Interrupt
+	.lword		dummy			; No1  Break Interrupt
+	.lword		dummy			; No2  Break Interrupt
+	.lword		dummy			; No3  Break Interrupt
+	.lword		dummy			; No4  Break Interrupt
+	.lword		dummy			; No5  Break Interrupt
+	.lword		dummy			; No6  Break Interrupt
+	.lword		dummy			; No7  Break Interrupt
+	.lword		dummy			; No8  Break Interrupt
+	.lword		dummy			; No9  Break Interrupt
+	.lword		dummy			; No10 Bus Clash Detect
+	.lword		dummy			; No11 DMA0 
+	.lword		dummy			; No12 DMA1 
+	.lword		dummy			; No13 KEY IN Interrupt
+	.lword		dummy	   		; No14 A-D Interrupt
+	.lword		dummy			; No15 UART2 Transmission Interrupt
+	.lword		dummy			; No16 UART2 receive Interrupt
+	.lword		dummy			; No17 UART0 Transmission Interrupt
+	.lword		dummy			; No18 UART0 receive Interrupt
+	.lword		0FF900H			; No19 UART1 Transmission Interrupt
+	.lword		0ff900H			; No20 UART1 receive Interrupt
+	.lword		sw_ta0 			; No21 TimerA0 Interrupt
+	.lword		dummy   		; No22 TimerA1 Interrupt
+	.lword		dummy			; No23 TimerA2 Interrupt
+	.lword		dummy			; No24 TimerA3 Interrupt
+	.lword		dummy			; No25 TimerA4 Interrupt
+	.lword		dummy			; No26 TimerB0 Interrupt
+	.lword		dummy			; No27 TimerB1 Interrupt
+	.lword		dummy			; No28 TimerB2 Interrupt
+	.lword		dummy			; No29 INIT0(Active Low) Interrupt
+	.lword		dummy			; No30 INIT1(Active Low) Interrupt
+	.lword		dummy			; No31 INIT2(Active Low) Interrupt
+	.lword		dummy			; No32 S/W Interrupt
+	.lword		dummy			; No33 S/W Interrupt
+	.lword		dummy			; No34 S/W Interrupt
+	.lword		dummy			; No35 S/W Interrupt
+	.lword		dummy			; No36 S/W Interrupt
+	.lword		dummy			; No37 S/W Interrupt
+	.lword		dummy			; No38 S/W Interrupt
+	.lword		dummy			; No39 S/W Interrupt
+	.lword		dummy			; No40 S/W Interrupt
+	.lword		dummy			; No41 S/W Interrupt
+	.lword		dummy			; No42 S/W Interrupt
+	.lword		dummy			; No43 S/W Interrupt
+	.lword		dummy			; No44 S/W Interrupt
+	.lword		dummy			; No45 S/W Interrupt
+	.lword		dummy			; No46 S/W Interrupt
+	.lword		dummy			; No47 S/W Interrupt
+	.lword		dummy			; No48 S/W Interrupt
+	.lword		dummy			; No49 S/W Interrupt
+	.lword		dummy			; No50 S/W Interrupt
+	.lword		dummy			; No51 S/W Interrupt
+	.lword		dummy			; No52 S/W Interrupt
+	.lword		dummy			; No53 S/W Interrupt
+	.lword		dummy			; No54 S/W Interrupt
+	.lword		dummy			; No55 S/W Interrupt
+	.lword		dummy			; No56 S/W Interrupt
+	.lword		dummy			; No57 S/W Interrupt
+	.lword		dummy			; No58 S/W Interrupt
+	.lword		dummy			; No59 S/W Interrupt
+	.lword		dummy			; No60 S/W Interrupt
+	.lword		dummy			; No61 S/W Interrupt
+	.lword		dummy			; No62 S/W Interrupt
+	.lword		dummy			; No63 S/W Interrupt
+
+;
+;----- INTERRUPCIÓN DE RESET (INICIALIZA PC) --------------------------------------------
+;
+	.section 	int_reset,romdata
+	.org 		Vvector+(8*4)
+	.lword 		reset
+;
+;----- FIN DEL PROGRAMA -----------------------------------------------------------------
+	.end
+;

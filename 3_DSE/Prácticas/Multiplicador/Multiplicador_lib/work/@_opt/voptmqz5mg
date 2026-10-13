@@ -1,0 +1,42 @@
+m255
+K3
+13
+cModel Technology
+Z0 dC:\DisSistEmpotrados\Multiplicador\auxiliar_lib\work
+Enivel_a_pulso_mealy
+Z1 w1667559774
+Z2 DPx4 ieee 15 std_logic_arith 0 22 4`Y?g_lkdn;7UL9IiJck01
+Z3 DPx3 std 6 textio 0 22 5>J:;AW>W0[[dW0I6EN1Q0
+Z4 DPx4 ieee 14 std_logic_1164 0 22 5=aWaoGZSMWIcH0i^f`XF1
+Z5 dC:\DisSistEmpotrados\Multiplicador\auxiliar_lib\work
+Z6 8C:/DisSistEmpotrados/Multiplicador/auxiliar_lib/hdl/nivel_a_pulso_mealy_struct.vhd
+Z7 FC:/DisSistEmpotrados/Multiplicador/auxiliar_lib/hdl/nivel_a_pulso_mealy_struct.vhd
+l0
+L13
+V>4DdPQc?Sj=5<^:6d1fzP1
+Z8 OL;C;10.1c;51
+32
+Z9 !s108 1671092058.821000
+Z10 !s90 -work|auxiliar_lib|-nologo|-f|C:/Users/puesto22/AppData/Local/Temp/Files0|
+Z11 !s107 C:/DisSistEmpotrados/Multiplicador/auxiliar_lib/hdl/nivel_a_pulso_mealy_struct.vhd|
+Z12 o-work auxiliar_lib -nologo
+Z13 tExplicit 1
+!s100 nnA@XId4MEUZ9R^]3kk[31
+!i10b 1
+Astruct
+DEx4 work 19 nivel_a_pulso_mealy 0 22 >4DdPQc?Sj=5<^:6d1fzP1
+R2
+R3
+R4
+l51
+L39
+VN71VOcEKHYbeGTS;R]k^?2
+R8
+32
+R9
+R10
+R11
+R12
+R13
+!s100 jM54;IVkdA>=hPB8DAXdc0
+!i10b 1

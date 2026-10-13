@@ -1,0 +1,69 @@
+DESIGN control_display_tester
+VIEW interface
+NO_GRAPHIC 0
+DESIGN control_display_tester
+VIEW interface
+GRAPHIC 50,0 8 0 
+DESIGN control_display_tester
+VIEW interface
+GRAPHIC 210,0 19 0 
+DESIGN control_display_tester
+VIEW interface
+GRAPHIC 245,0 20 0 
+DESIGN control_display_tester
+VIEW interface
+GRAPHIC 215,0 21 0 
+DESIGN control_display_tester
+VIEW interface
+GRAPHIC 220,0 22 0 
+DESIGN control_display_tester
+VIEW interface
+GRAPHIC 225,0 23 0 
+DESIGN control_display_tester
+VIEW interface
+GRAPHIC 230,0 24 0 
+DESIGN control_display_tester
+VIEW interface
+GRAPHIC 235,0 25 0 
+DESIGN control_display_tester
+VIEW interface
+GRAPHIC 240,0 26 0 
+DESIGN control_display_tester
+VIEW interface
+GRAPHIC 1,0 29 0 
+DESIGN control_display_tester
+VIEW interface
+GRAPHIC 1,0 30 0 
+DESIGN control_display_tester
+VIEW struct.bd
+NO_GRAPHIC 33
+DESIGN control_display_tester
+VIEW struct.bd
+GRAPHIC 169,0 42 0 
+DESIGN control_display_tester
+VIEW struct.bd
+NO_GRAPHIC 45
+DESIGN control_display_tester
+VIEW struct.bd
+GRAPHIC 0,0 47 2 
+DESIGN control_display_tester
+VIEW struct.bd
+NO_GRAPHIC 52
+DESIGN control_display_tester
+VIEW struct.bd
+NO_GRAPHIC 53
+DESIGN control_display_tester
+VIEW struct.bd
+NO_GRAPHIC 54
+DESIGN control_display_tester
+VIEW struct.bd
+GRAPHIC 237,0 57 0 
+DESIGN control_display_tester
+VIEW struct.bd
+NO_GRAPHIC 102
+DESIGN control_display_tester
+VIEW struct.bd
+NO_GRAPHIC 103
+DESIGN control_display_tester
+VIEW struct.bd
+NO_GRAPHIC 106

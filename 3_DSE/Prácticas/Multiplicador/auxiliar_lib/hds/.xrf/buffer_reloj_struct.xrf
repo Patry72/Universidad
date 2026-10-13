@@ -1,0 +1,63 @@
+DESIGN buffer_reloj
+VIEW symbol.sb
+NO_GRAPHIC 0
+DESIGN buffer_reloj
+VIEW symbol.sb
+GRAPHIC 50,0 8 0 
+DESIGN buffer_reloj
+VIEW symbol.sb
+GRAPHIC 200,0 14 0 
+DESIGN buffer_reloj
+VIEW symbol.sb
+GRAPHIC 112,0 15 0 
+DESIGN buffer_reloj
+VIEW symbol.sb
+GRAPHIC 195,0 16 0 
+DESIGN buffer_reloj
+VIEW symbol.sb
+GRAPHIC 117,0 17 0 
+DESIGN buffer_reloj
+VIEW symbol.sb
+GRAPHIC 1,0 20 0 
+DESIGN buffer_reloj
+VIEW symbol.sb
+GRAPHIC 1,0 21 0 
+DESIGN buffer_reloj
+VIEW struct.bd
+NO_GRAPHIC 24
+DESIGN buffer_reloj
+VIEW struct.bd
+GRAPHIC 42,0 33 0 
+DESIGN buffer_reloj
+VIEW struct.bd
+NO_GRAPHIC 38
+DESIGN buffer_reloj
+VIEW struct.bd
+GRAPHIC 0,0 40 2 
+DESIGN buffer_reloj
+VIEW struct.bd
+GRAPHIC 385,0 45 0 
+DESIGN buffer_reloj
+VIEW struct.bd
+NO_GRAPHIC 46
+DESIGN buffer_reloj
+VIEW struct.bd
+NO_GRAPHIC 50
+DESIGN buffer_reloj
+VIEW struct.bd
+NO_GRAPHIC 51
+DESIGN buffer_reloj
+VIEW struct.bd
+GRAPHIC 149,0 54 0 
+DESIGN buffer_reloj
+VIEW struct.bd
+NO_GRAPHIC 61
+DESIGN buffer_reloj
+VIEW struct.bd
+GRAPHIC 342,0 62 0 
+DESIGN buffer_reloj
+VIEW struct.bd
+NO_GRAPHIC 73
+DESIGN buffer_reloj
+VIEW struct.bd
+NO_GRAPHIC 76

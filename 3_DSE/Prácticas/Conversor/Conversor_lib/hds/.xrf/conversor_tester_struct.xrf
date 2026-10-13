@@ -1,0 +1,72 @@
+DESIGN @conversor_tester
+VIEW interface
+NO_GRAPHIC 0
+DESIGN @conversor_tester
+VIEW interface
+GRAPHIC 50,0 8 0 
+DESIGN @conversor_tester
+VIEW interface
+GRAPHIC 459,0 19 0 
+DESIGN @conversor_tester
+VIEW interface
+GRAPHIC 464,0 20 0 
+DESIGN @conversor_tester
+VIEW interface
+GRAPHIC 469,0 21 0 
+DESIGN @conversor_tester
+VIEW interface
+GRAPHIC 474,0 22 0 
+DESIGN @conversor_tester
+VIEW interface
+GRAPHIC 494,0 23 0 
+DESIGN @conversor_tester
+VIEW interface
+GRAPHIC 499,0 24 0 
+DESIGN @conversor_tester
+VIEW interface
+GRAPHIC 479,0 25 0 
+DESIGN @conversor_tester
+VIEW interface
+GRAPHIC 484,0 26 0 
+DESIGN @conversor_tester
+VIEW interface
+GRAPHIC 489,0 27 0 
+DESIGN @conversor_tester
+VIEW interface
+GRAPHIC 1,0 30 0 
+DESIGN @conversor_tester
+VIEW interface
+GRAPHIC 1,0 31 0 
+DESIGN @conversor_tester
+VIEW struct.bd
+NO_GRAPHIC 34
+DESIGN @conversor_tester
+VIEW struct.bd
+GRAPHIC 41,0 43 0 
+DESIGN @conversor_tester
+VIEW struct.bd
+NO_GRAPHIC 51
+DESIGN @conversor_tester
+VIEW struct.bd
+GRAPHIC 0,0 53 2 
+DESIGN @conversor_tester
+VIEW struct.bd
+NO_GRAPHIC 58
+DESIGN @conversor_tester
+VIEW struct.bd
+NO_GRAPHIC 59
+DESIGN @conversor_tester
+VIEW struct.bd
+NO_GRAPHIC 60
+DESIGN @conversor_tester
+VIEW struct.bd
+GRAPHIC 109,0 63 0 
+DESIGN @conversor_tester
+VIEW struct.bd
+NO_GRAPHIC 102
+DESIGN @conversor_tester
+VIEW struct.bd
+NO_GRAPHIC 103
+DESIGN @conversor_tester
+VIEW struct.bd
+NO_GRAPHIC 106

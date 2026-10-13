@@ -1,0 +1,3 @@
+vhdl work "../Display7Seg_lib/hdl/control_display_struct.vhd"
+vhdl work "../auxiliar_lib/hdl/buffer_reloj_struct.vhd"
+vhdl work "../Display7Seg_lib/hdl/interfaz_struct.vhd"

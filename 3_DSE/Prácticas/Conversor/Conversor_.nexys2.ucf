@@ -1,0 +1,37 @@
+# Fichero UCF para Nexys2
+
+# clk -> Reloj externo de entrada de 50 MHz por PIN B8
+NET "clk" LOC = "B8";
+
+# Imponemos a la linea de reloj una restriccion de 50000 KHz = 50 MHz
+NET "clk" TNM_NET = sys_clk_pin;
+TIMESPEC TS_sys_clk_pin = PERIOD sys_clk_pin 50000 kHz;
+
+#Botones
+NET "rst" LOC = "B18";
+NET "start" LOC = "H13";
+
+#Entradas del numero binario de 8 bits
+NET "entrada<0>" LOC = "G18"; #SW0
+NET "entrada<1>" LOC = "H18"; #SW1
+NET "entrada<2>" LOC = "K18"; #SW2
+NET "entrada<3>" LOC = "K17"; #SW3
+NET "entrada<4>" LOC = "L14"; #SW4
+NET "entrada<5>" LOC = "L13"; #SW5
+NET "entrada<6>" LOC = "N17"; #SW6
+NET "entrada<7>" LOC = "R17"; #SW7
+
+#Salidas para selector de digito
+NET "anodo<0>" LOC = "F17"; #digito 0 (mas a la derecha)
+NET "anodo<1>" LOC = "H17"; #digito 1
+NET "anodo<2>" LOC = "C18"; #digito 2
+NET "anodo<3>" LOC = "F15"; #digito 3
+
+#Salidas para siete segmentos
+NET "siete_segmentos<0>" LOC = "L18"; #segmento A
+NET "siete_segmentos<1>" LOC = "F18"; #segmento B
+NET "siete_segmentos<2>" LOC = "D17"; #segmento C
+NET "siete_segmentos<3>" LOC = "D16"; #segmento D
+NET "siete_segmentos<4>" LOC = "G14"; #segmento E
+NET "siete_segmentos<5>" LOC = "J17"; #segmento F
+NET "siete_segmentos<6>" LOC = "H14"; #segmento G

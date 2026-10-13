@@ -1,0 +1,26 @@
+V3 15
+FL C:/DisSistEmpotrados/Display7Seg/auxiliar_lib/hdl/buffer_reloj_struct.vhd 2022/11/04.12:02:41 P.20131013
+EN work/buffer_reloj 1667559804 \
+      FL C:/DisSistEmpotrados/Display7Seg/auxiliar_lib/hdl/buffer_reloj_struct.vhd \
+      PB ieee/std_logic_1164 1381692176 PB ieee/std_logic_arith 1381692177
+AR work/buffer_reloj/struct 1667559805 \
+      FL C:/DisSistEmpotrados/Display7Seg/auxiliar_lib/hdl/buffer_reloj_struct.vhd \
+      EN work/buffer_reloj 1667559804 PB ieee/std_logic_1164 1381692176 \
+      PB ieee/std_logic_arith 1381692177 LB UNISIM PH unisim/VCOMPONENTS 1381692182 \
+      CP BUFG
+FL C:/DisSistEmpotrados/Display7Seg/Display7Seg_lib/hdl/control_display_struct.vhd 2022/11/04.12:02:19 P.20131013
+EN work/control_display 1667559806 \
+      FL C:/DisSistEmpotrados/Display7Seg/Display7Seg_lib/hdl/control_display_struct.vhd \
+      PB ieee/std_logic_1164 1381692176 PB ieee/std_logic_arith 1381692177
+AR work/control_display/struct 1667559807 \
+      FL C:/DisSistEmpotrados/Display7Seg/Display7Seg_lib/hdl/control_display_struct.vhd \
+      EN work/control_display 1667559806 PB ieee/std_logic_1164 1381692176 \
+      PB ieee/std_logic_arith 1381692177
+FL C:/DisSistEmpotrados/Display7Seg/Display7Seg_lib/hdl/interfaz_struct.vhd 2022/11/04.12:03:20 P.20131013
+EN work/interfaz 1667559808 \
+      FL C:/DisSistEmpotrados/Display7Seg/Display7Seg_lib/hdl/interfaz_struct.vhd \
+      PB ieee/std_logic_1164 1381692176 PB ieee/std_logic_arith 1381692177
+AR work/interfaz/struct 1667559809 \
+      FL C:/DisSistEmpotrados/Display7Seg/Display7Seg_lib/hdl/interfaz_struct.vhd \
+      EN work/interfaz 1667559808 PB ieee/std_logic_1164 1381692176 \
+      PB ieee/std_logic_arith 1381692177 CP buffer_reloj CP control_display

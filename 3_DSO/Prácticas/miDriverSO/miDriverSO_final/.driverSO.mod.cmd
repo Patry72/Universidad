@@ -1,0 +1,1 @@
+cmd_/home/pi/DSO/Clase/miDriverSO/miDriverSO_final/driverSO.mod := printf '%s\n'   driverSO.o | awk '!x[$$0]++ { print("/home/pi/DSO/Clase/miDriverSO/miDriverSO_final/"$$0) }' > /home/pi/DSO/Clase/miDriverSO/miDriverSO_final/driverSO.mod

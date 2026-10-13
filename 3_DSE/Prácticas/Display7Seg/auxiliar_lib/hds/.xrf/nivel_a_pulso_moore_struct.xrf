@@ -1,0 +1,72 @@
+DESIGN nivel_a_pulso_moore
+VIEW symbol.sb
+NO_GRAPHIC 0
+DESIGN nivel_a_pulso_moore
+VIEW symbol.sb
+GRAPHIC 50,0 8 0 
+DESIGN nivel_a_pulso_moore
+VIEW symbol.sb
+GRAPHIC 116,0 14 0 
+DESIGN nivel_a_pulso_moore
+VIEW symbol.sb
+GRAPHIC 126,0 15 0 
+DESIGN nivel_a_pulso_moore
+VIEW symbol.sb
+GRAPHIC 121,0 16 0 
+DESIGN nivel_a_pulso_moore
+VIEW symbol.sb
+GRAPHIC 131,0 17 0 
+DESIGN nivel_a_pulso_moore
+VIEW symbol.sb
+GRAPHIC 1,0 20 0 
+DESIGN nivel_a_pulso_moore
+VIEW symbol.sb
+GRAPHIC 1,0 21 0 
+DESIGN nivel_a_pulso_moore
+VIEW struct.bd
+NO_GRAPHIC 24
+DESIGN nivel_a_pulso_moore
+VIEW struct.bd
+GRAPHIC 42,0 33 0 
+DESIGN nivel_a_pulso_moore
+VIEW struct.bd
+NO_GRAPHIC 36
+DESIGN nivel_a_pulso_moore
+VIEW struct.bd
+GRAPHIC 0,0 38 2 
+DESIGN nivel_a_pulso_moore
+VIEW struct.bd
+GRAPHIC 758,0 43 0 
+DESIGN nivel_a_pulso_moore
+VIEW struct.bd
+GRAPHIC 760,0 44 0 
+DESIGN nivel_a_pulso_moore
+VIEW struct.bd
+GRAPHIC 756,0 45 0 
+DESIGN nivel_a_pulso_moore
+VIEW struct.bd
+NO_GRAPHIC 46
+DESIGN nivel_a_pulso_moore
+VIEW struct.bd
+NO_GRAPHIC 53
+DESIGN nivel_a_pulso_moore
+VIEW struct.bd
+NO_GRAPHIC 54
+DESIGN nivel_a_pulso_moore
+VIEW struct.bd
+GRAPHIC 615,0 56 0 
+DESIGN nivel_a_pulso_moore
+VIEW struct.bd
+GRAPHIC 577,0 67 0 
+DESIGN nivel_a_pulso_moore
+VIEW struct.bd
+GRAPHIC 653,0 78 0 
+DESIGN nivel_a_pulso_moore
+VIEW struct.bd
+GRAPHIC 540,0 81 0 
+DESIGN nivel_a_pulso_moore
+VIEW struct.bd
+NO_GRAPHIC 84
+DESIGN nivel_a_pulso_moore
+VIEW struct.bd
+NO_GRAPHIC 87

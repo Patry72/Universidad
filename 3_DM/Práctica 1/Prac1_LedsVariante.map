@@ -1,0 +1,49 @@
+##########################################
+# (1) LINK INFORMATION                   #
+##########################################
+C:\MTOOL\BIN\Practicas\ln30.exe -MS -T -G Prac1_LedsVariante.r30
+
+# LINK FILE INFORMATION
+Prac1_LedsVariante (Prac1_LedsVariante.r30)
+	Feb 14 09:34:29 2023
+	
+
+##########################################
+# (2) SECTION INFORMATION                #
+##########################################
+# SECTION                        ATR TYPE    START  LENGTH ALIGN MODULENAME
+memory                           ABS DATA    000400 000000       Prac1_LedsVariante
+prog                             ABS CODE    0A0000 000057       Prac1_LedsVariante
+int_reset                        ABS ROMDATA 0FFFFC 000004       Prac1_LedsVariante
+# Total -------------------------------------------------------------------
+                                     DATA           000000(0000000) Byte(s)
+                                     ROMDATA        000004(0000004) Byte(s)
+                                     CODE           000057(0000087) Byte(s)
+
+##########################################
+# (3) GLOBAL LABEL INFORMATION           #
+##########################################
+
+##########################################
+# (4) GLOBAL EQU SYMBOL INFORMATION      #
+##########################################
+
+##########################################
+# (5) GLOBAL EQU BIT-SYMBOL INFORMATION  #
+##########################################
+
+##########################################
+# (6) LOCAL LABEL INFORMATION            #
+##########################################
+@ Prac1_LedsVariante ( Prac1_LedsVariante.r30 )
+
+##########################################
+# (7) LOCAL EQU SYMBOL INFORMATION       #
+##########################################
+@ Prac1_LedsVariante ( Prac1_LedsVariante.r30 )
+
+##########################################
+# (8) LOCAL EQU BIT-SYMBOL INFORMATION   #
+##########################################
+@ Prac1_LedsVariante ( Prac1_LedsVariante.r30 )
+

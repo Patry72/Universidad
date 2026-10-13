@@ -1,0 +1,743 @@
+--------------------------------------------------------------------------------
+Release 14.7 Trace  (nt64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+
+C:\Xilinx\14.7\ISE_DS\ISE\bin\nt64\unwrapped\trce.exe -intstyle ise -v 3 -s 4
+-n 3 -fastpaths -xml interfaz.twx interfaz.ncd -o interfaz.twr interfaz.pcf
+
+Design file:              interfaz.ncd
+Physical constraint file: interfaz.pcf
+Device,package,speed:     xc3s500e,fg320,-4 (PRODUCTION 1.27 2013-10-13)
+Report level:             verbose report
+
+Environment Variable      Effect 
+--------------------      ------ 
+NONE                      No environment variables were set
+--------------------------------------------------------------------------------
+
+INFO:Timing:3412 - To improve timing, see the Timing Closure User Guide (UG612).
+INFO:Timing:2752 - To get complete path coverage, use the unconstrained paths 
+   option. All paths that are not constrained will be reported in the 
+   unconstrained paths section(s) of the report.
+INFO:Timing:3339 - The clock-to-out numbers in this timing report are based on 
+   a 50 Ohm transmission line loading model.  For the details of this model, 
+   and for more information on accounting for different loading conditions, 
+   please see the device datasheet.
+INFO:Timing:3390 - This architecture does not support a default System Jitter 
+   value, please add SYSTEM_JITTER constraint to the UCF to modify the Clock 
+   Uncertainty calculation.
+INFO:Timing:3389 - This architecture does not support 'Discrete Jitter' and 
+   'Phase Error' calculations, these terms will be zero in the Clock 
+   Uncertainty calculation.  Please make appropriate modification to 
+   SYSTEM_JITTER to account for the unsupported Discrete Jitter and Phase 
+   Error.
+
+================================================================================
+Timing constraint: TS_sys_clk_pin = PERIOD TIMEGRP "sys_clk_pin" 50 MHz HIGH 
+50%;
+For more information, see Period Analysis in the Timing Closure User Guide (UG612).
+
+ 453 paths analyzed, 35 endpoints analyzed, 0 failing endpoints
+ 0 timing errors detected. (0 setup errors, 0 hold errors, 0 component switching limit errors)
+ Minimum period is   5.544ns.
+--------------------------------------------------------------------------------
+
+Paths for end point mw_U_1reg_cval_14 (SLICE_X42Y90.G1), 17 paths
+--------------------------------------------------------------------------------
+Slack (setup path):     14.456ns (requirement - (data path - clock path skew + uncertainty))
+  Source:               mw_U_1reg_cval_12 (FF)
+  Destination:          mw_U_1reg_cval_14 (FF)
+  Requirement:          20.000ns
+  Data Path Delay:      5.544ns (Levels of Logic = 3)
+  Clock Path Skew:      0.000ns
+  Source Clock:         clk_BUFGP rising at 0.000ns
+  Destination Clock:    clk_BUFGP rising at 20.000ns
+  Clock Uncertainty:    0.000ns
+
+  Maximum Data Path: mw_U_1reg_cval_12 to mw_U_1reg_cval_14
+    Location             Delay type         Delay(ns)  Physical Resource
+                                                       Logical Resource(s)
+    -------------------------------------------------  -------------------
+    SLICE_X42Y88.YQ      Tcko                  0.652   mw_U_1reg_cval<13>
+                                                       mw_U_1reg_cval_12
+    SLICE_X45Y84.G3      net (fanout=3)        1.046   mw_U_1reg_cval<12>
+    SLICE_X45Y84.COUT    Topcyg                1.001   mw_U_1reg_nval_cmp_eq0000_wg_cy<3>
+                                                       mw_U_1reg_nval_cmp_eq0000_wg_lut<3>
+                                                       mw_U_1reg_nval_cmp_eq0000_wg_cy<3>
+    SLICE_X45Y85.CIN     net (fanout=1)        0.000   mw_U_1reg_nval_cmp_eq0000_wg_cy<3>
+    SLICE_X45Y85.XB      Tcinxb                0.404   mw_U_1reg_nval_cmp_eq0000
+                                                       mw_U_1reg_nval_cmp_eq0000_wg_cy<4>
+    SLICE_X42Y90.G1      net (fanout=17)       1.549   mw_U_1reg_nval_cmp_eq0000
+    SLICE_X42Y90.CLK     Tgck                  0.892   mw_U_1reg_cval<15>
+                                                       mw_U_1reg_nval<14>1
+                                                       mw_U_1reg_cval_14
+    -------------------------------------------------  ---------------------------
+    Total                                      5.544ns (2.949ns logic, 2.595ns route)
+                                                       (53.2% logic, 46.8% route)
+
+--------------------------------------------------------------------------------
+Slack (setup path):     14.473ns (requirement - (data path - clock path skew + uncertainty))
+  Source:               mw_U_1reg_cval_3 (FF)
+  Destination:          mw_U_1reg_cval_14 (FF)
+  Requirement:          20.000ns
+  Data Path Delay:      5.527ns (Levels of Logic = 4)
+  Clock Path Skew:      0.000ns
+  Source Clock:         clk_BUFGP rising at 0.000ns
+  Destination Clock:    clk_BUFGP rising at 20.000ns
+  Clock Uncertainty:    0.000ns
+
+  Maximum Data Path: mw_U_1reg_cval_3 to mw_U_1reg_cval_14
+    Location             Delay type         Delay(ns)  Physical Resource
+                                                       Logical Resource(s)
+    -------------------------------------------------  -------------------
+    SLICE_X42Y84.XQ      Tcko                  0.592   mw_U_1reg_cval<3>
+                                                       mw_U_1reg_cval_3
+    SLICE_X45Y83.G3      net (fanout=2)        0.971   mw_U_1reg_cval<3>
+    SLICE_X45Y83.COUT    Topcyg                1.001   mw_U_1reg_nval_cmp_eq0000_wg_cy<1>
+                                                       mw_U_1reg_nval_cmp_eq0000_wg_lut<1>
+                                                       mw_U_1reg_nval_cmp_eq0000_wg_cy<1>
+    SLICE_X45Y84.CIN     net (fanout=1)        0.000   mw_U_1reg_nval_cmp_eq0000_wg_cy<1>
+    SLICE_X45Y84.COUT    Tbyp                  0.118   mw_U_1reg_nval_cmp_eq0000_wg_cy<3>
+                                                       mw_U_1reg_nval_cmp_eq0000_wg_cy<2>
+                                                       mw_U_1reg_nval_cmp_eq0000_wg_cy<3>
+    SLICE_X45Y85.CIN     net (fanout=1)        0.000   mw_U_1reg_nval_cmp_eq0000_wg_cy<3>
+    SLICE_X45Y85.XB      Tcinxb                0.404   mw_U_1reg_nval_cmp_eq0000
+                                                       mw_U_1reg_nval_cmp_eq0000_wg_cy<4>
+    SLICE_X42Y90.G1      net (fanout=17)       1.549   mw_U_1reg_nval_cmp_eq0000
+    SLICE_X42Y90.CLK     Tgck                  0.892   mw_U_1reg_cval<15>
+                                                       mw_U_1reg_nval<14>1
+                                                       mw_U_1reg_cval_14
+    -------------------------------------------------  ---------------------------
+    Total                                      5.527ns (3.007ns logic, 2.520ns route)
+                                                       (54.4% logic, 45.6% route)
+
+--------------------------------------------------------------------------------
+Slack (setup path):     14.490ns (requirement - (data path - clock path skew + uncertainty))
+  Source:               mw_U_1reg_cval_6 (FF)
+  Destination:          mw_U_1reg_cval_14 (FF)
+  Requirement:          20.000ns
+  Data Path Delay:      5.510ns (Levels of Logic = 4)
+  Clock Path Skew:      0.000ns
+  Source Clock:         clk_BUFGP rising at 0.000ns
+  Destination Clock:    clk_BUFGP rising at 20.000ns
+  Clock Uncertainty:    0.000ns
+
+  Maximum Data Path: mw_U_1reg_cval_6 to mw_U_1reg_cval_14
+    Location             Delay type         Delay(ns)  Physical Resource
+                                                       Logical Resource(s)
+    -------------------------------------------------  -------------------
+    SLICE_X42Y86.YQ      Tcko                  0.652   mw_U_1reg_cval<7>
+                                                       mw_U_1reg_cval_6
+    SLICE_X45Y83.G1      net (fanout=3)        0.894   mw_U_1reg_cval<6>
+    SLICE_X45Y83.COUT    Topcyg                1.001   mw_U_1reg_nval_cmp_eq0000_wg_cy<1>
+                                                       mw_U_1reg_nval_cmp_eq0000_wg_lut<1>
+                                                       mw_U_1reg_nval_cmp_eq0000_wg_cy<1>
+    SLICE_X45Y84.CIN     net (fanout=1)        0.000   mw_U_1reg_nval_cmp_eq0000_wg_cy<1>
+    SLICE_X45Y84.COUT    Tbyp                  0.118   mw_U_1reg_nval_cmp_eq0000_wg_cy<3>
+                                                       mw_U_1reg_nval_cmp_eq0000_wg_cy<2>
+                                                       mw_U_1reg_nval_cmp_eq0000_wg_cy<3>
+    SLICE_X45Y85.CIN     net (fanout=1)        0.000   mw_U_1reg_nval_cmp_eq0000_wg_cy<3>
+    SLICE_X45Y85.XB      Tcinxb                0.404   mw_U_1reg_nval_cmp_eq0000
+                                                       mw_U_1reg_nval_cmp_eq0000_wg_cy<4>
+    SLICE_X42Y90.G1      net (fanout=17)       1.549   mw_U_1reg_nval_cmp_eq0000
+    SLICE_X42Y90.CLK     Tgck                  0.892   mw_U_1reg_cval<15>
+                                                       mw_U_1reg_nval<14>1
+                                                       mw_U_1reg_cval_14
+    -------------------------------------------------  ---------------------------
+    Total                                      5.510ns (3.067ns logic, 2.443ns route)
+                                                       (55.7% logic, 44.3% route)
+
+--------------------------------------------------------------------------------
+
+Paths for end point mw_U_1reg_cval_16 (SLICE_X42Y91.G1), 17 paths
+--------------------------------------------------------------------------------
+Slack (setup path):     14.456ns (requirement - (data path - clock path skew + uncertainty))
+  Source:               mw_U_1reg_cval_12 (FF)
+  Destination:          mw_U_1reg_cval_16 (FF)
+  Requirement:          20.000ns
+  Data Path Delay:      5.544ns (Levels of Logic = 3)
+  Clock Path Skew:      0.000ns
+  Source Clock:         clk_BUFGP rising at 0.000ns
+  Destination Clock:    clk_BUFGP rising at 20.000ns
+  Clock Uncertainty:    0.000ns
+
+  Maximum Data Path: mw_U_1reg_cval_12 to mw_U_1reg_cval_16
+    Location             Delay type         Delay(ns)  Physical Resource
+                                                       Logical Resource(s)
+    -------------------------------------------------  -------------------
+    SLICE_X42Y88.YQ      Tcko                  0.652   mw_U_1reg_cval<13>
+                                                       mw_U_1reg_cval_12
+    SLICE_X45Y84.G3      net (fanout=3)        1.046   mw_U_1reg_cval<12>
+    SLICE_X45Y84.COUT    Topcyg                1.001   mw_U_1reg_nval_cmp_eq0000_wg_cy<3>
+                                                       mw_U_1reg_nval_cmp_eq0000_wg_lut<3>
+                                                       mw_U_1reg_nval_cmp_eq0000_wg_cy<3>
+    SLICE_X45Y85.CIN     net (fanout=1)        0.000   mw_U_1reg_nval_cmp_eq0000_wg_cy<3>
+    SLICE_X45Y85.XB      Tcinxb                0.404   mw_U_1reg_nval_cmp_eq0000
+                                                       mw_U_1reg_nval_cmp_eq0000_wg_cy<4>
+    SLICE_X42Y91.G1      net (fanout=17)       1.549   mw_U_1reg_nval_cmp_eq0000
+    SLICE_X42Y91.CLK     Tgck                  0.892   mw_U_1reg_cval<16>
+                                                       mw_U_1reg_nval<16>1
+                                                       mw_U_1reg_cval_16
+    -------------------------------------------------  ---------------------------
+    Total                                      5.544ns (2.949ns logic, 2.595ns route)
+                                                       (53.2% logic, 46.8% route)
+
+--------------------------------------------------------------------------------
+Slack (setup path):     14.473ns (requirement - (data path - clock path skew + uncertainty))
+  Source:               mw_U_1reg_cval_3 (FF)
+  Destination:          mw_U_1reg_cval_16 (FF)
+  Requirement:          20.000ns
+  Data Path Delay:      5.527ns (Levels of Logic = 4)
+  Clock Path Skew:      0.000ns
+  Source Clock:         clk_BUFGP rising at 0.000ns
+  Destination Clock:    clk_BUFGP rising at 20.000ns
+  Clock Uncertainty:    0.000ns
+
+  Maximum Data Path: mw_U_1reg_cval_3 to mw_U_1reg_cval_16
+    Location             Delay type         Delay(ns)  Physical Resource
+                                                       Logical Resource(s)
+    -------------------------------------------------  -------------------
+    SLICE_X42Y84.XQ      Tcko                  0.592   mw_U_1reg_cval<3>
+                                                       mw_U_1reg_cval_3
+    SLICE_X45Y83.G3      net (fanout=2)        0.971   mw_U_1reg_cval<3>
+    SLICE_X45Y83.COUT    Topcyg                1.001   mw_U_1reg_nval_cmp_eq0000_wg_cy<1>
+                                                       mw_U_1reg_nval_cmp_eq0000_wg_lut<1>
+                                                       mw_U_1reg_nval_cmp_eq0000_wg_cy<1>
+    SLICE_X45Y84.CIN     net (fanout=1)        0.000   mw_U_1reg_nval_cmp_eq0000_wg_cy<1>
+    SLICE_X45Y84.COUT    Tbyp                  0.118   mw_U_1reg_nval_cmp_eq0000_wg_cy<3>
+                                                       mw_U_1reg_nval_cmp_eq0000_wg_cy<2>
+                                                       mw_U_1reg_nval_cmp_eq0000_wg_cy<3>
+    SLICE_X45Y85.CIN     net (fanout=1)        0.000   mw_U_1reg_nval_cmp_eq0000_wg_cy<3>
+    SLICE_X45Y85.XB      Tcinxb                0.404   mw_U_1reg_nval_cmp_eq0000
+                                                       mw_U_1reg_nval_cmp_eq0000_wg_cy<4>
+    SLICE_X42Y91.G1      net (fanout=17)       1.549   mw_U_1reg_nval_cmp_eq0000
+    SLICE_X42Y91.CLK     Tgck                  0.892   mw_U_1reg_cval<16>
+                                                       mw_U_1reg_nval<16>1
+                                                       mw_U_1reg_cval_16
+    -------------------------------------------------  ---------------------------
+    Total                                      5.527ns (3.007ns logic, 2.520ns route)
+                                                       (54.4% logic, 45.6% route)
+
+--------------------------------------------------------------------------------
+Slack (setup path):     14.490ns (requirement - (data path - clock path skew + uncertainty))
+  Source:               mw_U_1reg_cval_6 (FF)
+  Destination:          mw_U_1reg_cval_16 (FF)
+  Requirement:          20.000ns
+  Data Path Delay:      5.510ns (Levels of Logic = 4)
+  Clock Path Skew:      0.000ns
+  Source Clock:         clk_BUFGP rising at 0.000ns
+  Destination Clock:    clk_BUFGP rising at 20.000ns
+  Clock Uncertainty:    0.000ns
+
+  Maximum Data Path: mw_U_1reg_cval_6 to mw_U_1reg_cval_16
+    Location             Delay type         Delay(ns)  Physical Resource
+                                                       Logical Resource(s)
+    -------------------------------------------------  -------------------
+    SLICE_X42Y86.YQ      Tcko                  0.652   mw_U_1reg_cval<7>
+                                                       mw_U_1reg_cval_6
+    SLICE_X45Y83.G1      net (fanout=3)        0.894   mw_U_1reg_cval<6>
+    SLICE_X45Y83.COUT    Topcyg                1.001   mw_U_1reg_nval_cmp_eq0000_wg_cy<1>
+                                                       mw_U_1reg_nval_cmp_eq0000_wg_lut<1>
+                                                       mw_U_1reg_nval_cmp_eq0000_wg_cy<1>
+    SLICE_X45Y84.CIN     net (fanout=1)        0.000   mw_U_1reg_nval_cmp_eq0000_wg_cy<1>
+    SLICE_X45Y84.COUT    Tbyp                  0.118   mw_U_1reg_nval_cmp_eq0000_wg_cy<3>
+                                                       mw_U_1reg_nval_cmp_eq0000_wg_cy<2>
+                                                       mw_U_1reg_nval_cmp_eq0000_wg_cy<3>
+    SLICE_X45Y85.CIN     net (fanout=1)        0.000   mw_U_1reg_nval_cmp_eq0000_wg_cy<3>
+    SLICE_X45Y85.XB      Tcinxb                0.404   mw_U_1reg_nval_cmp_eq0000
+                                                       mw_U_1reg_nval_cmp_eq0000_wg_cy<4>
+    SLICE_X42Y91.G1      net (fanout=17)       1.549   mw_U_1reg_nval_cmp_eq0000
+    SLICE_X42Y91.CLK     Tgck                  0.892   mw_U_1reg_cval<16>
+                                                       mw_U_1reg_nval<16>1
+                                                       mw_U_1reg_cval_16
+    -------------------------------------------------  ---------------------------
+    Total                                      5.510ns (3.067ns logic, 2.443ns route)
+                                                       (55.7% logic, 44.3% route)
+
+--------------------------------------------------------------------------------
+
+Paths for end point mw_U_1reg_cval_10 (SLICE_X42Y89.G1), 17 paths
+--------------------------------------------------------------------------------
+Slack (setup path):     14.648ns (requirement - (data path - clock path skew + uncertainty))
+  Source:               mw_U_1reg_cval_12 (FF)
+  Destination:          mw_U_1reg_cval_10 (FF)
+  Requirement:          20.000ns
+  Data Path Delay:      5.352ns (Levels of Logic = 3)
+  Clock Path Skew:      0.000ns
+  Source Clock:         clk_BUFGP rising at 0.000ns
+  Destination Clock:    clk_BUFGP rising at 20.000ns
+  Clock Uncertainty:    0.000ns
+
+  Maximum Data Path: mw_U_1reg_cval_12 to mw_U_1reg_cval_10
+    Location             Delay type         Delay(ns)  Physical Resource
+                                                       Logical Resource(s)
+    -------------------------------------------------  -------------------
+    SLICE_X42Y88.YQ      Tcko                  0.652   mw_U_1reg_cval<13>
+                                                       mw_U_1reg_cval_12
+    SLICE_X45Y84.G3      net (fanout=3)        1.046   mw_U_1reg_cval<12>
+    SLICE_X45Y84.COUT    Topcyg                1.001   mw_U_1reg_nval_cmp_eq0000_wg_cy<3>
+                                                       mw_U_1reg_nval_cmp_eq0000_wg_lut<3>
+                                                       mw_U_1reg_nval_cmp_eq0000_wg_cy<3>
+    SLICE_X45Y85.CIN     net (fanout=1)        0.000   mw_U_1reg_nval_cmp_eq0000_wg_cy<3>
+    SLICE_X45Y85.XB      Tcinxb                0.404   mw_U_1reg_nval_cmp_eq0000
+                                                       mw_U_1reg_nval_cmp_eq0000_wg_cy<4>
+    SLICE_X42Y89.G1      net (fanout=17)       1.357   mw_U_1reg_nval_cmp_eq0000
+    SLICE_X42Y89.CLK     Tgck                  0.892   mw_U_1reg_cval<11>
+                                                       mw_U_1reg_nval<10>1
+                                                       mw_U_1reg_cval_10
+    -------------------------------------------------  ---------------------------
+    Total                                      5.352ns (2.949ns logic, 2.403ns route)
+                                                       (55.1% logic, 44.9% route)
+
+--------------------------------------------------------------------------------
+Slack (setup path):     14.665ns (requirement - (data path - clock path skew + uncertainty))
+  Source:               mw_U_1reg_cval_3 (FF)
+  Destination:          mw_U_1reg_cval_10 (FF)
+  Requirement:          20.000ns
+  Data Path Delay:      5.335ns (Levels of Logic = 4)
+  Clock Path Skew:      0.000ns
+  Source Clock:         clk_BUFGP rising at 0.000ns
+  Destination Clock:    clk_BUFGP rising at 20.000ns
+  Clock Uncertainty:    0.000ns
+
+  Maximum Data Path: mw_U_1reg_cval_3 to mw_U_1reg_cval_10
+    Location             Delay type         Delay(ns)  Physical Resource
+                                                       Logical Resource(s)
+    -------------------------------------------------  -------------------
+    SLICE_X42Y84.XQ      Tcko                  0.592   mw_U_1reg_cval<3>
+                                                       mw_U_1reg_cval_3
+    SLICE_X45Y83.G3      net (fanout=2)        0.971   mw_U_1reg_cval<3>
+    SLICE_X45Y83.COUT    Topcyg                1.001   mw_U_1reg_nval_cmp_eq0000_wg_cy<1>
+                                                       mw_U_1reg_nval_cmp_eq0000_wg_lut<1>
+                                                       mw_U_1reg_nval_cmp_eq0000_wg_cy<1>
+    SLICE_X45Y84.CIN     net (fanout=1)        0.000   mw_U_1reg_nval_cmp_eq0000_wg_cy<1>
+    SLICE_X45Y84.COUT    Tbyp                  0.118   mw_U_1reg_nval_cmp_eq0000_wg_cy<3>
+                                                       mw_U_1reg_nval_cmp_eq0000_wg_cy<2>
+                                                       mw_U_1reg_nval_cmp_eq0000_wg_cy<3>
+    SLICE_X45Y85.CIN     net (fanout=1)        0.000   mw_U_1reg_nval_cmp_eq0000_wg_cy<3>
+    SLICE_X45Y85.XB      Tcinxb                0.404   mw_U_1reg_nval_cmp_eq0000
+                                                       mw_U_1reg_nval_cmp_eq0000_wg_cy<4>
+    SLICE_X42Y89.G1      net (fanout=17)       1.357   mw_U_1reg_nval_cmp_eq0000
+    SLICE_X42Y89.CLK     Tgck                  0.892   mw_U_1reg_cval<11>
+                                                       mw_U_1reg_nval<10>1
+                                                       mw_U_1reg_cval_10
+    -------------------------------------------------  ---------------------------
+    Total                                      5.335ns (3.007ns logic, 2.328ns route)
+                                                       (56.4% logic, 43.6% route)
+
+--------------------------------------------------------------------------------
+Slack (setup path):     14.682ns (requirement - (data path - clock path skew + uncertainty))
+  Source:               mw_U_1reg_cval_6 (FF)
+  Destination:          mw_U_1reg_cval_10 (FF)
+  Requirement:          20.000ns
+  Data Path Delay:      5.318ns (Levels of Logic = 4)
+  Clock Path Skew:      0.000ns
+  Source Clock:         clk_BUFGP rising at 0.000ns
+  Destination Clock:    clk_BUFGP rising at 20.000ns
+  Clock Uncertainty:    0.000ns
+
+  Maximum Data Path: mw_U_1reg_cval_6 to mw_U_1reg_cval_10
+    Location             Delay type         Delay(ns)  Physical Resource
+                                                       Logical Resource(s)
+    -------------------------------------------------  -------------------
+    SLICE_X42Y86.YQ      Tcko                  0.652   mw_U_1reg_cval<7>
+                                                       mw_U_1reg_cval_6
+    SLICE_X45Y83.G1      net (fanout=3)        0.894   mw_U_1reg_cval<6>
+    SLICE_X45Y83.COUT    Topcyg                1.001   mw_U_1reg_nval_cmp_eq0000_wg_cy<1>
+                                                       mw_U_1reg_nval_cmp_eq0000_wg_lut<1>
+                                                       mw_U_1reg_nval_cmp_eq0000_wg_cy<1>
+    SLICE_X45Y84.CIN     net (fanout=1)        0.000   mw_U_1reg_nval_cmp_eq0000_wg_cy<1>
+    SLICE_X45Y84.COUT    Tbyp                  0.118   mw_U_1reg_nval_cmp_eq0000_wg_cy<3>
+                                                       mw_U_1reg_nval_cmp_eq0000_wg_cy<2>
+                                                       mw_U_1reg_nval_cmp_eq0000_wg_cy<3>
+    SLICE_X45Y85.CIN     net (fanout=1)        0.000   mw_U_1reg_nval_cmp_eq0000_wg_cy<3>
+    SLICE_X45Y85.XB      Tcinxb                0.404   mw_U_1reg_nval_cmp_eq0000
+                                                       mw_U_1reg_nval_cmp_eq0000_wg_cy<4>
+    SLICE_X42Y89.G1      net (fanout=17)       1.357   mw_U_1reg_nval_cmp_eq0000
+    SLICE_X42Y89.CLK     Tgck                  0.892   mw_U_1reg_cval<11>
+                                                       mw_U_1reg_nval<10>1
+                                                       mw_U_1reg_cval_10
+    -------------------------------------------------  ---------------------------
+    Total                                      5.318ns (3.067ns logic, 2.251ns route)
+                                                       (57.7% logic, 42.3% route)
+
+--------------------------------------------------------------------------------
+
+Hold Paths: TS_sys_clk_pin = PERIOD TIMEGRP "sys_clk_pin" 50 MHz HIGH 50%;
+--------------------------------------------------------------------------------
+
+Paths for end point U_2/mw_U_0reg_cval (SLICE_X45Y91.CIN), 11 paths
+--------------------------------------------------------------------------------
+Slack (hold path):      2.037ns (requirement - (clock path skew + uncertainty - data path))
+  Source:               mw_U_1reg_cval_16 (FF)
+  Destination:          U_2/mw_U_0reg_cval (FF)
+  Requirement:          0.000ns
+  Data Path Delay:      2.029ns (Levels of Logic = 2)
+  Clock Path Skew:      -0.008ns (0.035 - 0.043)
+  Source Clock:         clk_BUFGP rising at 20.000ns
+  Destination Clock:    clk_BUFGP rising at 20.000ns
+  Clock Uncertainty:    0.000ns
+
+  Minimum Data Path: mw_U_1reg_cval_16 to U_2/mw_U_0reg_cval
+    Location             Delay type         Delay(ns)  Physical Resource
+                                                       Logical Resource(s)
+    -------------------------------------------------  -------------------
+    SLICE_X42Y91.YQ      Tcko                  0.522   mw_U_1reg_cval<16>
+                                                       mw_U_1reg_cval_16
+    SLICE_X45Y90.G4      net (fanout=3)        0.384   mw_U_1reg_cval<16>
+    SLICE_X45Y90.COUT    Topcyg                0.801   clk_out
+                                                       Mcompar_clk_out_cmp_ge0000_lut<5>_INV_0
+                                                       Mcompar_clk_out_cmp_ge0000_cy<5>
+    SLICE_X45Y91.CIN     net (fanout=1)        0.000   clk_out
+    SLICE_X45Y91.CLK     Tckcin      (-Th)    -0.322   U_2/mw_U_0reg_cval
+                                                       clk_out_rt
+                                                       U_2/mw_U_0reg_cval
+    -------------------------------------------------  ---------------------------
+    Total                                      2.029ns (1.645ns logic, 0.384ns route)
+                                                       (81.1% logic, 18.9% route)
+
+--------------------------------------------------------------------------------
+Slack (hold path):      2.109ns (requirement - (clock path skew + uncertainty - data path))
+  Source:               mw_U_1reg_cval_14 (FF)
+  Destination:          U_2/mw_U_0reg_cval (FF)
+  Requirement:          0.000ns
+  Data Path Delay:      2.101ns (Levels of Logic = 3)
+  Clock Path Skew:      -0.008ns (0.035 - 0.043)
+  Source Clock:         clk_BUFGP rising at 20.000ns
+  Destination Clock:    clk_BUFGP rising at 20.000ns
+  Clock Uncertainty:    0.000ns
+
+  Minimum Data Path: mw_U_1reg_cval_14 to U_2/mw_U_0reg_cval
+    Location             Delay type         Delay(ns)  Physical Resource
+                                                       Logical Resource(s)
+    -------------------------------------------------  -------------------
+    SLICE_X42Y90.YQ      Tcko                  0.522   mw_U_1reg_cval<15>
+                                                       mw_U_1reg_cval_14
+    SLICE_X45Y89.G4      net (fanout=3)        0.362   mw_U_1reg_cval<14>
+    SLICE_X45Y89.COUT    Topcyg                0.801   Mcompar_clk_out_cmp_ge0000_cy<3>
+                                                       Mcompar_clk_out_cmp_ge0000_lut<3>
+                                                       Mcompar_clk_out_cmp_ge0000_cy<3>
+    SLICE_X45Y90.CIN     net (fanout=1)        0.000   Mcompar_clk_out_cmp_ge0000_cy<3>
+    SLICE_X45Y90.COUT    Tbyp                  0.094   clk_out
+                                                       Mcompar_clk_out_cmp_ge0000_cy<4>
+                                                       Mcompar_clk_out_cmp_ge0000_cy<5>
+    SLICE_X45Y91.CIN     net (fanout=1)        0.000   clk_out
+    SLICE_X45Y91.CLK     Tckcin      (-Th)    -0.322   U_2/mw_U_0reg_cval
+                                                       clk_out_rt
+                                                       U_2/mw_U_0reg_cval
+    -------------------------------------------------  ---------------------------
+    Total                                      2.101ns (1.739ns logic, 0.362ns route)
+                                                       (82.8% logic, 17.2% route)
+
+--------------------------------------------------------------------------------
+Slack (hold path):      2.122ns (requirement - (clock path skew + uncertainty - data path))
+  Source:               mw_U_1reg_cval_13 (FF)
+  Destination:          U_2/mw_U_0reg_cval (FF)
+  Requirement:          0.000ns
+  Data Path Delay:      2.115ns (Levels of Logic = 3)
+  Clock Path Skew:      -0.007ns (0.035 - 0.042)
+  Source Clock:         clk_BUFGP rising at 20.000ns
+  Destination Clock:    clk_BUFGP rising at 20.000ns
+  Clock Uncertainty:    0.000ns
+
+  Minimum Data Path: mw_U_1reg_cval_13 to U_2/mw_U_0reg_cval
+    Location             Delay type         Delay(ns)  Physical Resource
+                                                       Logical Resource(s)
+    -------------------------------------------------  -------------------
+    SLICE_X42Y88.XQ      Tcko                  0.474   mw_U_1reg_cval<13>
+                                                       mw_U_1reg_cval_13
+    SLICE_X45Y89.G2      net (fanout=3)        0.424   mw_U_1reg_cval<13>
+    SLICE_X45Y89.COUT    Topcyg                0.801   Mcompar_clk_out_cmp_ge0000_cy<3>
+                                                       Mcompar_clk_out_cmp_ge0000_lut<3>
+                                                       Mcompar_clk_out_cmp_ge0000_cy<3>
+    SLICE_X45Y90.CIN     net (fanout=1)        0.000   Mcompar_clk_out_cmp_ge0000_cy<3>
+    SLICE_X45Y90.COUT    Tbyp                  0.094   clk_out
+                                                       Mcompar_clk_out_cmp_ge0000_cy<4>
+                                                       Mcompar_clk_out_cmp_ge0000_cy<5>
+    SLICE_X45Y91.CIN     net (fanout=1)        0.000   clk_out
+    SLICE_X45Y91.CLK     Tckcin      (-Th)    -0.322   U_2/mw_U_0reg_cval
+                                                       clk_out_rt
+                                                       U_2/mw_U_0reg_cval
+    -------------------------------------------------  ---------------------------
+    Total                                      2.115ns (1.691ns logic, 0.424ns route)
+                                                       (80.0% logic, 20.0% route)
+
+--------------------------------------------------------------------------------
+
+Paths for end point mw_U_1reg_cval_10 (SLICE_X42Y89.G3), 11 paths
+--------------------------------------------------------------------------------
+Slack (hold path):      2.333ns (requirement - (clock path skew + uncertainty - data path))
+  Source:               mw_U_1reg_cval_10 (FF)
+  Destination:          mw_U_1reg_cval_10 (FF)
+  Requirement:          0.000ns
+  Data Path Delay:      2.333ns (Levels of Logic = 2)
+  Clock Path Skew:      0.000ns
+  Source Clock:         clk_BUFGP rising at 20.000ns
+  Destination Clock:    clk_BUFGP rising at 20.000ns
+  Clock Uncertainty:    0.000ns
+
+  Minimum Data Path: mw_U_1reg_cval_10 to mw_U_1reg_cval_10
+    Location             Delay type         Delay(ns)  Physical Resource
+                                                       Logical Resource(s)
+    -------------------------------------------------  -------------------
+    SLICE_X42Y89.YQ      Tcko                  0.522   mw_U_1reg_cval<11>
+                                                       mw_U_1reg_cval_10
+    SLICE_X43Y88.F4      net (fanout=3)        0.386   mw_U_1reg_cval<10>
+    SLICE_X43Y88.X       Topx                  0.848   mw_U_1reg_nval_addsub0000<10>
+                                                       mw_U_1reg_cval<10>_rt
+                                                       Madd_mw_U_1reg_nval_addsub0000_xor<10>
+    SLICE_X42Y89.G3      net (fanout=1)        0.017   mw_U_1reg_nval_addsub0000<10>
+    SLICE_X42Y89.CLK     Tckg        (-Th)    -0.560   mw_U_1reg_cval<11>
+                                                       mw_U_1reg_nval<10>1
+                                                       mw_U_1reg_cval_10
+    -------------------------------------------------  ---------------------------
+    Total                                      2.333ns (1.930ns logic, 0.403ns route)
+                                                       (82.7% logic, 17.3% route)
+
+--------------------------------------------------------------------------------
+Slack (hold path):      2.687ns (requirement - (clock path skew + uncertainty - data path))
+  Source:               mw_U_1reg_cval_7 (FF)
+  Destination:          mw_U_1reg_cval_10 (FF)
+  Requirement:          0.000ns
+  Data Path Delay:      2.689ns (Levels of Logic = 4)
+  Clock Path Skew:      0.002ns (0.016 - 0.014)
+  Source Clock:         clk_BUFGP rising at 20.000ns
+  Destination Clock:    clk_BUFGP rising at 20.000ns
+  Clock Uncertainty:    0.000ns
+
+  Minimum Data Path: mw_U_1reg_cval_7 to mw_U_1reg_cval_10
+    Location             Delay type         Delay(ns)  Physical Resource
+                                                       Logical Resource(s)
+    -------------------------------------------------  -------------------
+    SLICE_X42Y86.XQ      Tcko                  0.474   mw_U_1reg_cval<7>
+                                                       mw_U_1reg_cval_7
+    SLICE_X43Y86.G4      net (fanout=3)        0.373   mw_U_1reg_cval<7>
+    SLICE_X43Y86.COUT    Topcyg                0.801   mw_U_1reg_nval_addsub0000<6>
+                                                       mw_U_1reg_cval<7>_rt
+                                                       Madd_mw_U_1reg_nval_addsub0000_cy<7>
+    SLICE_X43Y87.CIN     net (fanout=1)        0.000   Madd_mw_U_1reg_nval_addsub0000_cy<7>
+    SLICE_X43Y87.COUT    Tbyp                  0.094   mw_U_1reg_nval_addsub0000<8>
+                                                       Madd_mw_U_1reg_nval_addsub0000_cy<8>
+                                                       Madd_mw_U_1reg_nval_addsub0000_cy<9>
+    SLICE_X43Y88.CIN     net (fanout=1)        0.000   Madd_mw_U_1reg_nval_addsub0000_cy<9>
+    SLICE_X43Y88.X       Tcinx                 0.370   mw_U_1reg_nval_addsub0000<10>
+                                                       Madd_mw_U_1reg_nval_addsub0000_xor<10>
+    SLICE_X42Y89.G3      net (fanout=1)        0.017   mw_U_1reg_nval_addsub0000<10>
+    SLICE_X42Y89.CLK     Tckg        (-Th)    -0.560   mw_U_1reg_cval<11>
+                                                       mw_U_1reg_nval<10>1
+                                                       mw_U_1reg_cval_10
+    -------------------------------------------------  ---------------------------
+    Total                                      2.689ns (2.299ns logic, 0.390ns route)
+                                                       (85.5% logic, 14.5% route)
+
+--------------------------------------------------------------------------------
+Slack (hold path):      2.737ns (requirement - (clock path skew + uncertainty - data path))
+  Source:               mw_U_1reg_cval_5 (FF)
+  Destination:          mw_U_1reg_cval_10 (FF)
+  Requirement:          0.000ns
+  Data Path Delay:      2.741ns (Levels of Logic = 5)
+  Clock Path Skew:      0.004ns (0.016 - 0.012)
+  Source Clock:         clk_BUFGP rising at 20.000ns
+  Destination Clock:    clk_BUFGP rising at 20.000ns
+  Clock Uncertainty:    0.000ns
+
+  Minimum Data Path: mw_U_1reg_cval_5 to mw_U_1reg_cval_10
+    Location             Delay type         Delay(ns)  Physical Resource
+                                                       Logical Resource(s)
+    -------------------------------------------------  -------------------
+    SLICE_X42Y85.XQ      Tcko                  0.474   mw_U_1reg_cval<5>
+                                                       mw_U_1reg_cval_5
+    SLICE_X43Y85.G4      net (fanout=2)        0.331   mw_U_1reg_cval<5>
+    SLICE_X43Y85.COUT    Topcyg                0.801   mw_U_1reg_nval_addsub0000<4>
+                                                       mw_U_1reg_cval<5>_rt
+                                                       Madd_mw_U_1reg_nval_addsub0000_cy<5>
+    SLICE_X43Y86.CIN     net (fanout=1)        0.000   Madd_mw_U_1reg_nval_addsub0000_cy<5>
+    SLICE_X43Y86.COUT    Tbyp                  0.094   mw_U_1reg_nval_addsub0000<6>
+                                                       Madd_mw_U_1reg_nval_addsub0000_cy<6>
+                                                       Madd_mw_U_1reg_nval_addsub0000_cy<7>
+    SLICE_X43Y87.CIN     net (fanout=1)        0.000   Madd_mw_U_1reg_nval_addsub0000_cy<7>
+    SLICE_X43Y87.COUT    Tbyp                  0.094   mw_U_1reg_nval_addsub0000<8>
+                                                       Madd_mw_U_1reg_nval_addsub0000_cy<8>
+                                                       Madd_mw_U_1reg_nval_addsub0000_cy<9>
+    SLICE_X43Y88.CIN     net (fanout=1)        0.000   Madd_mw_U_1reg_nval_addsub0000_cy<9>
+    SLICE_X43Y88.X       Tcinx                 0.370   mw_U_1reg_nval_addsub0000<10>
+                                                       Madd_mw_U_1reg_nval_addsub0000_xor<10>
+    SLICE_X42Y89.G3      net (fanout=1)        0.017   mw_U_1reg_nval_addsub0000<10>
+    SLICE_X42Y89.CLK     Tckg        (-Th)    -0.560   mw_U_1reg_cval<11>
+                                                       mw_U_1reg_nval<10>1
+                                                       mw_U_1reg_cval_10
+    -------------------------------------------------  ---------------------------
+    Total                                      2.741ns (2.393ns logic, 0.348ns route)
+                                                       (87.3% logic, 12.7% route)
+
+--------------------------------------------------------------------------------
+
+Paths for end point mw_U_1reg_cval_16 (SLICE_X42Y91.G4), 17 paths
+--------------------------------------------------------------------------------
+Slack (hold path):      2.381ns (requirement - (clock path skew + uncertainty - data path))
+  Source:               mw_U_1reg_cval_16 (FF)
+  Destination:          mw_U_1reg_cval_16 (FF)
+  Requirement:          0.000ns
+  Data Path Delay:      2.381ns (Levels of Logic = 2)
+  Clock Path Skew:      0.000ns
+  Source Clock:         clk_BUFGP rising at 20.000ns
+  Destination Clock:    clk_BUFGP rising at 20.000ns
+  Clock Uncertainty:    0.000ns
+
+  Minimum Data Path: mw_U_1reg_cval_16 to mw_U_1reg_cval_16
+    Location             Delay type         Delay(ns)  Physical Resource
+                                                       Logical Resource(s)
+    -------------------------------------------------  -------------------
+    SLICE_X42Y91.YQ      Tcko                  0.522   mw_U_1reg_cval<16>
+                                                       mw_U_1reg_cval_16
+    SLICE_X43Y91.F4      net (fanout=3)        0.382   mw_U_1reg_cval<16>
+    SLICE_X43Y91.X       Topx                  0.848   mw_U_1reg_nval_addsub0000<16>
+                                                       mw_U_1reg_cval<16>_rt
+                                                       Madd_mw_U_1reg_nval_addsub0000_xor<16>
+    SLICE_X42Y91.G4      net (fanout=1)        0.069   mw_U_1reg_nval_addsub0000<16>
+    SLICE_X42Y91.CLK     Tckg        (-Th)    -0.560   mw_U_1reg_cval<16>
+                                                       mw_U_1reg_nval<16>1
+                                                       mw_U_1reg_cval_16
+    -------------------------------------------------  ---------------------------
+    Total                                      2.381ns (1.930ns logic, 0.451ns route)
+                                                       (81.1% logic, 18.9% route)
+
+--------------------------------------------------------------------------------
+Slack (hold path):      2.693ns (requirement - (clock path skew + uncertainty - data path))
+  Source:               mw_U_1reg_cval_15 (FF)
+  Destination:          mw_U_1reg_cval_16 (FF)
+  Requirement:          0.000ns
+  Data Path Delay:      2.693ns (Levels of Logic = 3)
+  Clock Path Skew:      0.000ns
+  Source Clock:         clk_BUFGP rising at 20.000ns
+  Destination Clock:    clk_BUFGP rising at 20.000ns
+  Clock Uncertainty:    0.000ns
+
+  Minimum Data Path: mw_U_1reg_cval_15 to mw_U_1reg_cval_16
+    Location             Delay type         Delay(ns)  Physical Resource
+                                                       Logical Resource(s)
+    -------------------------------------------------  -------------------
+    SLICE_X42Y90.XQ      Tcko                  0.474   mw_U_1reg_cval<15>
+                                                       mw_U_1reg_cval_15
+    SLICE_X43Y90.G2      net (fanout=3)        0.419   mw_U_1reg_cval<15>
+    SLICE_X43Y90.COUT    Topcyg                0.801   mw_U_1reg_nval_addsub0000<14>
+                                                       mw_U_1reg_cval<15>_rt
+                                                       Madd_mw_U_1reg_nval_addsub0000_cy<15>
+    SLICE_X43Y91.CIN     net (fanout=1)        0.000   Madd_mw_U_1reg_nval_addsub0000_cy<15>
+    SLICE_X43Y91.X       Tcinx                 0.370   mw_U_1reg_nval_addsub0000<16>
+                                                       Madd_mw_U_1reg_nval_addsub0000_xor<16>
+    SLICE_X42Y91.G4      net (fanout=1)        0.069   mw_U_1reg_nval_addsub0000<16>
+    SLICE_X42Y91.CLK     Tckg        (-Th)    -0.560   mw_U_1reg_cval<16>
+                                                       mw_U_1reg_nval<16>1
+                                                       mw_U_1reg_cval_16
+    -------------------------------------------------  ---------------------------
+    Total                                      2.693ns (2.205ns logic, 0.488ns route)
+                                                       (81.9% logic, 18.1% route)
+
+--------------------------------------------------------------------------------
+Slack (hold path):      2.890ns (requirement - (clock path skew + uncertainty - data path))
+  Source:               mw_U_1reg_cval_14 (FF)
+  Destination:          mw_U_1reg_cval_16 (FF)
+  Requirement:          0.000ns
+  Data Path Delay:      2.890ns (Levels of Logic = 3)
+  Clock Path Skew:      0.000ns
+  Source Clock:         clk_BUFGP rising at 20.000ns
+  Destination Clock:    clk_BUFGP rising at 20.000ns
+  Clock Uncertainty:    0.000ns
+
+  Minimum Data Path: mw_U_1reg_cval_14 to mw_U_1reg_cval_16
+    Location             Delay type         Delay(ns)  Physical Resource
+                                                       Logical Resource(s)
+    -------------------------------------------------  -------------------
+    SLICE_X42Y90.YQ      Tcko                  0.522   mw_U_1reg_cval<15>
+                                                       mw_U_1reg_cval_14
+    SLICE_X43Y90.F1      net (fanout=3)        0.439   mw_U_1reg_cval<14>
+    SLICE_X43Y90.COUT    Topcyf                0.930   mw_U_1reg_nval_addsub0000<14>
+                                                       mw_U_1reg_cval<14>_rt
+                                                       Madd_mw_U_1reg_nval_addsub0000_cy<14>
+                                                       Madd_mw_U_1reg_nval_addsub0000_cy<15>
+    SLICE_X43Y91.CIN     net (fanout=1)        0.000   Madd_mw_U_1reg_nval_addsub0000_cy<15>
+    SLICE_X43Y91.X       Tcinx                 0.370   mw_U_1reg_nval_addsub0000<16>
+                                                       Madd_mw_U_1reg_nval_addsub0000_xor<16>
+    SLICE_X42Y91.G4      net (fanout=1)        0.069   mw_U_1reg_nval_addsub0000<16>
+    SLICE_X42Y91.CLK     Tckg        (-Th)    -0.560   mw_U_1reg_cval<16>
+                                                       mw_U_1reg_nval<16>1
+                                                       mw_U_1reg_cval_16
+    -------------------------------------------------  ---------------------------
+    Total                                      2.890ns (2.382ns logic, 0.508ns route)
+                                                       (82.4% logic, 17.6% route)
+
+--------------------------------------------------------------------------------
+
+Component Switching Limit Checks: TS_sys_clk_pin = PERIOD TIMEGRP "sys_clk_pin" 50 MHz HIGH 50%;
+--------------------------------------------------------------------------------
+Slack: 16.808ns (period - (min low pulse limit / (low pulse / period)))
+  Period: 20.000ns
+  Low pulse: 10.000ns
+  Low pulse limit: 1.596ns (Trpw)
+  Physical resource: U_2/mw_U_0reg_cval/SR
+  Logical resource: U_2/mw_U_0reg_cval/SR
+  Location pin: SLICE_X45Y91.SR
+  Clock network: rst_IBUF
+--------------------------------------------------------------------------------
+Slack: 16.808ns (period - (min high pulse limit / (high pulse / period)))
+  Period: 20.000ns
+  High pulse: 10.000ns
+  High pulse limit: 1.596ns (Trpw)
+  Physical resource: U_2/mw_U_0reg_cval/SR
+  Logical resource: U_2/mw_U_0reg_cval/SR
+  Location pin: SLICE_X45Y91.SR
+  Clock network: rst_IBUF
+--------------------------------------------------------------------------------
+Slack: 16.808ns (period - (min low pulse limit / (low pulse / period)))
+  Period: 20.000ns
+  Low pulse: 10.000ns
+  Low pulse limit: 1.596ns (Trpw)
+  Physical resource: mw_U_1reg_cval<1>/SR
+  Logical resource: mw_U_1reg_cval_1/SR
+  Location pin: SLICE_X42Y82.SR
+  Clock network: rst_IBUF
+--------------------------------------------------------------------------------
+
+
+All constraints were met.
+
+
+Data Sheet report:
+-----------------
+All values displayed in nanoseconds (ns)
+
+Clock to Setup on destination clock clk
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+clk            |    5.544|         |         |         |
+---------------+---------+---------+---------+---------+
+
+
+Timing summary:
+---------------
+
+Timing errors: 0  Score: 0  (Setup/Max: 0, Hold: 0)
+
+Constraints cover 453 paths, 0 nets, and 103 connections
+
+Design statistics:
+   Minimum period:   5.544ns{1}   (Maximum frequency: 180.375MHz)
+
+
+------------------------------------Footnotes-----------------------------------
+1)  The minimum period statistic assumes all single cycle delays.
+
+Analysis completed Fri Nov 04 12:03:48 2022 
+--------------------------------------------------------------------------------
+
+Trace Settings:
+-------------------------
+Trace Settings 
+
+Peak Memory Usage: 164 MB
+
+
+

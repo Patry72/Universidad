@@ -1,0 +1,158 @@
+DESIGN control_display_tb
+VIEW symbol.sb
+NO_GRAPHIC 0
+DESIGN control_display_tb
+VIEW symbol.sb
+GRAPHIC 50,0 8 0 
+DESIGN control_display_tb
+VIEW symbol.sb
+GRAPHIC 1,0 11 0 
+DESIGN control_display_tb
+VIEW symbol.sb
+GRAPHIC 1,0 12 0 
+DESIGN control_display_tb
+VIEW struct.bd
+NO_GRAPHIC 15
+DESIGN control_display_tb
+VIEW struct.bd
+GRAPHIC 237,0 24 0 
+DESIGN control_display_tb
+VIEW struct.bd
+NO_GRAPHIC 32
+DESIGN control_display_tb
+VIEW struct.bd
+GRAPHIC 0,0 35 2 
+DESIGN control_display_tb
+VIEW struct.bd
+GRAPHIC 51,0 40 0 
+DESIGN control_display_tb
+VIEW struct.bd
+GRAPHIC 107,0 41 0 
+DESIGN control_display_tb
+VIEW struct.bd
+GRAPHIC 67,0 42 0 
+DESIGN control_display_tb
+VIEW struct.bd
+GRAPHIC 75,0 43 0 
+DESIGN control_display_tb
+VIEW struct.bd
+GRAPHIC 83,0 44 0 
+DESIGN control_display_tb
+VIEW struct.bd
+GRAPHIC 91,0 45 0 
+DESIGN control_display_tb
+VIEW struct.bd
+GRAPHIC 99,0 46 0 
+DESIGN control_display_tb
+VIEW struct.bd
+GRAPHIC 59,0 47 0 
+DESIGN control_display_tb
+VIEW struct.bd
+NO_GRAPHIC 48
+DESIGN control_display_tb
+VIEW struct.bd
+NO_GRAPHIC 49
+LIBRARY Display7Seg_lib
+DESIGN control_display
+VIEW struct
+GRAPHIC 41,0 51 0 
+DESIGN control_display
+VIEW symbol.sb
+GRAPHIC 149,0 53 0 
+DESIGN control_display
+VIEW symbol.sb
+GRAPHIC 124,0 54 0 
+DESIGN control_display
+VIEW symbol.sb
+GRAPHIC 129,0 55 0 
+DESIGN control_display
+VIEW symbol.sb
+GRAPHIC 134,0 56 0 
+DESIGN control_display
+VIEW symbol.sb
+GRAPHIC 139,0 57 0 
+DESIGN control_display
+VIEW symbol.sb
+GRAPHIC 144,0 58 0 
+DESIGN control_display
+VIEW symbol.sb
+GRAPHIC 154,0 59 0 
+DESIGN control_display
+VIEW symbol.sb
+GRAPHIC 159,0 60 0 
+DESIGN control_display_tb
+VIEW struct.bd
+GRAPHIC 115,0 63 0 
+DESIGN control_display_tb
+VIEW struct.bd
+GRAPHIC 125,0 65 0 
+DESIGN control_display_tb
+VIEW struct.bd
+GRAPHIC 133,0 66 0 
+DESIGN control_display_tb
+VIEW struct.bd
+GRAPHIC 181,0 67 0 
+DESIGN control_display_tb
+VIEW struct.bd
+GRAPHIC 141,0 68 0 
+DESIGN control_display_tb
+VIEW struct.bd
+GRAPHIC 149,0 69 0 
+DESIGN control_display_tb
+VIEW struct.bd
+GRAPHIC 157,0 70 0 
+DESIGN control_display_tb
+VIEW struct.bd
+GRAPHIC 165,0 71 0 
+DESIGN control_display_tb
+VIEW struct.bd
+GRAPHIC 173,0 72 0 
+LIBRARY Display7Seg_lib
+DESIGN control_display_tb
+VIEW struct.bd
+NO_GRAPHIC 75
+DESIGN control_display_tb
+VIEW struct.bd
+GRAPHIC 41,0 78 0 
+DESIGN control_display_tb
+VIEW struct.bd
+GRAPHIC 115,0 79 0 
+DESIGN control_display_tb
+VIEW struct.bd
+NO_GRAPHIC 82
+DESIGN control_display_tb
+VIEW struct.bd
+NO_GRAPHIC 84
+DESIGN control_display_tb
+VIEW struct.bd
+GRAPHIC 41,0 86 0 
+DESIGN control_display_tb
+VIEW struct.bd
+GRAPHIC 109,0 88 0 
+DESIGN control_display_tb
+VIEW struct.bd
+GRAPHIC 69,0 89 0 
+DESIGN control_display_tb
+VIEW struct.bd
+GRAPHIC 77,0 90 0 
+DESIGN control_display_tb
+VIEW struct.bd
+GRAPHIC 85,0 91 0 
+DESIGN control_display_tb
+VIEW struct.bd
+GRAPHIC 93,0 92 0 
+DESIGN control_display_tb
+VIEW struct.bd
+GRAPHIC 101,0 93 0 
+DESIGN control_display_tb
+VIEW struct.bd
+GRAPHIC 53,0 94 0 
+DESIGN control_display_tb
+VIEW struct.bd
+GRAPHIC 61,0 95 0 
+DESIGN control_display_tb
+VIEW struct.bd
+GRAPHIC 115,0 97 0 
+DESIGN control_display_tb
+VIEW struct.bd
+NO_GRAPHIC 109
